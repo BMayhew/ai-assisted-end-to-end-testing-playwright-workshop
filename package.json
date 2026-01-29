@@ -1,0 +1,23 @@
+{
+  "name": "ai-assisted-end-to-end-testing-playwright-workshop",
+  "version": "1.0.0",
+  "description": "1. Install Playwright [docs](https://playwright.dev/docs/intro)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/issues"
+  },
+  "homepage": "https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.1.0"
+  }
+}
