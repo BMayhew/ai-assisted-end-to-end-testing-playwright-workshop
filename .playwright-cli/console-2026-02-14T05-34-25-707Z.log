@@ -1,0 +1,3 @@
+[    3011ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    3420ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    3423ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/main.60cd83a2d07ec791.js:0

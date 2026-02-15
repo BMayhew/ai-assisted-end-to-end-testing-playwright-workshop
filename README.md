@@ -1,4 +1,6 @@
-# Workshop
+# AI Assisted End to End Testing with Playwright Workshop
+
+## Setting up the Project
 
 1. Install Playwright [docs](https://playwright.dev/docs/intro)
 
@@ -92,7 +94,11 @@ npx playwright init-agents --loop=vscode
 7. **Write descriptive test names** limit comments only to where the code may be confusing
 ```
 
-4. Create a new agents file utilizing the playwright-cli tool
+> [Initial Project Github Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/initial-project)
+
+## Creating a Test
+
+1. Create a new agents file utilizing the playwright-cli tool
 
 ```markdown
 # .github/agents/playwright-test-planner-cli.agent.md
@@ -166,5 +172,31 @@ Explore https://practicesoftwaretesting.com and create 20 different spec files
 
 This will create 20 different spec files with some test cases that we can use for generating test files.
 
-Where does this break down?
+- Where does this break down?
+- What types of tests are hard to generate?
+- How can we improve the prompt(s) to get better results?
+
+[Create Test GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/create-test/)
+
+------
+
+Let's try a better prompt and agent to generate this for us ....
+
+```
+Analyze https://testsmith-io.github.io/practice-software-testing/#/ and create a critical path test plan for the https://practicesoftwaretesting.com site. 
+
+Context about this application:
+
+- It's a practice e-commerce site for testing tools/hardware
+- Key features include: product browsing, search, cart, checkout, user accounts
+- There are different user roles (admin, customer)
+- The site has intentional bugs for testing practice
+
+Focus areas:
+
+- Shopping cart and checkout flow (highest priority)
+- User authentication
+- Product search and filtering
+- Account management
+```
 
