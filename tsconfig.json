@@ -1,0 +1,19 @@
+
+{
+  "compilerOptions": {
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "useDefineForClassFields": false,
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "paths": {
+      "@datafactory/*": ["/lib/datafactory/*"],
+      "@helpers/*": ["/lib/helpers/*"],
+      "@fixtures/*": ["/lib/fixtures/*"],
+      "@pages/*": ["/lib/pages/*"]
+    }
+  }
+}

@@ -166,3 +166,5 @@ A detailed comparison of all three versions is available in [specs/analysis/](sp
 - [workshop-comparison-slides.md](specs/analysis/workshop-comparison-slides.md) — Shareable summary
 
 > [Improve Prompt GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/improve-prompt)
+
+

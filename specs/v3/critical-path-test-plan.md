@@ -2,7 +2,7 @@
 
 **Generated:** February 15, 2026
 **Target URL:** https://practicesoftwaretesting.com
-**Alternate URL:** https://testsmith-io.github.io/practice-software-testing/#/
+**Docs URL:** https://testsmith-io.github.io/practice-software-testing/#/
 **Total Scenarios:** 20
 
 ## Executive Summary

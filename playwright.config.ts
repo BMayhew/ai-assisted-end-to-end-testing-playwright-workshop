@@ -20,6 +20,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: "html",
   use: {
+    testIdAttribute: "data-test",
     trace: "on",
     screenshot: "only-on-failure",
     video: "retain-on-failure",
