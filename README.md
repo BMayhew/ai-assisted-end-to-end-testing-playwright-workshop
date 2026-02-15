@@ -96,107 +96,73 @@ npx playwright init-agents --loop=vscode
 
 > [Initial Project Github Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/initial-project)
 
-## Creating a Test
+## Creating Test Specs
 
-1. Create a new agents file utilizing the playwright-cli tool
+This section walks through the iterative process of improving AI-generated test plans. Each version used a different prompt, agent, or model — and the results improved significantly with each iteration.
 
-```markdown
-# .github/agents/playwright-test-planner-cli.agent.md
+For the full breakdown of each version (prompts used, agents, models, and analysis), see **[specs/README.md](specs/README.md)**.
 
----
-name: playwright-test-planner-cli
-description: Use this agent when you need to create comprehensive test plan for a web application or website using playwright-cli
-tools:
-  [
-    "execute/runInTerminal",
-    "read/readFile",
-    "edit/createDirectory",
-    "edit/createFile",
-    "search",
-  ]
-model: Claude Sonnet 4
----
+### Version 1 — Broad Exploration (20 spec files)
 
-You are an expert web test planner with extensive experience in quality assurance, user experience testing, and test
-scenario design. Your expertise includes functional testing, edge case identification, and comprehensive test coverage
-planning.
-
-You will:
-
-1. **Navigate and Explore**
-   - Use playwright-cli commands to explore the application
-   - Run `playwright-cli open <URL>` to launch a browser and manually explore the interface
-   - Use `playwright-cli screenshot <URL> output.png` to capture interface states
-   - Use `playwright-cli pdf <URL> output.pdf` to capture full page layouts
-   - Thoroughly explore the interface, identifying all interactive elements, forms, navigation paths, and functionality
-
-2. **Analyze User Flows**
-   - Map out the primary user journeys and identify critical paths through the application
-   - Consider different user types and their typical behaviors
-
-3. **Design Comprehensive Scenarios**
-
-   Create detailed test scenarios that cover:
-   - Happy path scenarios (normal user behavior)
-   - Edge cases and boundary conditions
-   - Error handling and validation
-
-4. **Structure Test Plans**
-
-   Each scenario must include:
-   - Clear, descriptive title
-   - Detailed step-by-step instructions
-   - Expected outcomes where appropriate
-   - Assumptions about starting state (always assume blank/fresh state)
-   - Success criteria and failure conditions
-
-5. **Create Documentation**
-
-   Save your test plan as a markdown file in the specs/ directory with a descriptive filename.
-
-**Quality Standards**:
-
-- Write steps that are specific enough for any tester to follow
-- Include negative testing scenarios
-- Ensure scenarios are independent and can be run in any order
-
-**Output Format**: Always save the complete test plan as a markdown file with clear headings, numbered steps, and
-professional formatting suitable for sharing with development and QA teams.
+**Prompt:**
 ```
-
-With the playwright-test-planner-cli agent selected in your chat window, use this prompt
-
-```markdown
 Explore https://practicesoftwaretesting.com and create 20 different spec files
 ```
 
-This will create 20 different spec files with some test cases that we can use for generating test files.
+- **Agent:** `playwright-test-planner-cli`
+- **Model:** Claude Sonnet 4
+- **Output:** [specs/v1/](specs/v1/) — 20 individual spec files
 
-- Where does this break down?
-- What types of tests are hard to generate?
-- How can we improve the prompt(s) to get better results?
+A broad first pass. The agent explored the site and produced individual spec files per feature area. This surfaced a lot of scenarios but lacked prioritization — there was no distinction between critical revenue paths and nice-to-have checks.
 
-[Create Test GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/create-test/)
+**Where this breaks down:**
+- No priority ranking — all scenarios treated equally
+- Scenarios aren't independent (some assume state from others)
+- Many specs are shallow (e.g., "verify page loads")
+- Hard to know which 20% of tests gives 80% of coverage
 
-------
+> [Create Test GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/create-test/)
 
-Let's try a better prompt and agent to generate this for us ....
+### Version 2 — Focused Critical Path (single plan)
 
+**Prompt:**
 ```
-Analyze https://testsmith-io.github.io/practice-software-testing/#/ and create a critical path test plan for the https://practicesoftwaretesting.com site. 
+Analyze https://testsmith-io.github.io/practice-software-testing/#/ and create a critical path 
+test plan for the https://practicesoftwaretesting.com site. 
 
 Context about this application:
-
 - It's a practice e-commerce site for testing tools/hardware
 - Key features include: product browsing, search, cart, checkout, user accounts
 - There are different user roles (admin, customer)
 - The site has intentional bugs for testing practice
 
 Focus areas:
-
 - Shopping cart and checkout flow (highest priority)
 - User authentication
 - Product search and filtering
 - Account management
 ```
 
+- **Agent:** `playwright-critical-path-analyzer` (custom agent)
+- **Model:** Claude Sonnet 4
+- **Output:** [specs/v2/critical-path-test-plan.md](specs/v2/critical-path-test-plan.md)
+
+A major improvement. Providing application context, focus areas, and using a purpose-built agent produced a single prioritized plan with P0/P1/P2 rankings, a coverage matrix, and automation notes. The scenarios are more actionable and test-ready.
+
+### Version 3 — Enhanced with Codebase Awareness
+
+**Prompt:** Same as V2 (identical prompt and agent).
+
+- **Agent:** `playwright-critical-path-analyzer` (same custom agent)
+- **Model:** Claude Opus 4.6
+- **Output:** [specs/v3/critical-path-test-plan.md](specs/v3/critical-path-test-plan.md)
+
+The only change was the model. Opus 4.6 autonomously discovered and read the V1 and V2 specs already in the repo without being asked, then used that prior work as additional context. The result is more thorough: better locator hints (referencing `data-test` attributes from page snapshots), Playwright-specific API recommendations (`test.step()`, `toBeDisabled()`, `waitForResponse()`), and practical improvements like removing the impractical Google OAuth scenario.
+
+### Comparison & Gap Analysis
+
+A detailed comparison of all three versions is available in [specs/analysis/](specs/analysis/):
+- [gap-analysis-detailed.md](specs/analysis/gap-analysis-detailed.md) — Full scoring and gap analysis
+- [workshop-comparison-slides.md](specs/analysis/workshop-comparison-slides.md) — Shareable summary
+
+> [Improve Prompt GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/improve-prompt)
