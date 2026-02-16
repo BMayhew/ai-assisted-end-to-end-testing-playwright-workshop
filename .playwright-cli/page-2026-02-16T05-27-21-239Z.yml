@@ -1,0 +1,139 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Sign in" [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+            - menuitem "cart" [ref=e42]:
+              - link "cart" [ref=e43] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e45]
+                - generic [ref=e47]: "1"
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e51]
+            - text: EN
+  - generic [ref=e404]:
+    - generic [ref=e405]:
+      - figure "Photo by ANIRUDH on Unsplash." [ref=e407]:
+        - img "Thor Hammer" [ref=e409]
+        - generic [ref=e410]:
+          - text: Photo by
+          - link "ANIRUDH" [ref=e411] [cursor=pointer]:
+            - /url: https://unsplash.com/@lanirudhreddy
+          - text: "on"
+          - link "Unsplash" [ref=e412] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/3esjG-nlgyk
+          - text: .
+      - generic [ref=e413]:
+        - heading "Thor Hammer" [level=1] [ref=e414]
+        - paragraph [ref=e415]:
+          - generic "category" [ref=e416]: Hammer
+          - generic "brand" [ref=e417]: ForgeFlex Tools
+        - generic [ref=e419]: $11.14
+        - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e420]:
+          - text: "CO₂:"
+          - generic [ref=e421]: A
+          - generic [ref=e422]: B
+          - generic [ref=e423]: C
+          - generic [ref=e424]: D
+          - generic [ref=e425]: E
+        - paragraph [ref=e426]: Donec malesuada tempus purus. Integer sit amet arcu magna. Sed vel laoreet ligula, non sollicitudin ex. Mauris euismod ac dolor venenatis lobortis. Aliquam iaculis at diam nec accumsan. Ut sodales sed elit et imperdiet. Maecenas vitae molestie mauris. Integer quis placerat libero, in finibus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        - generic [ref=e427]:
+          - button "Decrease quantity" [ref=e428] [cursor=pointer]:
+            - img [ref=e430]
+          - generic [ref=e432]: Quantity
+          - spinbutton "Quantity" [ref=e433]: "1"
+          - button "Increase quantity" [ref=e434] [cursor=pointer]:
+            - img [ref=e436]
+        - generic [ref=e438]:
+          - button "Add to cart" [ref=e439] [cursor=pointer]:
+            - img [ref=e441]
+            - text: Add to cart
+          - button "Add to favourites" [ref=e443] [cursor=pointer]:
+            - img [ref=e445]
+            - text: Add to favourites
+    - separator [ref=e447]
+    - generic [ref=e448]:
+      - heading "Related products" [level=2] [ref=e449]
+      - generic [ref=e451]:
+        - link "Claw Hammer with Shock Reduction Grip Claw Hammer with Shock Reduction Grip More information" [ref=e452] [cursor=pointer]:
+          - /url: /product/01KHJD41J4G3S7APQ80YM0W1MV
+          - img "Claw Hammer with Shock Reduction Grip" [ref=e454]
+          - generic [ref=e455]:
+            - heading "Claw Hammer with Shock Reduction Grip" [level=5] [ref=e456]
+            - link "More information" [ref=e457]:
+              - /url: "#"
+        - link "Hammer Hammer More information" [ref=e458] [cursor=pointer]:
+          - /url: /product/01KHJD41J5G7HVTCB6R0AQ12ZR
+          - img "Hammer" [ref=e460]
+          - generic [ref=e461]:
+            - heading "Hammer" [level=5] [ref=e462]
+            - link "More information" [ref=e463]:
+              - /url: "#"
+        - link "Claw Hammer Claw Hammer More information" [ref=e464] [cursor=pointer]:
+          - /url: /product/01KHJD41J6W01GMW69N77FREM2
+          - img "Claw Hammer" [ref=e466]
+          - generic [ref=e467]:
+            - heading "Claw Hammer" [level=5] [ref=e468]
+            - link "More information" [ref=e469]:
+              - /url: "#"
+        - link "Sledgehammer Sledgehammer More information" [ref=e470] [cursor=pointer]:
+          - /url: /product/01KHJD41J88PXD66PXSC8W1TBZ
+          - img "Sledgehammer" [ref=e472]
+          - generic [ref=e473]:
+            - heading "Sledgehammer" [level=5] [ref=e474]
+            - link "More information" [ref=e475]:
+              - /url: "#"
+        - link "Claw Hammer with Fiberglass Handle Claw Hammer with Fiberglass Handle More information" [ref=e476] [cursor=pointer]:
+          - /url: /product/01KHJD41JA0G1J6MMZXWMDXNW4
+          - img "Claw Hammer with Fiberglass Handle" [ref=e478]
+          - generic [ref=e479]:
+            - heading "Claw Hammer with Fiberglass Handle" [level=5] [ref=e480]
+            - link "More information" [ref=e481]:
+              - /url: "#"
+        - link "Court Hammer Court Hammer More information" [ref=e482] [cursor=pointer]:
+          - /url: /product/01KHJD41JBPS9WA1VG633MZWRS
+          - img "Court Hammer" [ref=e484]
+          - generic [ref=e485]:
+            - heading "Court Hammer" [level=5] [ref=e486]
+            - link "More information" [ref=e487]:
+              - /url: "#"
+  - paragraph [ref=e167]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e168] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e169] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e170] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e171] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e173] [cursor=pointer]:
+    - img [ref=e174]

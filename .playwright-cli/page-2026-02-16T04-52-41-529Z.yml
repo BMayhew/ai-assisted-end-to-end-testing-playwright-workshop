@@ -1,0 +1,161 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "Howdy QA Logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Howdy QA Logo" [ref=e9]
+        - generic [ref=e10]:
+          - link "Services" [ref=e11] [cursor=pointer]:
+            - /url: "#services"
+          - link "Benefits" [ref=e12] [cursor=pointer]:
+            - /url: "#benefits"
+          - link "Glossary" [ref=e13] [cursor=pointer]:
+            - /url: /glossary
+          - link "FAQ" [ref=e14] [cursor=pointer]:
+            - /url: "#faq"
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Get Started" [ref=e16] [cursor=pointer]:
+            - /url: "#contact"
+            - button "Get Started" [ref=e17]
+    - main [ref=e18]:
+      - generic [ref=e21]:
+        - heading "Partners & Reviews" [level=1] [ref=e22]
+        - paragraph [ref=e23]: Discover what our clients say about our Playwright test automation services and explore our trusted partnerships.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Review Platforms" [level=2] [ref=e28]
+          - paragraph [ref=e29]: We're proud to be listed and reviewed on trusted business directories
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - link "GoodFirms logo - visit our profile" [ref=e33] [cursor=pointer]:
+              - /url: https://www.goodfirms.co/company/howdy-qa
+              - img [ref=e34]
+            - paragraph [ref=e36]: Independent B2B Research and Reviews Platform
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: GoodFirms is a trusted platform that helps businesses find the best software and service providers through authentic reviews and ratings. Visit our profile to see what our clients say about our Playwright test automation consultancy services.
+            - link "View Our GoodFirms Profile" [ref=e39] [cursor=pointer]:
+              - /url: https://www.goodfirms.co/company/howdy-qa
+              - text: View Our GoodFirms Profile
+              - img [ref=e40]
+        - generic [ref=e44]:
+          - heading "Want to be featured on our Partners & Reviews page?" [level=3] [ref=e45]
+          - paragraph [ref=e46]: We'd love to connect. Whether you're a review platform or a client willing to share feedback, reach out and we'll get back to you.
+          - link "Reach Out" [ref=e48] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "Get Started Today" [level=2] [ref=e52]
+          - paragraph [ref=e53]: Ready to revolutionize your test automation? Contact us for a free consultation and discover how we can help transform your testing strategy.
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - generic [ref=e58]:
+                - img [ref=e59]
+                - heading "Contact Information" [level=3] [ref=e62]
+              - generic [ref=e64]:
+                - paragraph [ref=e65]: Email
+                - link "butch@howdyqa.com" [ref=e66] [cursor=pointer]:
+                  - /url: mailto:butch@howdyqa.com
+            - generic [ref=e67]:
+              - generic [ref=e69]:
+                - img [ref=e70]
+                - heading "What to Expect" [level=3] [ref=e73]
+              - list [ref=e75]:
+                - listitem [ref=e76]:
+                  - img [ref=e77]
+                  - generic [ref=e80]: Free initial consultation
+                - listitem [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e85]: Custom strategy proposal within 3 days of consultation
+                - listitem [ref=e86]:
+                  - img [ref=e87]
+                  - generic [ref=e90]: 1 week free trial to prove value
+                - listitem [ref=e91]:
+                  - img [ref=e92]
+                  - generic [ref=e95]: 1 week free coding guarantee
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - img [ref=e99]
+                - heading "Quick Start Options" [level=3] [ref=e101]
+              - generic [ref=e102]:
+                - paragraph [ref=e103]:
+                  - text: 🚀
+                  - strong [ref=e104]: "Migration Project:"
+                  - text: Scope out and and begin migration 2 weeks
+                - paragraph [ref=e105]:
+                  - text: 📚
+                  - strong [ref=e106]: "Training Program:"
+                  - text: Custom duration based on team size
+                - paragraph [ref=e107]:
+                  - text: 🔧
+                  - strong [ref=e108]: "CI/CD Setup:"
+                  - text: 1-2 weeks implementation
+                - paragraph [ref=e109]:
+                  - text: 📊
+                  - strong [ref=e110]: "Strategy Consultation:"
+                  - text: 1-3 days assessment
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - heading "Send us a message" [level=3] [ref=e113]
+              - paragraph [ref=e114]: Tell us about your testing challenges and we'll get back to you quickly.
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]: Name
+                  - textbox "Name" [ref=e120]:
+                    - /placeholder: Your name
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Email
+                  - textbox "Email" [ref=e123]:
+                    - /placeholder: your@email.com
+              - generic [ref=e124]:
+                - generic [ref=e125]: Company
+                - textbox "Company" [ref=e126]:
+                  - /placeholder: Your company name
+              - generic [ref=e127]:
+                - generic [ref=e128]: Current Testing Tools
+                - textbox "Current Testing Tools" [ref=e129]:
+                  - /placeholder: e.g., Selenium, Cypress, Jest, etc.
+              - generic [ref=e130]:
+                - generic [ref=e131]: Project Details
+                - textbox "Project Details" [ref=e132]:
+                  - /placeholder: Tell us about your testing challenges, team size, and what you'd like to achieve...
+              - button "Send Message" [ref=e133] [cursor=pointer]
+    - contentinfo [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - img "Howdy QA Logo" [ref=e139]
+            - paragraph [ref=e140]: Expert Playwright test automation consultancy helping teams build reliable, efficient testing strategies that scale.
+          - generic [ref=e141]:
+            - heading "Services" [level=3] [ref=e142]
+            - list [ref=e143]:
+              - listitem [ref=e144]:
+                - link "Migration Services" [ref=e145] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e146]:
+                - link "CI/CD Orchestration" [ref=e147] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e148]:
+                - link "Training & Education" [ref=e149] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e150]:
+                - link "Code Reviews" [ref=e151] [cursor=pointer]:
+                  - /url: "#services"
+          - generic [ref=e152]:
+            - heading "Company" [level=3] [ref=e153]
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - link "Partners & Reviews" [ref=e156] [cursor=pointer]:
+                  - /url: /partners
+              - listitem [ref=e157]:
+                - text: "Email:"
+                - link "butch@howdyqa.com" [ref=e158] [cursor=pointer]:
+                  - /url: mailto:butch@howdyqa.com
+              - listitem [ref=e159]: Free trial available
+        - paragraph [ref=e161]: © 2026 Howdy QA. All rights reserved. | Playwright Test Automation Consultancy

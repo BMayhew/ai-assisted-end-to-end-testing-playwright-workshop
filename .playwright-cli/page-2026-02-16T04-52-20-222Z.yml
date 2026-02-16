@@ -1,0 +1,114 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "cart" [ref=e40]:
+              - link "cart" [ref=e41] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e43]
+                - generic [ref=e45]: "1"
+          - button [ref=e47] [cursor=pointer]:
+            - img [ref=e49]
+            - text: EN
+  - generic [ref=e52]:
+    - generic [ref=e53]:
+      - paragraph [ref=e54]:
+        - img "Banner" [ref=e55]
+      - separator [ref=e56]
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - heading "Sort" [level=4] [ref=e59]:
+          - img [ref=e61]
+          - text: Sort
+        - separator [ref=e63]
+        - combobox "sort" [ref=e66]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading "Price Range" [level=4] [ref=e67]:
+          - img [ref=e69]
+          - text: Price Range
+        - separator [ref=e71]
+        - generic "ngx-slider" [ref=e73]:
+          - slider "ngx-slider" [ref=e78] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=e79] [cursor=pointer]
+          - generic [ref=e80]: "0"
+          - generic [ref=e81]: "200"
+          - generic [ref=e82]: "1"
+          - generic [ref=e83]: "100"
+        - heading "Search" [level=4] [ref=e85]:
+          - img [ref=e87]
+          - text: Search
+        - separator [ref=e89]
+        - generic [ref=e91]:
+          - generic [ref=e92]: Search
+          - textbox "Search" [ref=e93]
+          - button "X" [ref=e94] [cursor=pointer]
+          - button "Search" [ref=e95] [cursor=pointer]
+        - heading "Filters" [level=4] [ref=e96]:
+          - img [ref=e98]
+          - text: Filters
+        - separator [ref=e100]
+        - heading "By category:" [level=4] [ref=e101]
+        - group "Categories":
+          - generic [ref=e102]: Categories
+        - heading "By brand:" [level=4] [ref=e104]
+        - group "Brands":
+          - generic [ref=e105]: Brands
+        - heading "Sustainability:" [level=4] [ref=e107]
+        - group "Eco-Friendly Products" [ref=e108]:
+          - generic [ref=e109]: Eco-Friendly Products
+          - generic [ref=e111]:
+            - checkbox "Show only eco-friendly products" [ref=e112]
+            - text: Show only eco-friendly products
+      - generic [ref=e114]:
+        - heading [level=5] [ref=e118]
+        - heading [level=5] [ref=e124]
+        - heading [level=5] [ref=e130]
+        - heading [level=5] [ref=e136]
+        - heading [level=5] [ref=e142]
+        - heading [level=5] [ref=e148]
+        - heading [level=5] [ref=e154]
+        - heading [level=5] [ref=e160]
+  - paragraph [ref=e165]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e166] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e167] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e168] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e169] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e171] [cursor=pointer]:
+    - img [ref=e172]

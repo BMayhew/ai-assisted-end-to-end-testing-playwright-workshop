@@ -1,0 +1,692 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - heading "QA Testing Glossary" [level=1] [ref=e5]
+      - paragraph [ref=e6]: Your comprehensive guide to testing terminology. Search, filter by category, or browse alphabetically to find definitions, examples, and related concepts.
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - img [ref=e9]
+        - textbox "Search terms or definitions..." [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14] [cursor=pointer]: All
+        - generic [ref=e15] [cursor=pointer]: Exploratory Testing
+        - generic [ref=e16] [cursor=pointer]: Testing Fundamentals
+        - generic [ref=e17] [cursor=pointer]: Test Automation
+        - generic [ref=e18] [cursor=pointer]: Accessibility
+        - generic [ref=e19] [cursor=pointer]: Performance
+        - generic [ref=e20] [cursor=pointer]: CI/CD
+        - generic [ref=e21] [cursor=pointer]: Web Technologies
+        - generic [ref=e22] [cursor=pointer]: AI in Testing
+    - generic [ref=e23]:
+      - button "A" [ref=e24] [cursor=pointer]
+      - button "C" [ref=e25] [cursor=pointer]
+      - button "D" [ref=e26] [cursor=pointer]
+      - button "E" [ref=e27] [cursor=pointer]
+      - button "F" [ref=e28] [cursor=pointer]
+      - button "G" [ref=e29] [cursor=pointer]
+      - button "H" [ref=e30] [cursor=pointer]
+      - button "L" [ref=e31] [cursor=pointer]
+      - button "P" [ref=e32] [cursor=pointer]
+      - button "R" [ref=e33] [cursor=pointer]
+      - button "S" [ref=e34] [cursor=pointer]
+      - button "T" [ref=e35] [cursor=pointer]
+      - button "W" [ref=e36] [cursor=pointer]
+    - generic [ref=e37]: Showing 29 terms
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - heading "A" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - generic [ref=e43]:
+            - generic [ref=e45]:
+              - link "AI-Assisted Test Generation" [ref=e46] [cursor=pointer]:
+                - /url: "#ai-assisted-test-generation"
+              - generic [ref=e47]: AI in Testing
+            - paragraph [ref=e48]: AI-assisted test generation uses machine learning models to propose or synthesize test cases automatically. Teams apply these tools to broaden coverage for complex user journeys and reveal edge cases that are hard to script manually.
+            - generic [ref=e49]:
+              - heading "Examples:" [level=4] [ref=e50]
+              - list [ref=e51]:
+                - listitem [ref=e52]: Leveraging large language models to draft exploratory charters
+                - listitem [ref=e53]: Generating Playwright flows from production analytics
+            - generic [ref=e54]:
+              - heading "Related Terms:" [level=4] [ref=e55]
+              - generic [ref=e56]:
+                - link "Test Data Management" [ref=e57] [cursor=pointer]:
+                  - /url: "#test-data-management"
+                - link "Playwright" [ref=e58] [cursor=pointer]:
+                  - /url: "#playwright"
+            - generic [ref=e59]:
+              - heading "Learn More:" [level=4] [ref=e60]
+              - 'link "Thoughtworks Radar: AI-Augmented Testing" [ref=e62] [cursor=pointer]':
+                - /url: https://www.thoughtworks.com/radar/techniques/ai-augmented-testing
+                - text: "Thoughtworks Radar: AI-Augmented Testing"
+                - img [ref=e63]
+          - generic [ref=e68]:
+            - generic [ref=e70]:
+              - link "API" [ref=e71] [cursor=pointer]:
+                - /url: "#api"
+              - generic [ref=e72]: Web Technologies
+            - paragraph [ref=e73]: An application programming interface (API) exposes defined contracts that let software systems exchange data or trigger behavior. Testers validate APIs to ensure integrations remain stable, performant, and resilient to malformed inputs.
+            - generic [ref=e74]:
+              - heading "Examples:" [level=4] [ref=e75]
+              - list [ref=e76]:
+                - listitem [ref=e77]: Validating REST responses for error handling
+                - listitem [ref=e78]: Contract-testing a GraphQL query
+            - generic [ref=e79]:
+              - heading "Related Terms:" [level=4] [ref=e80]
+              - generic [ref=e81]:
+                - link "HTTP Status Code" [ref=e82] [cursor=pointer]:
+                  - /url: "#http-status-code"
+                - link "Test Data Management" [ref=e83] [cursor=pointer]:
+                  - /url: "#test-data-management"
+                - link "Regression Testing" [ref=e84] [cursor=pointer]:
+                  - /url: "#regression-testing"
+            - generic [ref=e85]:
+              - heading "Learn More:" [level=4] [ref=e86]
+              - 'link "MDN: Introduction to Web APIs" [ref=e88] [cursor=pointer]':
+                - /url: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
+                - text: "MDN: Introduction to Web APIs"
+                - img [ref=e89]
+          - generic [ref=e94]:
+            - generic [ref=e96]:
+              - link "ARIA" [ref=e97] [cursor=pointer]:
+                - /url: "#aria"
+              - generic [ref=e98]: Accessibility
+            - paragraph [ref=e99]: Accessible Rich Internet Applications (ARIA) define semantic attributes that improve assistive technology interpretation of complex widgets. Practitioners add ARIA roles and states to complement semantic HTML and communicate dynamic UI changes.
+            - generic [ref=e100]:
+              - heading "Examples:" [level=4] [ref=e101]
+              - list [ref=e102]:
+                - listitem [ref=e103]: Using aria-live to announce toast messages
+                - listitem [ref=e104]: Applying role="dialog" to a modal component
+            - generic [ref=e105]:
+              - heading "Related Terms:" [level=4] [ref=e106]
+              - generic [ref=e107]:
+                - link "WCAG" [ref=e108] [cursor=pointer]:
+                  - /url: "#wcag"
+                - link "Screen Reader" [ref=e109] [cursor=pointer]:
+                  - /url: "#screen-reader"
+                - link "axe-core" [ref=e110] [cursor=pointer]:
+                  - /url: "#axe-core"
+            - generic [ref=e111]:
+              - heading "Learn More:" [level=4] [ref=e112]
+              - link "WAI-ARIA Authoring Practices" [ref=e114] [cursor=pointer]:
+                - /url: https://www.w3.org/WAI/ARIA/apg/
+                - text: WAI-ARIA Authoring Practices
+                - img [ref=e115]
+          - generic [ref=e120]:
+            - generic [ref=e122]:
+              - link "Assertion" [ref=e123] [cursor=pointer]:
+                - /url: "#assertion"
+              - generic [ref=e124]: Testing Fundamentals
+            - paragraph [ref=e125]: An assertion checks that an observed value matches an expected outcome during a test. Clear assertions produce fast failure signals and readable diagnostics when behavior regresses.
+            - generic [ref=e126]:
+              - heading "Examples:" [level=4] [ref=e127]
+              - list [ref=e128]:
+                - listitem [ref=e129]: expect(response.status).toBe(201)
+                - listitem [ref=e130]: assert.strictEqual(cart.total, '$49.00')
+            - generic [ref=e131]:
+              - heading "Related Terms:" [level=4] [ref=e132]
+              - generic [ref=e133]:
+                - link "Regression Testing" [ref=e134] [cursor=pointer]:
+                  - /url: "#regression-testing"
+                - link "Playwright" [ref=e135] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Test Coverage" [ref=e136] [cursor=pointer]:
+                  - /url: "#test-coverage"
+            - generic [ref=e137]:
+              - heading "Learn More:" [level=4] [ref=e138]
+              - 'link "Playwright: Assertions" [ref=e140] [cursor=pointer]':
+                - /url: https://playwright.dev/docs/test-assertions
+                - text: "Playwright: Assertions"
+                - img [ref=e141]
+          - generic [ref=e146]:
+            - generic [ref=e148]:
+              - link "Automated Visual Regression" [ref=e149] [cursor=pointer]:
+                - /url: "#automated-visual-regression"
+              - generic [ref=e150]: Test Automation
+            - paragraph [ref=e151]: Automated visual regression testing captures baseline screenshots and compares future renders to detect UI drift. Teams pair pixel diffs with human review to avoid accessibility regressions and brand inconsistencies.
+            - generic [ref=e152]:
+              - heading "Related Terms:" [level=4] [ref=e153]
+              - generic [ref=e154]:
+                - link "Playwright" [ref=e155] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Regression Testing" [ref=e156] [cursor=pointer]:
+                  - /url: "#regression-testing"
+            - generic [ref=e157]:
+              - heading "Learn More:" [level=4] [ref=e158]
+              - link "Top 10 Visual Testing Tools" [ref=e160] [cursor=pointer]:
+                - /url: https://applitools.com/blog/top-10-visual-testing-tools/
+                - text: Top 10 Visual Testing Tools
+                - img [ref=e161]
+          - generic [ref=e166]:
+            - generic [ref=e168]:
+              - link "Automation in Testing (AiT)" [ref=e169] [cursor=pointer]:
+                - /url: "#automation-in-testing-(ait)"
+              - generic [ref=e170]: Test Automation
+            - paragraph [ref=e171]: Automation in Testing (AiT) is a holistic approach created by Mark Winteringham and Richard Bradshaw that frames automation as a service to exploratory testing. The framework emphasizes tooling strategy, human skill growth, and systems thinking over test-case counting.
+            - generic [ref=e172]:
+              - heading "Related Terms:" [level=4] [ref=e173]
+              - generic [ref=e174]:
+                - generic [ref=e175]: Mark Winteringham
+                - generic [ref=e176]: Richard Bradshaw
+            - generic [ref=e177]:
+              - heading "Learn More:" [level=4] [ref=e178]
+              - link "Automation in Testing" [ref=e180] [cursor=pointer]:
+                - /url: https://automationintesting.com/
+                - text: Automation in Testing
+                - img [ref=e181]
+          - generic [ref=e186]:
+            - generic [ref=e188]:
+              - link "axe-core" [ref=e189] [cursor=pointer]:
+                - /url: "#axe-core"
+              - generic [ref=e190]: Accessibility
+            - paragraph [ref=e191]: axe-core is an accessibility rules engine that scans web content for WCAG violations. Teams integrate it into Playwright, Cypress, or CI pipelines to surface blocking issues before release.
+            - generic [ref=e192]:
+              - heading "Related Terms:" [level=4] [ref=e193]
+              - generic [ref=e194]:
+                - link "WCAG" [ref=e195] [cursor=pointer]:
+                  - /url: "#wcag"
+                - link "ARIA" [ref=e196] [cursor=pointer]:
+                  - /url: "#aria"
+                - link "Screen Reader" [ref=e197] [cursor=pointer]:
+                  - /url: "#screen-reader"
+            - generic [ref=e198]:
+              - heading "Learn More:" [level=4] [ref=e199]
+              - link "axe-core GitHub" [ref=e201] [cursor=pointer]:
+                - /url: https://github.com/dequelabs/axe-core
+                - text: axe-core GitHub
+                - img [ref=e202]
+      - generic [ref=e206]:
+        - heading "C" [level=2] [ref=e207]
+        - generic [ref=e208]:
+          - generic [ref=e210]:
+            - generic [ref=e212]:
+              - link "CI/CD" [ref=e213] [cursor=pointer]:
+                - /url: "#ci/cd"
+              - generic [ref=e214]: CI/CD
+            - paragraph [ref=e215]: Continuous integration and continuous delivery (CI/CD) automate build, test, and release tasks so code reaches users reliably. Effective pipelines provide rapid feedback loops, artifact traceability, and gated rollouts.
+            - generic [ref=e216]:
+              - heading "Related Terms:" [level=4] [ref=e217]
+              - generic [ref=e218]:
+                - link "GitHub Actions" [ref=e219] [cursor=pointer]:
+                  - /url: "#github-actions"
+                - link "Test Artifact" [ref=e220] [cursor=pointer]:
+                  - /url: "#test-artifact"
+                - link "Regression Testing" [ref=e221] [cursor=pointer]:
+                  - /url: "#regression-testing"
+            - generic [ref=e222]:
+              - heading "Learn More:" [level=4] [ref=e223]
+              - 'link "Red Hat: What is CI/CD?" [ref=e225] [cursor=pointer]':
+                - /url: https://www.redhat.com/en/topics/devops/what-is-ci-cd
+                - text: "Red Hat: What is CI/CD?"
+                - img [ref=e226]
+          - generic [ref=e231]:
+            - generic [ref=e233]:
+              - link "Core Web Vitals" [ref=e234] [cursor=pointer]:
+                - /url: "#core-web-vitals"
+              - generic [ref=e235]: Performance
+            - paragraph [ref=e236]: Core Web Vitals are Google's field metrics for user experience focusing on loading speed, interactivity, and visual stability. Teams monitor Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift to guard against performance regressions.
+            - generic [ref=e237]:
+              - heading "Related Terms:" [level=4] [ref=e238]
+              - generic [ref=e239]:
+                - link "Lighthouse" [ref=e240] [cursor=pointer]:
+                  - /url: "#lighthouse"
+                - generic [ref=e241]: Performance Budget
+                - link "Time to Interactive (TTI)" [ref=e242] [cursor=pointer]:
+                  - /url: "#time-to-interactive-(tti)"
+            - generic [ref=e243]:
+              - heading "Learn More:" [level=4] [ref=e244]
+              - 'link "web.dev: Core Web Vitals" [ref=e246] [cursor=pointer]':
+                - /url: https://web.dev/vitals/
+                - text: "web.dev: Core Web Vitals"
+                - img [ref=e247]
+          - generic [ref=e252]:
+            - generic [ref=e254]:
+              - link "Cypress" [ref=e255] [cursor=pointer]:
+                - /url: "#cypress"
+              - generic [ref=e256]: Test Automation
+            - paragraph [ref=e257]: Cypress is a JavaScript end-to-end testing framework that runs directly in the browser loop. Its time-travel debugger and network stubbing make it popular for modern web application teams.
+            - generic [ref=e258]:
+              - heading "Related Terms:" [level=4] [ref=e259]
+              - generic [ref=e260]:
+                - link "Playwright" [ref=e261] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Selenium" [ref=e262] [cursor=pointer]:
+                  - /url: "#selenium"
+                - link "Test Fixtures" [ref=e263] [cursor=pointer]:
+                  - /url: "#test-fixtures"
+            - generic [ref=e264]:
+              - heading "Learn More:" [level=4] [ref=e265]
+              - link "Cypress Documentation" [ref=e267] [cursor=pointer]:
+                - /url: https://docs.cypress.io/guides/overview/why-cypress
+                - text: Cypress Documentation
+                - img [ref=e268]
+      - generic [ref=e272]:
+        - heading "D" [level=2] [ref=e273]
+        - generic [ref=e276]:
+          - generic [ref=e278]:
+            - link "DOM" [ref=e279] [cursor=pointer]:
+              - /url: "#dom"
+            - generic [ref=e280]: Web Technologies
+          - paragraph [ref=e281]: The Document Object Model (DOM) represents markup as a live node tree that scripts can traverse and mutate. Understanding DOM APIs helps testers craft resilient selectors and diagnose flakiness from dynamic renders.
+          - generic [ref=e282]:
+            - heading "Related Terms:" [level=4] [ref=e283]
+            - generic [ref=e284]:
+              - generic [ref=e285]: Selector
+              - generic [ref=e286]: XPath
+              - link "Playwright" [ref=e287] [cursor=pointer]:
+                - /url: "#playwright"
+          - generic [ref=e288]:
+            - heading "Learn More:" [level=4] [ref=e289]
+            - 'link "MDN: DOM Introduction" [ref=e291] [cursor=pointer]':
+              - /url: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+              - text: "MDN: DOM Introduction"
+              - img [ref=e292]
+      - generic [ref=e296]:
+        - heading "E" [level=2] [ref=e297]
+        - generic [ref=e298]:
+          - generic [ref=e300]:
+            - generic [ref=e302]:
+              - link "End-to-End Testing" [ref=e303] [cursor=pointer]:
+                - /url: "#end-to-end-testing"
+              - generic [ref=e304]: Testing Fundamentals
+            - paragraph [ref=e305]: End-to-end testing exercises an application's full user workflows across UI, API, and data layers. The technique complements unit and integration suites by validating critical business journeys from a user perspective.
+            - generic [ref=e306]:
+              - heading "Related Terms:" [level=4] [ref=e307]
+              - generic [ref=e308]:
+                - link "Playwright" [ref=e309] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Regression Testing" [ref=e310] [cursor=pointer]:
+                  - /url: "#regression-testing"
+                - link "Exploratory Testing Charter" [ref=e311] [cursor=pointer]:
+                  - /url: "#exploratory-testing-charter"
+            - generic [ref=e312]:
+              - heading "Learn More:" [level=4] [ref=e313]
+              - 'link "Martin Fowler: Test Pyramid" [ref=e315] [cursor=pointer]':
+                - /url: https://martinfowler.com/articles/practical-test-pyramid.html
+                - text: "Martin Fowler: Test Pyramid"
+                - img [ref=e316]
+          - generic [ref=e321]:
+            - generic [ref=e323]:
+              - link "Exploratory Testing Charter" [ref=e324] [cursor=pointer]:
+                - /url: "#exploratory-testing-charter"
+              - generic [ref=e325]: Exploratory Testing
+            - paragraph [ref=e326]: An exploratory testing charter articulates the mission, resources, and heuristics for a focused learning session. Charters encourage purposeful exploration while leaving room for discovery-driven pivots.
+            - generic [ref=e327]:
+              - heading "Examples:" [level=4] [ref=e328]
+              - list [ref=e329]:
+                - listitem [ref=e330]: Explore checkout payment failures focusing on retry flows
+                - listitem [ref=e331]: Survey accessibility barriers on the account settings page
+            - generic [ref=e332]:
+              - heading "Related Terms:" [level=4] [ref=e333]
+              - generic [ref=e334]:
+                - link "Session-Based Test Management (SBTM)" [ref=e335] [cursor=pointer]:
+                  - /url: "#session-based-test-management-(sbtm)"
+                - generic [ref=e336]: Context-Driven Testing
+            - generic [ref=e337]:
+              - heading "Learn More:" [level=4] [ref=e338]
+              - link "Heuristic Approach to Test Charters" [ref=e340] [cursor=pointer]:
+                - /url: https://solavirtusinvicta.wordpress.com/2014/12/18/a-heuristic-approach-to-test-charters/
+                - text: Heuristic Approach to Test Charters
+                - img [ref=e341]
+      - generic [ref=e345]:
+        - heading "F" [level=2] [ref=e346]
+        - generic [ref=e349]:
+          - generic [ref=e351]:
+            - link "Flaky Test" [ref=e352] [cursor=pointer]:
+              - /url: "#flaky-test"
+            - generic [ref=e353]: Testing Fundamentals
+          - paragraph [ref=e354]: A flaky test yields both passes and failures without code changes, obscuring real regressions. Teams tame flakiness by stabilizing asynchronous waits, isolating test data, and tightening observability around failures.
+          - generic [ref=e355]:
+            - heading "Related Terms:" [level=4] [ref=e356]
+            - generic [ref=e357]:
+              - link "Test Fixtures" [ref=e358] [cursor=pointer]:
+                - /url: "#test-fixtures"
+              - link "Regression Testing" [ref=e359] [cursor=pointer]:
+                - /url: "#regression-testing"
+              - link "Playwright" [ref=e360] [cursor=pointer]:
+                - /url: "#playwright"
+          - generic [ref=e361]:
+            - heading "Learn More:" [level=4] [ref=e362]
+            - 'link "Google: Flaky Tests at Scale" [ref=e364] [cursor=pointer]':
+              - /url: https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html
+              - text: "Google: Flaky Tests at Scale"
+              - img [ref=e365]
+      - generic [ref=e369]:
+        - heading "G" [level=2] [ref=e370]
+        - generic [ref=e373]:
+          - generic [ref=e375]:
+            - link "GitHub Actions" [ref=e376] [cursor=pointer]:
+              - /url: "#github-actions"
+            - generic [ref=e377]: CI/CD
+          - paragraph [ref=e378]: GitHub Actions is a hosted workflow engine that responds to repository events with automated jobs. Testing teams orchestrate lint, test, accessibility, and deployment tasks through reusable YAML workflows.
+          - generic [ref=e379]:
+            - heading "Related Terms:" [level=4] [ref=e380]
+            - generic [ref=e381]:
+              - link "CI/CD" [ref=e382] [cursor=pointer]:
+                - /url: "#ci/cd"
+              - link "Test Artifact" [ref=e383] [cursor=pointer]:
+                - /url: "#test-artifact"
+              - link "Playwright" [ref=e384] [cursor=pointer]:
+                - /url: "#playwright"
+          - generic [ref=e385]:
+            - heading "Learn More:" [level=4] [ref=e386]
+            - link "GitHub Actions Documentation" [ref=e388] [cursor=pointer]:
+              - /url: https://docs.github.com/en/actions
+              - text: GitHub Actions Documentation
+              - img [ref=e389]
+      - generic [ref=e393]:
+        - heading "H" [level=2] [ref=e394]
+        - generic [ref=e397]:
+          - generic [ref=e399]:
+            - link "HTTP Status Code" [ref=e400] [cursor=pointer]:
+              - /url: "#http-status-code"
+            - generic [ref=e401]: Web Technologies
+          - paragraph [ref=e402]: HTTP status codes communicate how a server handled a request using standardized three-digit responses. Testers assert the right codes to ensure APIs and web flows signal success and failure accurately.
+          - generic [ref=e403]:
+            - heading "Examples:" [level=4] [ref=e404]
+            - list [ref=e405]:
+              - listitem [ref=e406]: Expecting 202 Accepted for async jobs
+              - listitem [ref=e407]: Asserting 422 Unprocessable Entity for invalid payloads
+          - generic [ref=e408]:
+            - heading "Related Terms:" [level=4] [ref=e409]
+            - generic [ref=e410]:
+              - link "API" [ref=e411] [cursor=pointer]:
+                - /url: "#api"
+              - link "Regression Testing" [ref=e412] [cursor=pointer]:
+                - /url: "#regression-testing"
+              - link "Playwright" [ref=e413] [cursor=pointer]:
+                - /url: "#playwright"
+          - generic [ref=e414]:
+            - heading "Learn More:" [level=4] [ref=e415]
+            - 'link "MDN: HTTP Response Status Codes" [ref=e417] [cursor=pointer]':
+              - /url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+              - text: "MDN: HTTP Response Status Codes"
+              - img [ref=e418]
+      - generic [ref=e422]:
+        - heading "L" [level=2] [ref=e423]
+        - generic [ref=e426]:
+          - generic [ref=e428]:
+            - link "Lighthouse" [ref=e429] [cursor=pointer]:
+              - /url: "#lighthouse"
+            - generic [ref=e430]: Performance
+          - paragraph [ref=e431]: Lighthouse is an automated auditing tool from Google that evaluates performance, accessibility, SEO, and progressive web app criteria. Teams run it in CI to enforce budgets and capture trends over time.
+          - generic [ref=e432]:
+            - heading "Related Terms:" [level=4] [ref=e433]
+            - generic [ref=e434]:
+              - link "Core Web Vitals" [ref=e435] [cursor=pointer]:
+                - /url: "#core-web-vitals"
+              - generic [ref=e436]: Performance Budget
+              - link "Time to Interactive (TTI)" [ref=e437] [cursor=pointer]:
+                - /url: "#time-to-interactive-(tti)"
+          - generic [ref=e438]:
+            - heading "Learn More:" [level=4] [ref=e439]
+            - link "Lighthouse Documentation" [ref=e441] [cursor=pointer]:
+              - /url: https://developers.google.com/web/tools/lighthouse
+              - text: Lighthouse Documentation
+              - img [ref=e442]
+      - generic [ref=e446]:
+        - heading "P" [level=2] [ref=e447]
+        - generic [ref=e448]:
+          - generic [ref=e450]:
+            - generic [ref=e452]:
+              - link "Page Object Model" [ref=e453] [cursor=pointer]:
+                - /url: "#page-object-model"
+              - generic [ref=e454]: Test Automation
+            - paragraph [ref=e455]: The page object model encapsulates UI interactions in dedicated classes or modules to reduce duplication and brittleness. Well-designed page objects expose business-level actions instead of raw selectors.
+            - generic [ref=e456]:
+              - heading "Examples:" [level=4] [ref=e457]
+              - list [ref=e458]:
+                - listitem [ref=e459]: loginPage.signIn('casey@example.com', 'password123')
+                - listitem [ref=e460]: cartPage.checkoutWithSavedCard()
+            - generic [ref=e461]:
+              - heading "Related Terms:" [level=4] [ref=e462]
+              - generic [ref=e463]:
+                - link "Playwright" [ref=e464] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Selenium" [ref=e465] [cursor=pointer]:
+                  - /url: "#selenium"
+            - generic [ref=e466]:
+              - heading "Learn More:" [level=4] [ref=e467]
+              - 'link "Martin Fowler: Page Object" [ref=e469] [cursor=pointer]':
+                - /url: https://martinfowler.com/bliki/PageObject.html
+                - text: "Martin Fowler: Page Object"
+                - img [ref=e470]
+          - generic [ref=e475]:
+            - generic [ref=e477]:
+              - link "Playwright" [ref=e478] [cursor=pointer]:
+                - /url: "#playwright"
+              - generic [ref=e479]: Test Automation
+            - paragraph [ref=e480]: Playwright is a cross-browser automation library from Microsoft that enables reliable end-to-end testing across Chromium, Firefox, and WebKit. Its auto-waiting, tracing, and test fixtures simplify modern UI testing.
+            - generic [ref=e481]:
+              - heading "Related Terms:" [level=4] [ref=e482]
+              - generic [ref=e483]:
+                - link "Cypress" [ref=e484] [cursor=pointer]:
+                  - /url: "#cypress"
+                - link "Selenium" [ref=e485] [cursor=pointer]:
+                  - /url: "#selenium"
+                - link "Test Fixtures" [ref=e486] [cursor=pointer]:
+                  - /url: "#test-fixtures"
+            - generic [ref=e487]:
+              - heading "Learn More:" [level=4] [ref=e488]
+              - link "Playwright Documentation" [ref=e490] [cursor=pointer]:
+                - /url: https://playwright.dev/
+                - text: Playwright Documentation
+                - img [ref=e491]
+      - generic [ref=e495]:
+        - heading "R" [level=2] [ref=e496]
+        - generic [ref=e499]:
+          - generic [ref=e501]:
+            - link "Regression Testing" [ref=e502] [cursor=pointer]:
+              - /url: "#regression-testing"
+            - generic [ref=e503]: Testing Fundamentals
+          - paragraph [ref=e504]: Regression testing revisits previously verified behavior to catch unintended side effects from new changes. Balanced regression suites mix automated checks with exploratory probes around risky integrations.
+          - generic [ref=e505]:
+            - heading "Related Terms:" [level=4] [ref=e506]
+            - generic [ref=e507]:
+              - link "Flaky Test" [ref=e508] [cursor=pointer]:
+                - /url: "#flaky-test"
+              - link "CI/CD" [ref=e509] [cursor=pointer]:
+                - /url: "#ci/cd"
+              - link "Test Coverage" [ref=e510] [cursor=pointer]:
+                - /url: "#test-coverage"
+          - generic [ref=e511]:
+            - heading "Learn More:" [level=4] [ref=e512]
+            - 'link "Wikipedia: Regression Testing" [ref=e514] [cursor=pointer]':
+              - /url: https://en.wikipedia.org/wiki/Regression_testing
+              - text: "Wikipedia: Regression Testing"
+              - img [ref=e515]
+      - generic [ref=e519]:
+        - heading "S" [level=2] [ref=e520]
+        - generic [ref=e521]:
+          - generic [ref=e523]:
+            - generic [ref=e525]:
+              - link "Screen Reader" [ref=e526] [cursor=pointer]:
+                - /url: "#screen-reader"
+              - generic [ref=e527]: Accessibility
+            - paragraph [ref=e528]: A screen reader is assistive technology that converts on-screen content into synthesized speech or braille output. Accessibility testing includes verifying meaningful landmarks, labels, and focus management for screen reader users.
+            - generic [ref=e529]:
+              - heading "Related Terms:" [level=4] [ref=e530]
+              - generic [ref=e531]:
+                - link "WCAG" [ref=e532] [cursor=pointer]:
+                  - /url: "#wcag"
+                - link "ARIA" [ref=e533] [cursor=pointer]:
+                  - /url: "#aria"
+                - link "axe-core" [ref=e534] [cursor=pointer]:
+                  - /url: "#axe-core"
+            - generic [ref=e535]:
+              - heading "Learn More:" [level=4] [ref=e536]
+              - 'link "W3C: Providing Accessible Names and Descriptions" [ref=e538] [cursor=pointer]':
+                - /url: https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
+                - text: "W3C: Providing Accessible Names and Descriptions"
+                - img [ref=e539]
+          - generic [ref=e544]:
+            - generic [ref=e546]:
+              - link "Selenium" [ref=e547] [cursor=pointer]:
+                - /url: "#selenium"
+              - generic [ref=e548]: Test Automation
+            - paragraph [ref=e549]: Selenium is a long-standing browser automation framework that drives real browsers through the WebDriver protocol. Its language bindings and grid support make it foundational for many legacy automation suites.
+            - generic [ref=e550]:
+              - heading "Related Terms:" [level=4] [ref=e551]
+              - generic [ref=e552]:
+                - link "Playwright" [ref=e553] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Page Object Model" [ref=e554] [cursor=pointer]:
+                  - /url: "#page-object-model"
+            - generic [ref=e555]:
+              - heading "Learn More:" [level=4] [ref=e556]
+              - link "Selenium Documentation" [ref=e558] [cursor=pointer]:
+                - /url: https://www.selenium.dev/documentation/
+                - text: Selenium Documentation
+                - img [ref=e559]
+          - generic [ref=e564]:
+            - generic [ref=e566]:
+              - link "Session-Based Test Management (SBTM)" [ref=e567] [cursor=pointer]:
+                - /url: "#session-based-test-management-(sbtm)"
+              - generic [ref=e568]: Exploratory Testing
+            - paragraph [ref=e569]: Session-Based Test Management (SBTM) structures exploratory testing into time-boxed sessions with charters, notes, and debriefs. The lightweight framework provides accountability without constraining creativity.
+            - generic [ref=e570]:
+              - heading "Related Terms:" [level=4] [ref=e571]
+              - generic [ref=e572]:
+                - link "Exploratory Testing Charter" [ref=e573] [cursor=pointer]:
+                  - /url: "#exploratory-testing-charter"
+                - generic [ref=e574]: Context-Driven Testing
+                - generic [ref=e575]: Rapid Software Testing (RST)
+            - generic [ref=e576]:
+              - heading "Learn More:" [level=4] [ref=e577]
+              - link "Session-Based Test Management" [ref=e579] [cursor=pointer]:
+                - /url: https://www.satisfice.com/download/session-based-test-management
+                - text: Session-Based Test Management
+                - img [ref=e580]
+      - generic [ref=e584]:
+        - heading "T" [level=2] [ref=e585]
+        - generic [ref=e586]:
+          - generic [ref=e588]:
+            - generic [ref=e590]:
+              - link "Test Artifact" [ref=e591] [cursor=pointer]:
+                - /url: "#test-artifact"
+              - generic [ref=e592]: CI/CD
+            - paragraph [ref=e593]: A test artifact is any stored output that helps teams diagnose quality, such as logs, screenshots, traces, or reports. High-performing teams retain artifacts in CI to streamline debugging and compliance evidence.
+            - generic [ref=e594]:
+              - heading "Related Terms:" [level=4] [ref=e595]
+              - generic [ref=e596]:
+                - link "Playwright" [ref=e597] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "GitHub Actions" [ref=e598] [cursor=pointer]:
+                  - /url: "#github-actions"
+                - link "Regression Testing" [ref=e599] [cursor=pointer]:
+                  - /url: "#regression-testing"
+            - generic [ref=e600]:
+              - heading "Learn More:" [level=4] [ref=e601]
+              - 'link "Github: Workflow Artifacts" [ref=e603] [cursor=pointer]':
+                - /url: https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts
+                - text: "Github: Workflow Artifacts"
+                - img [ref=e604]
+          - generic [ref=e609]:
+            - generic [ref=e611]:
+              - link "Test Coverage" [ref=e612] [cursor=pointer]:
+                - /url: "#test-coverage"
+              - generic [ref=e613]: Testing Fundamentals
+            - paragraph [ref=e614]: Test coverage estimates how much of the product's behavior or code the test suite exercises. Mature teams combine structural metrics with risk narratives to avoid a false sense of security.
+            - generic [ref=e615]:
+              - heading "Related Terms:" [level=4] [ref=e616]
+              - generic [ref=e617]:
+                - link "Regression Testing" [ref=e618] [cursor=pointer]:
+                  - /url: "#regression-testing"
+                - link "Test Data Management" [ref=e619] [cursor=pointer]:
+                  - /url: "#test-data-management"
+                - link "Flaky Test" [ref=e620] [cursor=pointer]:
+                  - /url: "#flaky-test"
+            - generic [ref=e621]:
+              - heading "Learn More:" [level=4] [ref=e622]
+              - 'link "Martin Fowler: Test Coverage" [ref=e624] [cursor=pointer]':
+                - /url: https://martinfowler.com/bliki/TestCoverage.html
+                - text: "Martin Fowler: Test Coverage"
+                - img [ref=e625]
+          - generic [ref=e630]:
+            - generic [ref=e632]:
+              - link "Test Data Management" [ref=e633] [cursor=pointer]:
+                - /url: "#test-data-management"
+              - generic [ref=e634]: Testing Fundamentals
+            - paragraph [ref=e635]: Test data management curates representative, compliant datasets so tests remain deterministic and privacy-conscious. Strategies blend synthetic generation, masking, and on-demand provisioning for automated suites.
+            - generic [ref=e636]:
+              - heading "Related Terms:" [level=4] [ref=e637]
+              - generic [ref=e638]:
+                - link "AI-Assisted Test Generation" [ref=e639] [cursor=pointer]:
+                  - /url: "#ai-assisted-test-generation"
+                - link "Test Fixtures" [ref=e640] [cursor=pointer]:
+                  - /url: "#test-fixtures"
+                - link "Regression Testing" [ref=e641] [cursor=pointer]:
+                  - /url: "#regression-testing"
+            - generic [ref=e642]:
+              - heading "Learn More:" [level=4] [ref=e643]
+              - 'link "IBM: Test Data Management" [ref=e645] [cursor=pointer]':
+                - /url: https://www.ibm.com/topics/test-data-management
+                - text: "IBM: Test Data Management"
+                - img [ref=e646]
+          - generic [ref=e651]:
+            - generic [ref=e653]:
+              - link "Test Fixtures" [ref=e654] [cursor=pointer]:
+                - /url: "#test-fixtures"
+              - generic [ref=e655]: Test Automation
+            - paragraph [ref=e656]: Test fixtures prepare and clean shared state so each test runs in a controlled environment. Playwright and Cypress provide fixture hooks to provision browsers, databases, or feature flags per test scope.
+            - generic [ref=e657]:
+              - heading "Related Terms:" [level=4] [ref=e658]
+              - generic [ref=e659]:
+                - link "Playwright" [ref=e660] [cursor=pointer]:
+                  - /url: "#playwright"
+                - link "Cypress" [ref=e661] [cursor=pointer]:
+                  - /url: "#cypress"
+                - link "Flaky Test" [ref=e662] [cursor=pointer]:
+                  - /url: "#flaky-test"
+            - generic [ref=e663]:
+              - heading "Learn More:" [level=4] [ref=e664]
+              - 'link "Playwright: Test Fixtures" [ref=e666] [cursor=pointer]':
+                - /url: https://playwright.dev/docs/test-fixtures
+                - text: "Playwright: Test Fixtures"
+                - img [ref=e667]
+          - generic [ref=e672]:
+            - generic [ref=e674]:
+              - link "Time to Interactive (TTI)" [ref=e675] [cursor=pointer]:
+                - /url: "#time-to-interactive-(tti)"
+              - generic [ref=e676]: Performance
+            - paragraph [ref=e677]: Time to Interactive (TTI) measures how long a page takes to become reliably responsive to user input. Monitoring TTI alongside Core Web Vitals helps teams catch main-thread blocks that frustrate customers.
+            - generic [ref=e678]:
+              - heading "Related Terms:" [level=4] [ref=e679]
+              - generic [ref=e680]:
+                - link "Core Web Vitals" [ref=e681] [cursor=pointer]:
+                  - /url: "#core-web-vitals"
+                - link "Lighthouse" [ref=e682] [cursor=pointer]:
+                  - /url: "#lighthouse"
+                - generic [ref=e683]: Performance Budget
+            - generic [ref=e684]:
+              - heading "Learn More:" [level=4] [ref=e685]
+              - 'link "web.dev: Time to Interactive" [ref=e687] [cursor=pointer]':
+                - /url: https://web.dev/tti/
+                - text: "web.dev: Time to Interactive"
+                - img [ref=e688]
+      - generic [ref=e692]:
+        - heading "W" [level=2] [ref=e693]
+        - generic [ref=e696]:
+          - generic [ref=e698]:
+            - link "WCAG" [ref=e699] [cursor=pointer]:
+              - /url: "#wcag"
+            - generic [ref=e700]: Accessibility
+          - paragraph [ref=e701]: The Web Content Accessibility Guidelines (WCAG) describe success criteria for making digital experiences perceivable, operable, understandable, and robust. Organizations map these criteria to legal obligations and internal accessibility standards.
+          - generic [ref=e702]:
+            - heading "Related Terms:" [level=4] [ref=e703]
+            - generic [ref=e704]:
+              - link "ARIA" [ref=e705] [cursor=pointer]:
+                - /url: "#aria"
+              - link "axe-core" [ref=e706] [cursor=pointer]:
+                - /url: "#axe-core"
+              - link "Screen Reader" [ref=e707] [cursor=pointer]:
+                - /url: "#screen-reader"
+          - generic [ref=e708]:
+            - heading "Learn More:" [level=4] [ref=e709]
+            - link "WCAG Quick Reference" [ref=e711] [cursor=pointer]:
+              - /url: https://www.w3.org/WAI/WCAG22/quickref/
+              - text: WCAG Quick Reference
+              - img [ref=e712]

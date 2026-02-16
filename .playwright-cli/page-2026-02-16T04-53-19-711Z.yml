@@ -1,0 +1,233 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - heading "Playwright Login Test With Two Factor Authentication (2FA) Enabled (TOTP)" [level=1] [ref=e37]
+            - generic [ref=e39]:
+              - list [ref=e40]:
+                - listitem [ref=e41]:
+                  - link "Butch Mayhew" [ref=e42] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Butch Mayhew" [level=4] [ref=e45]:
+                  - link "Butch Mayhew" [ref=e46] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e47]:
+                  - time [ref=e48]: Dec 9, 2024
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: •
+                    - text: 4 min read
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: This week I'll walk through a Playwright Test with 2FA enabled. 2FA or Two Factor Authentication is a common recommended security measure to protect users accounts across the internet. Having a way to test this functionality in your CI/CD pipelines within your Playwright tests can ensure that this functionality doesn't get broken as new features and bug fixes are made to the codebase.
+            - heading "Example of 2FA with TOTP" [level=2] [ref=e53]
+            - paragraph [ref=e54]: A common way to implement 2FA is by using TOTP, this stands for Time-based One-time Password. Typically the TOTP service provides you with a QR code or a Key that you input into an Authenticator App, after you initially create your user account. There is an example of a file below.
+            - figure [ref=e55]
+            - paragraph [ref=e56]:
+              - text: The key above
+              - code [ref=e57]: A7VDILVI5ZTJPPGR
+              - text: ", is used to generate the time based password. If you want to view the current 6 digit code that is generated at this current moment you can use a tool like -"
+              - link "https://it-tools.tech/otp-generator" [ref=e58] [cursor=pointer]:
+                - /url: https://it-tools.tech/otp-generator?ref=playwrightsolutions.com
+              - text: ", paste in the OTP key and see the code that is generated every 30 seconds. You can think of this step the same as scanning the barcode into your Authenticator App, the key is what gets saved to your device and is used to generate the random rolling 6 digit password."
+            - heading "Install otpauth dependency" [level=2] [ref=e59]
+            - paragraph [ref=e60]:
+              - text: In the same way the above web app can take the key and generate the 6 digit TOTP code, we will be using the Node package
+              - link "otpauth" [ref=e61] [cursor=pointer]:
+                - /url: https://www.npmjs.com/package/otpauth?ref=playwrightsolutions.com
+              - text: ", within our Playwright tests. Let's first install this into our project."
+            - code [ref=e63]: npm install otpauth
+            - heading "Build logic to generate the one time password" [level=2] [ref=e64]
+            - paragraph [ref=e65]:
+              - text: Once installed we'll go ahead and create a new helper file in the lib folder named
+              - code [ref=e66]: otp.ts
+              - text: .
+            - code [ref=e68]:
+              - text: // lib/helpers/otp.ts import * as OTPAuth from "otpauth"; export function generateOTP(
+              - generic [ref=e69]: "secret: string"
+              - text: ") { const totp = new"
+              - generic [ref=e70]: OTPAuth.TOTP
+              - text: "({ secret: secret, digits: 6, algorithm: \"sha1\", period: 30, }); return totp.generate(); }"
+            - paragraph [ref=e71]:
+              - text: This code will generate the One Time Password that will be used to validate and login with the key that was provided above. All we have to do from a test now is call
+              - code [ref=e72]: generateOTP(secretKey)
+              - text: while passing in the secretKey we created from the last step.
+            - paragraph [ref=e73]: One thing to note on this code, if the digits, algorithm, or period are different for your system under test you will need to adjust these.
+            - heading "Implement within a Playwright test" [level=2] [ref=e74]
+            - paragraph [ref=e75]:
+              - text: For our example we will be using
+              - link "https://practicesoftwaretesting.com" [ref=e76] [cursor=pointer]:
+                - /url: https://practicesoftwaretesting.com/?ref=playwrightsolutions.com
+              - text: website. This is a tool built by
+              - link "Roy de Kleijn" [ref=e77] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/roydekleijn/?ref=playwrightsolutions.com
+              - text: ", which can be used as a test site for exploring or writing test automation."
+            - paragraph [ref=e78]:
+              - text: All the code I'm showing off can be found in this
+              - link "pull request" [ref=e79] [cursor=pointer]:
+                - /url: https://github.com/playwrightsolutions/playwright-practicesoftwaretesting.com/pull/18?ref=playwrightsolutions.com
+              - text: from the repo linked below.
+            - figure [ref=e80]:
+              - 'link "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com GitHub •playwrightsolutions" [ref=e81] [cursor=pointer]':
+                - /url: https://github.com/playwrightsolutions/playwright-practicesoftwaretesting.com?ref=playwrightsolutions.com
+                - generic [ref=e82]:
+                  - generic [ref=e83]: "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com"
+                  - generic [ref=e84]: Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: GitHub
+                    - generic [ref=e87]: •playwrightsolutions
+            - paragraph [ref=e89]: If you reviewed the pull request closely you'll notice I added a few helpers and data factories in order to setup test data, as the practicesoftwaretesting.com site database resets multiple times a day. For our purposes I'm not going to focus on test data setup/creation/management but rather how to implement 2fa into your tests.
+            - heading "Creating the data" [level=2] [ref=e90]
+            - paragraph [ref=e91]:
+              - text: First off you should
+              - link "register" [ref=e92] [cursor=pointer]:
+                - /url: https://practicesoftwaretesting.com/auth/register?ref=playwrightsolutions.com
+              - text: a new account. Once registered and logged back in, you can visit the
+              - link "profile" [ref=e93] [cursor=pointer]:
+                - /url: https://practicesoftwaretesting.com/account/profile?ref=playwrightsolutions.com
+              - text: page and you will see the section above with a QR code and a key. You can scan this into an authenticator app or use
+              - link "this tool I linked earlier" [ref=e94] [cursor=pointer]:
+                - /url: https://it-tools.tech/otp-generator?ref=playwrightsolutions.com
+              - text: to generate the 6 digit 1 time password from the key. Once you have a 6 digit code, enter and verify the TOTP code.
+            - figure [ref=e95]
+            - heading "Update .env file" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Next we'll update the .env file with the username, password, and one time password key.
+            - code [ref=e99]: //.env PLAYWRIGHT_USERNAME=playwrightsolutions@practicesoftwaretesting.com PLAYWRIGHT_PASSWORD=testyMctesterface!@5 OTP_KEY=LMWOOBI4DSVGGR4W
+            - heading "2FA login spec" [level=3] [ref=e100]
+            - paragraph [ref=e101]:
+              - text: At this point the spec is pretty straight forward. notice we set the
+              - code [ref=e102]: otpKey
+              - text: from the environment variable along with the email and passwords. We use these to login on the main page. The next section includes the
+              - code [ref=e103]: generateOTP()
+              - text: method where we pass in the
+              - code [ref=e104]: otpKey
+              - text: ", to generate the 6 digit code we will use to login."
+            - code [ref=e106]:
+              - text: "// tests/auth/login.2fa.spec.ts import { generateOTP } from \"@helpers/otp\"; import { LoginPage } from \"@pages\"; import { test, expect } from \"@playwright/test\"; test(\"Login with 2FA enabled\", async ("
+              - generic [ref=e107]: "{ page }"
+              - text: ") => { const playwrightEmail = process.env.PLAYWRIGHT_USERNAME; const playwrightPassword = process.env.PLAYWRIGHT_PASSWORD; const otpKey = process.env.OTP_KEY; const loginPage = new LoginPage(page); await loginPage.goto(); await loginPage.login(playwrightEmail, playwrightPassword); const otpCode = generateOTP(otpKey); await loginPage.totp.fill(otpCode); await loginPage.verifyTotp.click(); expect(await loginPage.navMenu.innerText()).toContain(\"Testy McTester\"); });"
+            - paragraph [ref=e108]: The full end to end flow looks like this.
+            - figure [ref=e109]:
+              - generic [ref=e110]:
+                - button "Play video" [ref=e113] [cursor=pointer]:
+                  - img [ref=e114]
+                - generic [ref=e117]:
+                  - button "Play video" [ref=e118] [cursor=pointer]:
+                    - img [ref=e119]
+                  - generic [ref=e121]: 0:00
+                  - generic [ref=e122]: /0:12
+                  - slider [ref=e123]: "0"
+                  - button "Adjust playback speed" [ref=e124] [cursor=pointer]: 1×
+                  - button "Unmute" [ref=e125] [cursor=pointer]:
+                    - img [ref=e126]
+                  - slider [ref=e128]: "100"
+            - heading "Final Thoughts" [level=2] [ref=e129]
+            - paragraph [ref=e130]:
+              - text: The example we had was quite straight forward, you may run into a scenario where you may not have the key but you do have a QR code to use.
+              - link "This guide" [ref=e131] [cursor=pointer]:
+                - /url: https://cavalloj.medium.com/totp-secret-extraction-from-qr-codes-ee097b4c687f?ref=playwrightsolutions.com
+              - text: will walk you through how to extract the key from a QR code utilizing a mobile device.
+            - separator [ref=e132]
+            - paragraph [ref=e133]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e134] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e135] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e137]: If this solution was helpful show some love!
+      - generic [ref=e138]:
+        - img [ref=e139]
+        - generic [ref=e142]: "23"
+      - paragraph
+      - generic [ref=e144]:
+        - heading "Sign up for more like this." [level=2] [ref=e145]
+        - link "Enter your email Subscribe" [ref=e146] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e147]: Enter your email
+          - generic [ref=e148]: Subscribe
+      - complementary [ref=e149]:
+        - generic [ref=e150]:
+          - article [ref=e151]:
+            - generic [ref=e152]:
+              - 'link "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e153] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e155]'
+                - generic [ref=e156]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e157]:
+                - time [ref=e158]: Feb 18, 2025
+                - generic [ref=e159]: 3 min read
+          - article [ref=e160]:
+            - generic [ref=e161]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e162] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e164]'
+                - generic [ref=e165]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e166]:
+                - time [ref=e167]: Feb 10, 2025
+                - generic [ref=e168]: 6 min read
+          - article [ref=e169]:
+            - generic [ref=e170]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e171] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e173]
+                - generic [ref=e174]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e175]:
+                - time [ref=e176]: Jan 20, 2025
+                - generic [ref=e177]: 4 min read
+    - contentinfo [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - link "Playwright Solutions" [ref=e181] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e182]:
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - link "Data & privacy" [ref=e185] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e186]:
+              - link "Contact" [ref=e187] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e189] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e190]:
+    - generic [ref=f66e3] [cursor=pointer]:
+      - img [ref=f66e4]
+      - generic [ref=f66e8]: Subscribe

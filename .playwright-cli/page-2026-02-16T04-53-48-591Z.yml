@@ -1,0 +1,100 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - banner [ref=e34]:
+        - heading "Privacy Policy of Playwright Solutions" [level=1] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]:
+          - text: Playwright Solutions operates the
+          - link "https://playwrightsolutions.com" [ref=e38] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com/
+          - text: website, which provides the SERVICE.
+        - paragraph [ref=e39]: This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Playwright Solutions website.
+        - paragraph [ref=e40]:
+          - text: If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. Our Privacy Policy was created with the help of the
+          - link "Privacy Policy Template Generator" [ref=e41] [cursor=pointer]:
+            - /url: https://www.privacypolicytemplate.net/?ref=playwrightsolutions.com
+          - text: .
+        - paragraph [ref=e42]: The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://playwrightsolutions.com, unless otherwise defined in this Privacy Policy.
+        - heading "Information Collection and Use" [level=2] [ref=e43]
+        - paragraph [ref=e44]: For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.
+        - heading "Log Data" [level=2] [ref=e45]
+        - paragraph [ref=e46]: We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer’s Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.
+        - heading "Cookies" [level=2] [ref=e47]
+        - paragraph [ref=e48]: Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer’s hard drive.
+        - paragraph [ref=e49]: Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.
+        - heading "Service Providers" [level=2] [ref=e50]
+        - paragraph [ref=e51]: "We may employ third-party companies and individuals due to the following reasons:"
+        - list [ref=e52]:
+          - listitem [ref=e53]: To facilitate our Service;
+          - listitem [ref=e54]: To provide the Service on our behalf;
+          - listitem [ref=e55]: To perform Service-related services; or
+          - listitem [ref=e56]: To assist us in analyzing how our Service is used.
+        - paragraph [ref=e57]: We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+        - heading "Security" [level=2] [ref=e58]
+        - paragraph [ref=e59]: We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
+        - heading "Links to Other Sites" [level=2] [ref=e60]
+        - paragraph [ref=e61]: Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+        - paragraph [ref=e62]: Children's Privacy
+        - paragraph [ref=e63]: Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.
+        - heading "Changes to This Privacy Policy" [level=2] [ref=e64]
+        - paragraph [ref=e65]: We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
+        - heading "Contact Us" [level=2] [ref=e66]
+        - paragraph [ref=e67]:
+          - text: If you have any questions or suggestions about our Privacy Policy, do not hesitate to
+          - link "contact us" [ref=e68] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com/contact
+          - text: .
+    - contentinfo [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - link "Playwright Solutions" [ref=e72] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e73]:
+          - list [ref=e74]:
+            - listitem [ref=e75]:
+              - link "Data & privacy" [ref=e76] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e77]:
+              - link "Contact" [ref=e78] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e80] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e81]:
+    - generic [ref=f104e3] [cursor=pointer]:
+      - img [ref=f104e4]
+      - generic [ref=f104e8]: Subscribe

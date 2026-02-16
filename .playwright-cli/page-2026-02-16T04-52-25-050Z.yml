@@ -1,0 +1,240 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - banner [ref=e34]:
+        - heading "Playwright Resources" [level=1] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]:
+          - text: My goal with this page is to create a library of curated Playwright resources specific to Typescript/Javascript I've found around the web. This resource page was inspired by
+          - link "Rahul Yadav" [ref=e38] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/rahulydv/?ref=playwrightsolutions.com
+          - text: and his work over at
+          - link "TesterOps" [ref=e39] [cursor=pointer]:
+            - /url: https://testerops.com/playwright-2/?ref=playwrightsolutions.com
+          - text: .
+        - heading "Official Resources" [level=2] [ref=e40]
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - link "Playwright.Dev" [ref=e43] [cursor=pointer]:
+              - /url: https://playwright.dev/?ref=playwrightsolutions.com
+            - text: "- Playwright Docs, with great guides to get started!"
+          - listitem [ref=e44]:
+            - link "Release Notes" [ref=e45] [cursor=pointer]:
+              - /url: https://playwright.dev/docs/release-notes?ref=playwrightsolutions.com
+            - text: "- Typically 1 release every month, with lots of new goodies!"
+          - listitem [ref=e46]:
+            - link "Playwright Discord" [ref=e47] [cursor=pointer]:
+              - /url: https://discord.gg/W9Ut4Pv9?ref=playwrightsolutions.com
+            - text: "- A place to go to learn, ask questions, and be a part of the Playwright Community"
+          - listitem [ref=e48]:
+            - link "Playwright Video Resources" [ref=e49] [cursor=pointer]:
+              - /url: https://playwright.dev/community/release-videos?ref=playwrightsolutions.com
+            - text: "- Release Videos, Conference Videos, and Live Streams!"
+          - listitem [ref=e50]:
+            - link "Try Playwright" [ref=e51] [cursor=pointer]:
+              - /url: https://try.playwright.tech/?ref=playwrightsolutions.com
+            - text: "- Online Playground to experiment with Playwright in the browser."
+        - separator [ref=e52]
+        - heading "Community Resources" [level=2] [ref=e53]
+        - list [ref=e54]:
+          - listitem [ref=e55]:
+            - link "PlaywrightSolutions Github Repos" [ref=e56] [cursor=pointer]:
+              - /url: https://github.com/orgs/playwrightsolutions/repositories?ref=playwrightsolutions.com
+            - text: "- This is where the bulk of code examples are stored for this blog."
+          - listitem [ref=e57]:
+            - link "Martioli Playwright Articles" [ref=e58] [cursor=pointer]:
+              - /url: https://blog.martioli.com/tag/playwright/?ref=playwrightsolutions.com
+            - text: by
+            - link "Adrian Maciuc" [ref=e59] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/adrian-maciuc/?ref=playwrightsolutions.com
+          - listitem [ref=e60]:
+            - link "Martioli - Playwright Resources" [ref=e61] [cursor=pointer]:
+              - /url: https://blog.martioli.com/tag/playwright/?ref=playwrightsolutions.com
+            - text: by
+            - link "Adrian Maciuc" [ref=e62] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/adrian-maciuc/?ref=playwrightsolutions.com
+          - listitem [ref=e63]:
+            - link "Awesome Web Testing Playwright Tutorial" [ref=e64] [cursor=pointer]:
+              - /url: https://github.com/AutomationPanda/awesome-web-testing-playwright?ref=playwrightsolutions.com
+            - text: by
+            - link "Andrew Knight" [ref=e65] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/andrew-leland-knight/?ref=playwrightsolutions.com
+            - text: "- A self paced tutorial that can be worked as a learning exercise."
+          - listitem [ref=e66]:
+            - link "TesterOps" [ref=e67] [cursor=pointer]:
+              - /url: https://testerops.com/playwright-2/?ref=playwrightsolutions.com
+            - text: "- Playwright articles along with Lots of other QA and OPS resources created by"
+            - link "Rahul Yadav" [ref=e68] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/rahulydv/?ref=playwrightsolutions.com
+          - listitem [ref=e69]:
+            - link "Awesome-Playwright" [ref=e70] [cursor=pointer]:
+              - /url: https://github.com/mxschmitt/awesome-playwright?ref=playwrightsolutions.com
+            - text: "- A curated list of awesome tools, utils and projects using Playwright"
+          - listitem [ref=e71]:
+            - link "LooP" [ref=e72] [cursor=pointer]:
+              - /url: https://www.workwithloop.com/blog-categories/playwright-test-automation?ref=playwrightsolutions.com
+            - text: "- Playwright Test Automation Articles written by"
+            - link "Ben Fellows" [ref=e73] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/ben-f-44778426/?ref=playwrightsolutions.com
+          - listitem [ref=e74]:
+            - link "Debbie.codes" [ref=e75] [cursor=pointer]:
+              - /url: https://debbie.codes/?ref=playwrightsolutions.com
+            - text: "-"
+            - link "Debbie O'Brien" [ref=e76] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/debbie-o-brien-1a199975/?ref=playwrightsolutions.com
+            - text: is a Playwright ambassador and a PM for the Playwright team at Microsoft.
+          - listitem [ref=e77]:
+            - link "Learn Playwright" [ref=e78] [cursor=pointer]:
+              - /url: https://ray.run/?ref=playwrightsolutions.com
+            - text: "&"
+            - link "Ask Playwright Questions" [ref=e79] [cursor=pointer]:
+              - /url: https://ray.run/ask?ref=playwrightsolutions.com
+            - text: by
+            - link "Luc Gagan" [ref=e80] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/lucgagan/recent-activity/all/?ref=playwrightsolutions.com
+          - listitem [ref=e81]:
+            - link "TestersDock" [ref=e82] [cursor=pointer]:
+              - /url: https://testersdock.com/category/playwright/?ref=playwrightsolutions.com
+            - text: "- Some nice walkthroughs of common scenarios with Playwright (and lots more) maintained by"
+            - link "Alapan Das" [ref=e83] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/alapandas/?ref=playwrightsolutions.com
+          - listitem [ref=e84]:
+            - link "TimDeschryver.dev" [ref=e85] [cursor=pointer]:
+              - /url: https://timdeschryver.dev/blog?q=Playwright&ref=playwrightsolutions.com
+            - text: "- Tim's blog has some great Playwright content and examples!"
+        - separator [ref=e86]
+        - heading "Videos" [level=2] [ref=e87]
+        - list [ref=e88]:
+          - listitem [ref=e89]:
+            - link "Commit Quality" [ref=e90] [cursor=pointer]:
+              - /url: https://www.youtube.com/playlist?list=PLXgRgGX8-5UVm9yioRY329rfcfy3MusiY&ref=playwrightsolutions.com
+            - text: YouTube Channel
+          - listitem [ref=e91]:
+            - link "Uncle Aaroh Testing" [ref=e92] [cursor=pointer]:
+              - /url: https://www.youtube.com/@uncleaarohtesting?ref=playwrightsolutions.com
+            - text: YouTube Channel
+          - listitem [ref=e93]:
+            - link "AutomateTogether" [ref=e94] [cursor=pointer]:
+              - /url: https://www.youtube.com/@AutomateTogether/videos?ref=playwrightsolutions.com
+            - text: Youtube Channel
+          - listitem [ref=e95]:
+            - link "Ben Fellows" [ref=e96] [cursor=pointer]:
+              - /url: https://www.youtube.com/@benfellowsloop/videos?ref=playwrightsolutions.com
+            - text: Youtube Channel
+          - listitem [ref=e97]:
+            - link "LetCode with Koushik" [ref=e98] [cursor=pointer]:
+              - /url: https://www.youtube.com/playlist?list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD&ref=playwrightsolutions.com
+            - text: Youtube Channel
+        - separator [ref=e99]
+        - heading "Courses" [level=2] [ref=e100]
+        - list [ref=e101]:
+          - listitem [ref=e102]:
+            - link "Hands On Test Automation with Playwright" [ref=e103] [cursor=pointer]:
+              - /url: https://www.ministryoftesting.com/events/hands-on-test-automation-with-playwright-a72b4035-fc54-4320-8057-5574f87492a4?ref=playwrightsolutions.com
+            - text: 99 Minute Workshop Ad Hoc - Butch Mayhew (
+            - link "repo" [ref=e104] [cursor=pointer]:
+              - /url: https://github.com/BMayhew/mot-playwright-workshop/tree/main?ref=playwrightsolutions.com
+            - text: see branches for each progression/exercise)
+          - listitem [ref=e105]:
+            - link "Introduction to Playwright" [ref=e106] [cursor=pointer]:
+              - /url: https://testautomationu.applitools.com/playwright-intro/?ref=playwrightsolutions.com
+            - text: "-"
+            - link "Renata Andrade" [ref=e107] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/raptatinha?ref=playwrightsolutions.com
+            - text: "- TestAutomationU"
+          - listitem [ref=e108]:
+            - link "Advanced Playwright" [ref=e109] [cursor=pointer]:
+              - /url: https://testautomationu.applitools.com/playwright-advanced/?ref=playwrightsolutions.com
+            - text: "-"
+            - link "Renata Andrade" [ref=e110] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/raptatinha/?ref=playwrightsolutions.com
+            - text: "- TestAutomationU"
+        - separator [ref=e111]
+        - heading "Blog Posts" [level=2] [ref=e112]
+        - list [ref=e113]:
+          - listitem [ref=e114]:
+            - link "Modern Web Testing With Playwright" [ref=e115] [cursor=pointer]:
+              - /url: https://automationpanda.com/2023/07/28/modern-web-testing-with-playwright/?ref=playwrightsolutions.com
+          - listitem [ref=e116]:
+            - link "Playwright and Shadow Dom a Love Story" [ref=e117] [cursor=pointer]:
+              - /url: https://testerops.com/playwright-and-shadow-dom-a-love-story/?ref=playwrightsolutions.com
+          - listitem [ref=e118]:
+            - link "Verify PDF Contents Using Playwright and NodeJS" [ref=e119] [cursor=pointer]:
+              - /url: https://medium.com/bosphorusiss/verify-pdf-contents-using-playwright-and-node-js-dd3cf6749f70?ref=playwrightsolutions.com
+          - listitem [ref=e120]:
+            - link "Faster End To End Tests With Playwright" [ref=e121] [cursor=pointer]:
+              - /url: https://medium.com/@jfgreffier/faster-end-to-end-tests-with-playwright-4cbf32c3f9bf?ref=playwrightsolutions.com
+        - separator [ref=e122]
+        - heading "Non-JS Blog Posts" [level=2] [ref=e123]
+        - paragraph [ref=e124]: These just seemed too good not to share
+        - list [ref=e125]:
+          - listitem [ref=e126]:
+            - link "Using Playwright to Test Azure Active Directory Secured APIs" [ref=e127] [cursor=pointer]:
+              - /url: https://dev.to/irarainey/using-playwright-to-test-azure-active-directory-secured-apis-38p5?ref=playwrightsolutions.com
+            - text: (.NET)
+        - separator [ref=e128]
+        - heading "JS/TS Resources" [level=2] [ref=e129]
+        - paragraph [ref=e130]: List of resources to help folks learn more about Javascript.
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - link "All About Promises in Javascript" [ref=e133] [cursor=pointer]:
+              - /url: https://dev.to/codeofrelevancy/all-about-promises-in-javascript-39lj?ref=playwrightsolutions.com
+        - separator [ref=e134]
+        - paragraph [ref=e135]:
+          - text: If you found this helpful or there is a resource that should be listed here, reach out and let me know on
+          - link "LinkedIn" [ref=e136] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/butchmayhew/?ref=playwrightsolutions.com
+          - text: . If you want more content delivered to you in your email inbox subscribe below.
+    - contentinfo [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - link "Playwright Solutions" [ref=e140] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e141]:
+          - list [ref=e142]:
+            - listitem [ref=e143]:
+              - link "Data & privacy" [ref=e144] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e145]:
+              - link "Contact" [ref=e146] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e148] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e149]:
+    - generic [ref=f17e3] [cursor=pointer]:
+      - img [ref=f17e4]
+      - generic [ref=f17e8]: Subscribe

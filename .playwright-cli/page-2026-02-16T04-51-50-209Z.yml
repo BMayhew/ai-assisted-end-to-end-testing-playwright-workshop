@@ -1,0 +1,119 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Jane Doe" [ref=e168]:
+              - button "Jane Doe" [ref=e169] [cursor=pointer]
+          - button [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+            - text: EN
+  - generic [ref=e383]:
+    - generic [ref=e384]:
+      - figure "Photo by Helinton Fantin on Unsplash." [ref=e386]:
+        - img "Combination Pliers" [ref=e388]
+        - generic [ref=e389]:
+          - text: Photo by
+          - link "Helinton Fantin" [ref=e390] [cursor=pointer]:
+            - /url: https://unsplash.com/@fantin
+          - text: "on"
+          - link "Unsplash" [ref=e391] [cursor=pointer]:
+            - /url: https://unsplash.com/photos/W8BNwvOvW4M
+          - text: .
+      - generic [ref=e392]:
+        - heading "Combination Pliers" [level=1] [ref=e393]
+        - paragraph [ref=e394]:
+          - generic "category" [ref=e395]: Pliers
+          - generic "brand" [ref=e396]: ForgeFlex Tools
+        - generic [ref=e398]: $14.15
+        - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e399]:
+          - text: "CO₂:"
+          - generic [ref=e400]: A
+          - generic [ref=e401]: B
+          - generic [ref=e402]: C
+          - generic [ref=e403]: D
+          - generic [ref=e404]: E
+        - paragraph [ref=e405]: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra felis nec pellentesque feugiat. Donec faucibus arcu maximus, convallis nisl eu, placerat dolor. Morbi finibus neque nec tincidunt pharetra. Sed eget tortor malesuada, mollis enim id, condimentum nisi. In viverra quam at bibendum ultricies. Aliquam quis eros ex. Etiam at pretium massa, ut pharetra tortor. Sed vel metus sem. Suspendisse ac molestie turpis. Duis luctus justo massa, faucibus ornare eros elementum et. Vestibulum quis nisl vitae ante dapibus tempor auctor ut leo. Mauris consectetur et magna at ultricies. Proin a aliquet turpis.
+        - generic [ref=e406]:
+          - button "Decrease quantity" [ref=e407] [cursor=pointer]:
+            - img [ref=e409]
+          - generic [ref=e411]: Quantity
+          - spinbutton "Quantity" [ref=e412]: "1"
+          - button "Increase quantity" [ref=e413] [cursor=pointer]:
+            - img [ref=e415]
+        - generic [ref=e417]:
+          - button "Add to cart" [ref=e418] [cursor=pointer]:
+            - img [ref=e420]
+            - text: Add to cart
+          - button "Add to favourites" [ref=e422] [cursor=pointer]:
+            - img [ref=e424]
+            - text: Add to favourites
+    - separator [ref=e426]
+    - generic [ref=e427]:
+      - heading "Related products" [level=2] [ref=e428]
+      - generic [ref=e430]:
+        - link "Pliers Pliers More information" [ref=e431] [cursor=pointer]:
+          - /url: /product/01KHJ9PCKXTC2ZYSHB7V6S26SF
+          - img "Pliers" [ref=e433]
+          - generic [ref=e434]:
+            - heading "Pliers" [level=5] [ref=e435]
+            - link "More information" [ref=e436]:
+              - /url: "#"
+        - link "Bolt Cutters Bolt Cutters More information" [ref=e437] [cursor=pointer]:
+          - /url: /product/01KHJ9PCM0ESZ7N2BD2742M7AM
+          - img "Bolt Cutters" [ref=e439]
+          - generic [ref=e440]:
+            - heading "Bolt Cutters" [level=5] [ref=e441]
+            - link "More information" [ref=e442]:
+              - /url: "#"
+        - link "Long Nose Pliers Long Nose Pliers More information" [ref=e443] [cursor=pointer]:
+          - /url: /product/01KHJ9PCM1QFBDHDX7D1CDN53J
+          - img "Long Nose Pliers" [ref=e445]
+          - generic [ref=e446]:
+            - heading "Long Nose Pliers" [level=5] [ref=e447]
+            - link "More information" [ref=e448]:
+              - /url: "#"
+        - link "Slip Joint Pliers Slip Joint Pliers More information" [ref=e449] [cursor=pointer]:
+          - /url: /product/01KHJ9PCM30FTRKCT0Q85HRDBF
+          - img "Slip Joint Pliers" [ref=e451]
+          - generic [ref=e452]:
+            - heading "Slip Joint Pliers" [level=5] [ref=e453]
+            - link "More information" [ref=e454]:
+              - /url: "#"
+  - paragraph [ref=e159]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e160] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e161] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e162] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e163] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e165] [cursor=pointer]:
+    - img [ref=e166]

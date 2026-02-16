@@ -1,0 +1,165 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Playwright Practitioner" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: Playwright Practitioner
+        - generic [ref=e7]:
+          - link "How We Work" [ref=e8] [cursor=pointer]:
+            - /url: /#methodology
+          - link "Team" [ref=e9] [cursor=pointer]:
+            - /url: /#team
+          - link "FAQ" [ref=e10] [cursor=pointer]:
+            - /url: /#faq
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about.html
+          - link "Let's Talk" [ref=e12] [cursor=pointer]:
+            - /url: https://cal.com/howdyqa/strategy-call
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - heading "About Playwright Practitioner" [level=1] [ref=e16]
+      - paragraph [ref=e17]: We're two engineers who believe that quality isn't about perfect code - it's about happy users.
+    - generic [ref=e21]:
+      - heading "Our Philosophy" [level=2] [ref=e22]
+      - blockquote [ref=e23]: "\"Quality, at its core, is when your end user is happy.\""
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: "Think about it: your UI might not be glamorous (is there even such a thing as a perfect UI?). Your code might have a few minor quirks. But if your customer is happy - if they enjoy using your product, if it meets their needs and solves their problems - then you've built a quality product."
+        - paragraph [ref=e26]: It's not just about how fast your API responds or what toolset you use for logging. Quality is about user satisfaction.
+        - paragraph [ref=e27]: As testers and automation engineers, our goal is to make sure the product meets the expectations of the people who use it. And we love doing that.
+        - paragraph [ref=e28]: This philosophy drives everything we do. When we embed with your team, we're not just checking boxes or hitting coverage numbers. We're helping you build confidence that your users will have a great experience.
+    - generic [ref=e30]:
+      - heading "Why Embedded Training Works" [level=2] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - heading "The Problem with Courses" [level=3] [ref=e34]
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - img [ref=e37]
+              - text: Generic examples that don't match your codebase
+            - listitem [ref=e39]:
+              - img [ref=e40]
+              - text: No feedback when you get stuck
+            - listitem [ref=e42]:
+              - img [ref=e43]
+              - text: Easy to watch, hard to apply
+            - listitem [ref=e45]:
+              - img [ref=e46]
+              - text: No accountability for results
+        - generic [ref=e48]:
+          - heading "The Embedded Difference" [level=3] [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - img [ref=e52]
+              - text: We work directly in your repository
+            - listitem [ref=e54]:
+              - img [ref=e55]
+              - text: Real-time feedback and course correction
+            - listitem [ref=e57]:
+              - img [ref=e58]
+              - text: Learning by doing, not watching
+            - listitem [ref=e60]:
+              - img [ref=e61]
+              - text: Progress tracked and reported to leadership
+    - generic [ref=e64]:
+      - heading "Meet the Team" [level=2] [ref=e65]
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - img "Butch Mayhew" [ref=e69]
+          - generic [ref=e71]:
+            - generic [ref=e72]: Playwright Ambassador
+            - generic [ref=e73]: Microsoft MVP
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - heading "Butch Mayhew" [level=3] [ref=e76]
+            - link "Butch Mayhew on LinkedIn" [ref=e77] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/butchmayhew/
+              - img [ref=e78]
+          - generic [ref=e80]:
+            - paragraph [ref=e81]: I care deeply about the end user. It's as simple as that.
+            - paragraph [ref=e82]: During one interview, I was asked, "What is quality?" I started to respond with something like, "It's when reality meets expectation," - but then it hit me. Quality, at its core, is when your end user is happy.
+            - paragraph [ref=e83]: As a tester, my goal is to make sure the product meets the expectations of the people who use it. And I love doing that.
+          - heading "Credentials" [level=4] [ref=e84]
+          - list [ref=e85]:
+            - listitem [ref=e86]:
+              - img [ref=e87]
+              - text: Official Playwright Ambassador
+            - listitem [ref=e89]:
+              - img [ref=e90]
+              - text: Microsoft Most Valuable Professional (MVP)
+            - listitem [ref=e92]:
+              - img [ref=e93]
+              - generic [ref=e95]:
+                - text: Creator of
+                - link "playwrightsolutions.com" [ref=e96] [cursor=pointer]:
+                  - /url: https://playwrightsolutions.com
+            - listitem [ref=e97]:
+              - img [ref=e98]
+              - text: Author of 2 LinkedIn Learning Courses
+            - listitem [ref=e100]:
+              - img [ref=e101]
+              - text: Speaker at major QA & Developer conferences
+            - listitem [ref=e103]:
+              - img [ref=e104]
+              - text: 10+ years in test automation
+            - listitem [ref=e106]:
+              - img [ref=e107]
+              - text: Helped 1,000+ individuals learn and scale Playwright
+      - separator [ref=e109]
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - img "Sergei Gapanovich" [ref=e113]
+          - generic [ref=e115]:
+            - generic [ref=e116]: QA Lead
+            - generic [ref=e117]: Conference Speaker
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - heading "Sergei Gapanovich" [level=3] [ref=e120]
+            - link "Sergei Gapanovich on LinkedIn" [ref=e121] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/sgapanovich/
+              - img [ref=e122]
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: I've been building automation tooling for over 6 years and have built multiple automation projects from the ground up. What I love most is training individuals and watching them grow into confident automation engineers.
+            - paragraph [ref=e126]: I believe in providing solid, actionable feedback and being a great communicator. Automation is a skill that can be taught, and I'm passionate about helping teams develop that capability.
+          - heading "Experience" [level=4] [ref=e127]
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - img [ref=e130]
+              - text: 6+ years building automation tooling
+            - listitem [ref=e132]:
+              - img [ref=e133]
+              - text: Built multiple automation frameworks from the ground up
+            - listitem [ref=e135]:
+              - img [ref=e136]
+              - text: Led QA teams through 1:1s, pair sessions, and daily office hours
+            - listitem [ref=e138]:
+              - img [ref=e139]
+              - text: Reduced automated check development time by over 70%
+            - listitem [ref=e141]:
+              - img [ref=e142]
+              - text: Implemented API contract testing for 200+ endpoints
+            - listitem [ref=e144]:
+              - img [ref=e145]
+              - text: Conference speaker and skilled communicator
+            - listitem [ref=e147]:
+              - img [ref=e148]
+              - text: Proven track record of mentoring individuals and teams
+    - generic [ref=e151]:
+      - heading "Let's Talk About Your Team" [level=2] [ref=e152]
+      - paragraph [ref=e153]: Every team is different. Let's discuss your specific challenges and see how we can help.
+      - link "Let's Talk" [ref=e154] [cursor=pointer]:
+        - /url: https://cal.com/howdyqa/strategy-call
+        - text: Let's Talk
+        - img [ref=e155]
+  - contentinfo [ref=e157]:
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - generic [ref=e161]: Playwright Practitioner
+        - generic [ref=e162]:
+          - link "About" [ref=e163] [cursor=pointer]:
+            - /url: /about.html
+          - link "Privacy" [ref=e164] [cursor=pointer]:
+            - /url: /privacy.html
+          - link "Blog" [ref=e165] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+      - paragraph [ref=e167]: © 2026 Playwright Practitioner. All rights reserved.

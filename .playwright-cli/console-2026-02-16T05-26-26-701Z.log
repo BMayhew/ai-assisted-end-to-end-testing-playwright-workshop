@@ -1,0 +1,4 @@
+[    1654ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    2021ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    2022ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/main.60cd83a2d07ec791.js:0
+[   75935ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://api.practicesoftwaretesting.com/carts/01khjcwrerw0b274yymsb1pv00:0

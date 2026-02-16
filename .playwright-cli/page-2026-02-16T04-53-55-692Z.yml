@@ -1,0 +1,63 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - banner [ref=e34]:
+        - heading "Contact" [level=1] [ref=e35]
+      - paragraph [ref=e37]:
+        - text: If you'd like to contact me please reach out
+        - link "Butch Mayhew" [ref=e38] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/butchmayhew/?ref=playwrightsolutions.com
+        - text: "!"
+    - contentinfo [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - link "Playwright Solutions" [ref=e42] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e43]:
+          - list [ref=e44]:
+            - listitem [ref=e45]:
+              - link "Data & privacy" [ref=e46] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e47]:
+              - link "Contact" [ref=e48] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e50] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e51]:
+    - generic [ref=f110e3] [cursor=pointer]:
+      - img [ref=f110e4]
+      - generic [ref=f110e8]: Subscribe

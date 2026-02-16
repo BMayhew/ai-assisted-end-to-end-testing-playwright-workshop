@@ -1,0 +1,126 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - text: View the
+      - link "Documentation" [ref=e4] [cursor=pointer]:
+        - /url: https://testsmith-io.github.io/practice-software-testing/#/
+      - text: for this application.
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+        - button "Testing Guide" [ref=e9] [cursor=pointer]
+        - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+            - /url: /
+            - img [ref=e14]
+          - generic [ref=e32]:
+            - menubar "Main menu" [ref=e33]:
+              - menuitem "Home" [ref=e34]:
+                - link "Home" [ref=e35] [cursor=pointer]:
+                  - /url: /
+              - menuitem "Categories" [ref=e36]:
+                - button "Categories" [ref=e37] [cursor=pointer]
+              - menuitem "Contact" [ref=e38]:
+                - link "Contact" [ref=e39] [cursor=pointer]:
+                  - /url: /contact
+              - menuitem "Jane Doe" [ref=e174]:
+                - button "Jane Doe" [ref=e175] [cursor=pointer]
+              - menuitem "cart" [ref=e40]:
+                - link "cart" [ref=e41] [cursor=pointer]:
+                  - /url: /checkout
+                  - img [ref=e43]
+                  - generic [ref=e45]: "2"
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e49]
+              - text: EN
+    - generic [ref=e389]:
+      - generic [ref=e390]:
+        - figure "Photo by Michael Dziedzic on Unsplash." [ref=e392]:
+          - img "Bolt Cutters" [ref=e394]
+          - generic [ref=e395]:
+            - text: Photo by
+            - link "Michael Dziedzic" [ref=e396] [cursor=pointer]:
+              - /url: https://unsplash.com/@lazycreekimages
+            - text: "on"
+            - link "Unsplash" [ref=e397] [cursor=pointer]:
+              - /url: https://unsplash.com/photos/pM9pkc9J918
+            - text: .
+        - generic [ref=e398]:
+          - heading "Bolt Cutters" [level=1] [ref=e399]
+          - paragraph [ref=e400]:
+            - generic "category" [ref=e401]: Pliers
+            - generic "brand" [ref=e402]: MightyCraft Hardware
+          - generic [ref=e404]: $48.41
+          - generic "A = most environmentally friendly, E = higher environmental impact" [ref=e405]:
+            - text: "CO₂:"
+            - generic [ref=e406]: A
+            - generic [ref=e407]: B
+            - generic [ref=e408]: C
+            - generic [ref=e409]: D
+            - generic [ref=e410]: E
+          - paragraph [ref=e411]: Aliquam viverra scelerisque tempus. Ut vehicula, ex sed elementum rhoncus, sem neque vehicula turpis, sit amet accumsan mauris justo non magna. Cras ut vulputate lectus, sit amet sollicitudin enim. Quisque sit amet turpis ut orci pulvinar vestibulum non at velit. Quisque ultrices malesuada felis non rutrum. Sed molestie lobortis nisl, in varius arcu dictum vel. In sit amet fringilla orci. Quisque ac magna dui. Nam pulvinar nulla sed commodo ultricies. Suspendisse aliquet quis eros sit amet gravida. Aenean vitae arcu in sapien sodales commodo.
+          - generic [ref=e412]:
+            - button "Decrease quantity" [ref=e413] [cursor=pointer]:
+              - img [ref=e415]
+            - generic [ref=e417]: Quantity
+            - spinbutton "Quantity" [ref=e418]: "1"
+            - button "Increase quantity" [ref=e419] [cursor=pointer]:
+              - img [ref=e421]
+          - generic [ref=e423]:
+            - button "Add to cart" [active] [ref=e424] [cursor=pointer]:
+              - img [ref=e426]
+              - text: Add to cart
+            - button "Add to favourites" [ref=e428] [cursor=pointer]:
+              - img [ref=e430]
+              - text: Add to favourites
+      - separator [ref=e432]
+      - generic [ref=e433]:
+        - heading "Related products" [level=2] [ref=e434]
+        - generic [ref=e436]:
+          - link "Combination Pliers Combination Pliers More information" [ref=e437] [cursor=pointer]:
+            - /url: /product/01KHJ9PCKSC75RW66WF232Q1S0
+            - img "Combination Pliers" [ref=e439]
+            - generic [ref=e440]:
+              - heading "Combination Pliers" [level=5] [ref=e441]
+              - link "More information" [ref=e442]:
+                - /url: "#"
+          - link "Pliers Pliers More information" [ref=e443] [cursor=pointer]:
+            - /url: /product/01KHJ9PCKXTC2ZYSHB7V6S26SF
+            - img "Pliers" [ref=e445]
+            - generic [ref=e446]:
+              - heading "Pliers" [level=5] [ref=e447]
+              - link "More information" [ref=e448]:
+                - /url: "#"
+          - link "Long Nose Pliers Long Nose Pliers More information" [ref=e449] [cursor=pointer]:
+            - /url: /product/01KHJ9PCM1QFBDHDX7D1CDN53J
+            - img "Long Nose Pliers" [ref=e451]
+            - generic [ref=e452]:
+              - heading "Long Nose Pliers" [level=5] [ref=e453]
+              - link "More information" [ref=e454]:
+                - /url: "#"
+          - link "Slip Joint Pliers Slip Joint Pliers More information" [ref=e455] [cursor=pointer]:
+            - /url: /product/01KHJ9PCM30FTRKCT0Q85HRDBF
+            - img "Slip Joint Pliers" [ref=e457]
+            - generic [ref=e458]:
+              - heading "Slip Joint Pliers" [level=5] [ref=e459]
+              - link "More information" [ref=e460]:
+                - /url: "#"
+    - paragraph [ref=e165]:
+      - text: This is a DEMO application (
+      - link "GitHub repo" [ref=e166] [cursor=pointer]:
+        - /url: https://github.com/testsmith-io/practice-software-testing
+      - text: ), used for software testing training purpose. |
+      - link "Privacy Policy" [ref=e167] [cursor=pointer]:
+        - /url: /privacy
+      - text: "| Banner photo by"
+      - link "Barn Images" [ref=e168] [cursor=pointer]:
+        - /url: https://unsplash.com/@barnimages
+      - text: "on"
+      - link "Unsplash" [ref=e169] [cursor=pointer]:
+        - /url: https://unsplash.com/photos/t5YUoHW6zRo
+      - text: .
+    - button "Open chat" [ref=e171] [cursor=pointer]:
+      - img [ref=e172]
+  - alert "Product added to shopping cart." [ref=e462]

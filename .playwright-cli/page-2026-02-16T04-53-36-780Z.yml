@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - heading "How Do You Scroll To The Bottom Of An Infinite Scrolling Page In A Playwright Test?" [level=1] [ref=e37]
+            - generic [ref=e39]:
+              - list [ref=e40]:
+                - listitem [ref=e41]:
+                  - link "Butch Mayhew" [ref=e42] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Butch Mayhew" [level=4] [ref=e45]:
+                  - link "Butch Mayhew" [ref=e46] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e47]:
+                  - time [ref=e48]: Aug 12, 2024
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: •
+                    - text: 2 min read
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: This week our team had a renewed focus on addressing some of our flakey tests, and one of the things we ran across was an interesting page interaction.
+            - paragraph [ref=e53]: We wanted to utilize our drop down to limit the amount of responses within a page. The options for filtering are 5, 10, 25, and 50. The drop down is at the bottom of the page, and we had some flakey tests where 1 in every 5 test runs, the screen would get in a state where the drop down is clicked and partially viewable but not scrolled down to the element to interact with it. See the video below.
+            - figure [ref=e54]:
+              - generic [ref=e55]:
+                - button [ref=e58] [cursor=pointer]:
+                  - img [ref=e59]
+                - generic [ref=e62]:
+                  - button [ref=e63] [cursor=pointer]:
+                    - img [ref=e64]
+                  - generic [ref=e66]: 0:00
+                  - generic [ref=e67]: /0:33
+                  - slider [ref=e68]: "0"
+                  - button "1×" [ref=e69] [cursor=pointer]
+                  - button [ref=e70] [cursor=pointer]:
+                    - img [ref=e71]
+                  - slider [ref=e73]: "100"
+            - paragraph [ref=e74]: The logs from the html report show where it attempted to scroll down but because the way the element is built, I guess it couldn't.
+            - code [ref=e76]: "// html report error message TimeoutError: locator.click: Timeout 10000ms exceeded. =========================== logs =========================== waiting for getByRole('option', { name: '25', exact: true }) locator resolved to <mat-option role=\"option\" id=\"mat-option-3\" aria-selected=\"f…>…</mat-option> attempting click action waiting for element to be visible, enabled and stable element is not stable - waiting... element is visible, enabled and stable scrolling into view if needed done scrolling element is outside of the viewport retrying click action, attempt #1 waiting for element to be visible, enabled and stable element is visible, enabled and stable scrolling into view if needed done scrolling element is outside of the viewport ... // 22 more attempts were made before hitting the timeout threshold"
+            - heading "Set click() to force true" [level=2] [ref=e77]
+            - paragraph [ref=e78]:
+              - text: As I thought about how to solve this problem, 2 ways came to mind. The first being just set
+              - code [ref=e79]: force:true
+              - text: on the
+              - link "click action" [ref=e80] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/input?ref=playwrightsolutions.com#forcing-the-click
+              - text: . This can be seen below. This is a good solution but I wanted to have the page scrolled like a user would rather than automagically clicking the button. Also note that I am using
+              - code [ref=e81]: this.page
+              - text: syntax as I am running this code from a Class ( my page object).
+            - code [ref=e83]: "// sharedPage.ts (page object) async selectItemsPerPage(howManyItems) { await this.itemsPerPage.locator(\".mat-mdc-select-trigger\").click(); await this.page .getByRole(\"option\", { name: howManyItems, exact: true }) .click({ force: true }); }"
+            - heading "Scroll to the bottom of the page" [level=2] [ref=e84]
+            - paragraph [ref=e85]:
+              - text: So I started looking at how to implement ways to scroll to the bottom of the page. I started by actually trying to just use the
+              - link ".scrollIntoViewIfNeeded()" [ref=e86] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/api/class-locator?ref=playwrightsolutions.com#locator-scroll-into-view-if-needed
+              - text: function playwright, but I guess the browser thought the element was already in view much like the html report error logs showed it attempted to scroll into view.
+            - paragraph [ref=e87]: My work around was to use page.evaluate, grab the document.body.scrollHeight and use window.scrollTo() the value. This function will also take into account any lazy loading pages that may grow as you scroll, this was not a concern of mine but the code will handle it, though you may need to adjust the delay.
+            - code [ref=e89]: "// sharedPage.ts (page object) async selectItemsPerPage(howManyItems) { await this.itemsPerPage.locator(\".mat-mdc-select-trigger\").click(); // Scroll to the bottom of the page await this.page.evaluate(async () => { const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms)); for (let i = 0; i < document.body.scrollHeight; i += 100) { window.scrollTo(0, i); await delay(100); } }); await this.page .getByRole(\"option\", { name: howManyItems, exact: true }) .click(; }"
+            - paragraph [ref=e90]:
+              - text: The above code was listed as a part of a solution to a
+              - link "GitHub question" [ref=e91] [cursor=pointer]:
+                - /url: https://github.com/microsoft/playwright/issues/4302?ref=playwrightsolutions.com
+              - text: ", if your looking for other alternatives or examples there are a few in the comments."
+            - separator [ref=e92]
+            - paragraph [ref=e93]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e94] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e95] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e97]: If this solution was helpful show some love!
+      - generic [ref=e98]:
+        - img [ref=e99]
+        - generic [ref=e102]: "24"
+      - paragraph
+      - generic [ref=e104]:
+        - heading "Sign up for more like this." [level=2] [ref=e105]
+        - link "Enter your email Subscribe" [ref=e106] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e107]: Enter your email
+          - generic [ref=e108]: Subscribe
+      - complementary [ref=e109]:
+        - generic [ref=e110]:
+          - article [ref=e111]:
+            - generic [ref=e112]:
+              - 'link "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e113] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e115]'
+                - generic [ref=e116]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e117]:
+                - time [ref=e118]: Feb 18, 2025
+                - generic [ref=e119]: 3 min read
+          - article [ref=e120]:
+            - generic [ref=e121]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e122] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e124]'
+                - generic [ref=e125]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e126]:
+                - time [ref=e127]: Feb 10, 2025
+                - generic [ref=e128]: 6 min read
+          - article [ref=e129]:
+            - generic [ref=e130]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e131] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e133]
+                - generic [ref=e134]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e135]:
+                - time [ref=e136]: Jan 20, 2025
+                - generic [ref=e137]: 4 min read
+    - contentinfo [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - link "Playwright Solutions" [ref=e141] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e142]:
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "Data & privacy" [ref=e145] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e146]:
+              - link "Contact" [ref=e147] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e149] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e150]:
+    - generic [ref=f90e3] [cursor=pointer]:
+      - img [ref=f90e4]
+      - generic [ref=f90e8]: Subscribe

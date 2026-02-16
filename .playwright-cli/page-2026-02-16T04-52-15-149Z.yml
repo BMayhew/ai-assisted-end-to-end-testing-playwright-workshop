@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - banner [ref=e34]:
+        - heading "About" [level=1] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]:
+          - text: Welcome to Playwright Solutions! I'm
+          - link "Butch Mayhew" [ref=e38] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/butchmayhew/?ref=playwrightsolutions.com
+          - text: ", a Playwright Ambassador and I love Playwright! I was inspired to keep a collection of Playwright problems and solutions by"
+          - link "Justin Ko and the Blog" [ref=e39] [cursor=pointer]:
+            - /url: https://jkotests.wordpress.com/?ref=playwrightsolutions.com
+          - text: he runs. When working with Ruby and Watir, I spent many hours reading and getting a better understanding of the tools, and code I was writing thanks to him. I'd like to provide that for others for Playwright.
+        - paragraph [ref=e40]:
+          - text: I would highly encourage everyone to take some time and read the
+          - link "Playwright Docs" [ref=e41] [cursor=pointer]:
+            - /url: https://playwright.dev/?ref=playwrightsolutions.com
+          - text: . Typically when I face a problem this is the first place I look. Secondly, many of these questions have been asked before. If you need real-time help please check out the
+          - link "Playwright Discord" [ref=e42] [cursor=pointer]:
+            - /url: https://aka.ms/playwright/discord?ref=playwrightsolutions.com
+          - text: . For other helpful resources check out the
+          - link "Playwright Resources" [ref=e43] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com/playwright-resources/
+          - text: page.
+        - separator [ref=e44]
+        - heading "Other Contributors" [level=2] [ref=e45]
+        - paragraph [ref=e46]:
+          - link "Joel Black" [ref=e47] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com/author/joel
+          - text: "- His passions include: Cats, Keyboards, and Command Line Interfaces"
+        - separator [ref=e48]
+        - paragraph [ref=e49]: If you'd like to support me, consider buying me a coffee below. This will either contribute to me buying a fancy cup of coffee or go towards hosting costs!
+        - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e51] [cursor=pointer]:
+          - /url: https://ko-fi.com/A0A7PBHM
+          - generic [ref=e52]:
+            - img "Ko-fi donations" [ref=e53]
+            - text: Support Me on Ko-Fi
+    - contentinfo [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - link "Playwright Solutions" [ref=e57] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e58]:
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "Data & privacy" [ref=e61] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e62]:
+              - link "Contact" [ref=e63] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e65] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e66]:
+    - generic [ref=f9e3] [cursor=pointer]:
+      - img [ref=f9e4]
+      - generic [ref=f9e8]: Subscribe

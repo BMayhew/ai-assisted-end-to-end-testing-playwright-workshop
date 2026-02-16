@@ -1,0 +1,241 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=1] [ref=e37]'
+            - generic [ref=e39]:
+              - list [ref=e40]:
+                - listitem [ref=e41]:
+                  - link "Butch Mayhew" [ref=e42] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Butch Mayhew" [level=4] [ref=e45]:
+                  - link "Butch Mayhew" [ref=e46] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e47]:
+                  - time [ref=e48]: Feb 10, 2025
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: •
+                    - text: 6 min read
+          - generic [ref=e51]:
+            - paragraph [ref=e52]:
+              - text: With the latest
+              - link "1.50" [ref=e53] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/release-notes?ref=playwrightsolutions.com#version-150
+              - text: Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report.
+            - heading "From Playwright Test Report" [level=2] [ref=e54]
+            - paragraph [ref=e55]:
+              - text: To be able to view your traces after a test run within the
+              - code [ref=e56]: playwright.config.ts
+              - text: file you will need set 2 values.
+            - paragraph [ref=e57]:
+              - text: First -
+              - code [ref=e58]: reporter
+              - text: ": \"html\" in the below example I have multiple reporters active which is why I use the array syntax but if you just need 1 reporter you can pass in \"html\""
+            - paragraph [ref=e59]:
+              - text: Second - in the use section you want to set
+              - code [ref=e60]: trace
+              - text: ": \"on\". This will ensure that any tests that are run the trace file is saved for inspection. Feel free to adjust this when you are ready to commit your changes to your repository, as it's likely you don't need the trace on all the time. I tend to use the value \"retain-on-failure\"."
+            - code [ref=e62]: "// playwright.config.ts import { defineConfig } from \"@playwright/test\"; export default defineConfig<TestOptions>({ timeout: 30_000, testDir: \"./tests\", fullyParallel: true, forbidOnly: !!process.env.CI, retries: process.env.CI ? 2 : 2, workers: process.env.CI ? 1 : undefined, reporter:[[\"list\"], [\"html\"], [\"@currents/playwright\"]] use: { testIdAttribute: \"data-test\", baseURL: process.env.UI_URL, trace: \"on\", screenshot: \"on\", video: \"on\", }, });"
+            - paragraph [ref=e63]:
+              - text: With the configuration you can run your playwright tests
+              - code [ref=e64]: npx playwright test
+              - text: and in the html report that either pops up after your test run if there is a failure or you can run manually using the command
+              - code [ref=e65]: npx playwright show-report
+              - text: ", you'll want to click into a specific test. Scroll down to the"
+              - code [ref=e66]: Traces
+              - text: section and click on the thumbnail image.
+            - figure [ref=e67]
+            - paragraph [ref=e68]:
+              - text: Once clicked you can find the test step, click the network tab, and find the http request you want to copy. In my below example I found the
+              - code [ref=e69]: POST
+              - text: request to the users/login api endpoint and on the
+              - code [ref=e70]: Request
+              - text: tab I scrolled down and see the "Copy as Playwright" button.
+            - figure "Playwright Trace Viewer" [ref=e71]:
+              - generic [ref=e72]: Playwright Trace Viewer
+            - paragraph [ref=e73]: Clicking the button copied the below code into my clipboard.
+            - code [ref=e75]:
+              - text: "// from clipboard await page.request.post('https://api.practicesoftwaretesting.com/users/login', { data:"
+              - generic [ref=e76]: "`{ \"email\": \"playwrightsolutions@practicesoftwaretesting.com\", \"password\": \"testyMctesterface!@5\" }`"
+              - text: ", headers: { 'user-agent': 'Playwright/1.50.1 (arm64; macOS 14.5) node/18.18', accept: '*/*', 'accept-encoding': 'gzip,deflate,br', 'content-type': 'application/json', 'content-length': '93' } });"
+            - paragraph [ref=e77]:
+              - text: WHAT!!! That was crazy easy! the Copy as cURL and Copy as Fetch are also easy shortcuts that can be used, but having a button to copy the code to be used in a Playwright test is great! Keep reading to the
+              - emphasis [ref=e78]: Why This is Incredible
+              - text: sections below for more thoughts on why this is great.
+            - heading "From Playwright UI mode" [level=2] [ref=e79]
+            - paragraph [ref=e80]:
+              - text: To enter ui mode you can run the command
+              - code [ref=e81]: npx playwright test --ui
+              - text: . This will pull up a UI mode with tests on the left and the same trace viewer on the right, that has the same network tab and Copy as Playwright button once you have a request selected.
+            - figure [ref=e82]
+            - heading "Why This is Incredible?" [level=2] [ref=e83]
+            - paragraph [ref=e84]: One of my beliefs about automation is one of the hardest parts is creating test data. This functionality will allow you to quickly inspect HTTP requests that are made through the UI and generate code to re-create those request with Playwright.
+            - paragraph [ref=e85]: This is a major shortcut, I will no longer have to closely inspect and copy and paste headers, parameters, or a request body, I just have to make a valid api call through a test (typically using the UI) and then view the trace.
+            - heading "Using this to create test data" [level=3] [ref=e86]
+            - paragraph [ref=e87]:
+              - text: For a live example I'll use this repo, which includes a suite of tests and the latest version
+              - link "(1.50)" [ref=e88] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/release-notes?ref=playwrightsolutions.com#version-150
+              - text: of Playwright configured.
+            - figure [ref=e89]:
+              - 'link "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com GitHub •playwrightsolutions" [ref=e90] [cursor=pointer]':
+                - /url: https://github.com/playwrightsolutions/playwright-practicesoftwaretesting.com?ref=playwrightsolutions.com
+                - generic [ref=e91]:
+                  - generic [ref=e92]: "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com"
+                  - generic [ref=e93]: Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com
+                  - generic [ref=e94]:
+                    - generic [ref=e95]: GitHub
+                    - generic [ref=e96]: •playwrightsolutions
+            - paragraph [ref=e98]:
+              - text: With our existing tests, I want to stop relying on static data for my test assertions but rather want to create test data as a part of my test setup. Ideally I want to do this from the API rather than from the UI. In this repository, I already have a setup project which will create authentication for each type of user (you can read more about that here -
+              - link "https://playwrightsolutions.com/handling-multiple-login-states-between-different-tests-in-playwright/" [ref=e99] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/handling-multiple-login-states-between-different-tests-in-playwright/
+              - text: )
+            - paragraph [ref=e100]: I'll focus on adding a brand on the site under test. Now I just need to create a UI test that will add a brand through the brand page.
+            - code [ref=e102]:
+              - text: "import { test, expect } from \"@playwright/test\"; test.describe(\"Admin brands specs\", () => { test.use({ storageState: \".auth/admin.json\" }); test(\"create a new brand\", async ("
+              - generic [ref=e103]: "{ page }"
+              - text: ") => { await page.goto(\"/admin/brands/add\"); await page.getByTestId(\"name\").fill(\"Playwright Brand\"); await page.getByTestId(\"slug\").fill(\"playwright-slug\"); await page.getByTestId(\"brand-submit\").click(); await expect(page.getByText(\"Brand saved\")).toBeVisible(); }); });"
+            - paragraph [ref=e104]: When running this test I can now view the test report/trace file and copy the code
+            - figure [ref=e105]
+            - paragraph [ref=e106]: The code below is the entire request pasted. You'll notice that this has a lot more information because the request was made from the browser and there are lots of headers that we actually don't need for data creation process.
+            - code [ref=e108]:
+              - text: "await page.request.post('https://api.practicesoftwaretesting.com/brands', { data:"
+              - generic [ref=e109]: "`{ \"id\": \"\", \"name\": \"Playwright Brand\", \"slug\": \"playwirght-slug\" }`"
+              - text: ", headers: { Accept: 'application/json, text/plain, */*', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US', Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5wcmFjdGljZXNvZnR3YXJldGVzdGluZy5jb20vdXNlcnMvbG9naW4iLCJpYXQiOjE3Mzg3Mzc4NjIsImV4cCI6MTczODczODE2MiwibmJmIjoxNzM4NzM3ODYyLCJqdGkiOiJrUFNvck14U3pQT29qZ2hCIiwic3ViIjoiMDFKS0FCM0hFVkVUQTJGME5BSjQyR1A3M1kiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6ImFkbWluIn0.bjjPGNFtFIzW8VosJg1n7q3_G06HOSKIqcITfw988U4', Connection: 'keep-alive', 'Content-Length': '60', 'Content-Type': 'application/json', Host: 'api.practicesoftwaretesting.com', Origin: 'https://practicesoftwaretesting.com', Referer: 'https://practicesoftwaretesting.com/', 'Sec-Fetch-Dest': 'empty', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'sec-ch-ua': '\"Chromium\";v=\"133\", \"Not(A:Brand\";v=\"99\"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '\"macOS\"' } });"
+            - paragraph [ref=e110]: I'll take the above and modify it to only the essentials. I'll also add "import" statements because I want this to be called from a file outside of a test.
+            - heading "Final Output" [level=2] [ref=e111]
+            - paragraph [ref=e112]:
+              - text: Below is that example, you'll notice I had to import extra functions to get this to work as I needed a valid Bearer Token. I generated this and cleaned up the request/response. I decided to modify to use the
+              - code [ref=e113]: request
+              - text: method rather than the
+              - code [ref=e114]: page
+              - text: method because we aren't working inside a browser for this. I also used interpolation on the brandName and slugName. Because the Trace Viewer copy functionality surrounds the
+              - code [ref=e115]: data
+              - text: ": with the back ticks ` `."
+            - code [ref=e117]:
+              - text: "// lib/datafactory/createBrand.ts import { expect, request } from \"@playwright/test\"; import { getLoginToken } from \"./login\"; export async function createBrand("
+              - generic [ref=e118]: "brandName: string, slugName: string"
+              - text: ") { let apiURL = process.env.API_URL; let email = process.env.ADMIN_USERNAME; let password = process.env.ADMIN_PASSWORD; const token = await getLoginToken(email, password); const createRequestContext = await request.newContext(); const response = await createRequestContext.post(apiURL + \"/brands\", { data:"
+              - generic [ref=e119]:
+                - text: "`{ \"id\": \"\", \"name\": \""
+                - generic [ref=e120]: "${brandName}"
+                - text: "\", \"slug\": \""
+                - generic [ref=e121]: "${slugName}"
+                - text: "\" }`"
+              - text: ", headers: { Authorization: \"Bearer \" + token, \"Content-Type\": \"application/json\", }, }); expect(response.status()).toBe(201); }"
+            - paragraph [ref=e122]:
+              - text: The final test is below. You can see that we make a call to
+              - code [ref=e123]: createBrand()
+              - text: which uses the newly copied Playwright request.
+            - code [ref=e125]: "// tests/admin/brands/brand.spec.ts import { test, expect } from \"@playwright/test\"; import { createBrand } from \"@datafactory/createBrand\"; import { faker } from \"@faker-js/faker\"; test.describe(\"Admin brands specs\", () => { test.use({ storageState: \".auth/admin.json\" }); test(\"validate new brand is rendered in the list\", async ({ page, context, }) => { await page.goto(\"/admin/brands\"); const name = faker.person.firstName(); const slug = faker.animal.type(); await createBrand(name, slug); await page.goto(\"/admin/brands\"); await expect(page.getByText(name)).toBeVisible(); }); });"
+            - paragraph [ref=e126]:
+              - text: This
+              - code [ref=e127]: Copy as Playwright
+              - text: button will save you a lot of typing in your future test automation development. Building out tests with a data factory this way allows me to bypass the UI to create test data during my test runs, which should in turn speed up my tests, and I now have a quick way to create future test data.
+            - separator [ref=e128]
+            - paragraph [ref=e129]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e130] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e131] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e133]: If this solution was helpful show some love!
+      - generic [ref=e134]:
+        - img [ref=e135]
+        - generic [ref=e138]: "24"
+      - paragraph
+      - generic [ref=e140]:
+        - heading "Sign up for more like this." [level=2] [ref=e141]
+        - link "Enter your email Subscribe" [ref=e142] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e143]: Enter your email
+          - generic [ref=e144]: Subscribe
+      - complementary [ref=e145]:
+        - generic [ref=e146]:
+          - article [ref=e147]:
+            - generic [ref=e148]:
+              - 'link "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e149] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e151]'
+                - generic [ref=e152]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e153]:
+                - time [ref=e154]: Feb 18, 2025
+                - generic [ref=e155]: 3 min read
+          - article [ref=e156]:
+            - generic [ref=e157]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e158] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e160]
+                - generic [ref=e161]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e162]:
+                - time [ref=e163]: Jan 20, 2025
+                - generic [ref=e164]: 4 min read
+          - article [ref=e165]:
+            - generic [ref=e166]:
+              - link "End of 2024 Announcements I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the \"Learning Playwright\" Course that I've been working on the last few months was released. I've been" [ref=e167] [cursor=pointer]:
+                - /url: /end-of-2024-announcements/
+                - heading "End of 2024 Announcements" [level=2] [ref=e169]
+                - generic [ref=e170]: I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the "Learning Playwright" Course that I've been working on the last few months was released. I've been
+              - generic [ref=e171]:
+                - time [ref=e172]: Dec 10, 2024
+                - generic [ref=e173]: 1 min read
+    - contentinfo [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - link "Playwright Solutions" [ref=e177] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e178]:
+          - list [ref=e179]:
+            - listitem [ref=e180]:
+              - link "Data & privacy" [ref=e181] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e182]:
+              - link "Contact" [ref=e183] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e185] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e186]:
+    - generic [ref=f39e3] [cursor=pointer]:
+      - img [ref=f39e4]
+      - generic [ref=f39e8]: Subscribe

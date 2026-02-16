@@ -1,0 +1,225 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=1] [ref=e37]
+            - generic [ref=e39]:
+              - list [ref=e40]:
+                - listitem [ref=e41]:
+                  - link "Butch Mayhew" [ref=e42] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Butch Mayhew" [level=4] [ref=e45]:
+                  - link "Butch Mayhew" [ref=e46] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e47]:
+                  - time [ref=e48]: Jan 20, 2025
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: •
+                    - text: 4 min read
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time in parallel there times where this may not be feasible. This is typically when you have a state that needs to be consistent.
+            - heading "Scenario" [level=2] [ref=e53]
+            - paragraph [ref=e54]:
+              - text: We'll use the repo linked below and use the
+              - code [ref=e55]: account.spec.ts
+              - text: to demonstrate the functionality.
+            - figure [ref=e56]:
+              - 'link "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com GitHub •playwrightsolutions" [ref=e57] [cursor=pointer]':
+                - /url: https://github.com/playwrightsolutions/playwright-practicesoftwaretesting.com?ref=playwrightsolutions.com
+                - generic [ref=e58]:
+                  - generic [ref=e59]: "GitHub - playwrightsolutions/playwright-practicesoftwaretesting.com: Example using Playwright against site https://practicesoftwaretesting.com"
+                  - generic [ref=e60]: Example using Playwright against site https://practicesoftwaretesting.com - playwrightsolutions/playwright-practicesoftwaretesting.com
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: GitHub
+                    - generic [ref=e63]: •playwrightsolutions
+            - paragraph [ref=e65]: The code we will run is listed below. Notice the below there are 3 tests.
+            - list [ref=e66]:
+              - listitem [ref=e67]: In the first test we don't make any changes to any data we only make assertions.
+              - listitem [ref=e68]: In the second test we make a change to the first name, last name, and street 1 address.
+              - listitem [ref=e69]: In the third test we don't make any changes to any data only make an assertion.
+            - paragraph [ref=e70]: The problem here is that the 2nd test changes data that test 1 and test 3 rely on "Jane Doe" first and last name.
+            - code [ref=e72]:
+              - text: "//tests/account/account.spec.ts import { test, expect } from \"@playwright/test\"; test.describe(\"Customer 01 my account specs\", () => { test.use({ storageState: \".auth/customer01.json\" }); test.afterEach(async ("
+              - generic [ref=e73]: "{ page }"
+              - text: ") => { await page.goto(\"/account/profile\"); await page.waitForLoadState(\"networkidle\"); await page.getByTestId(\"first-name\").fill(\"Jane\"); await page.getByTestId(\"last-name\").fill(\"Doe\"); await page.getByTestId(\"address\").fill(\"101 Testing Way\"); await page.getByTestId(\"update-profile-submit\").click(); await expect( page.getByRole(\"alert\").filter({ hasText: \"successfully\" }) ).toBeVisible(); }); test(\"validate customer 01 my account page\", async ("
+              - generic [ref=e74]: "{ page }"
+              - text: ") => { await page.goto(\"/account\"); expect(await page.getByTestId(\"nav-menu\").innerText()).toContain( \"Jane Doe\" ); expect(await page.getByTestId(\"page-title\").innerText()).toContain( \"My account\" ); expect(await page.getByTestId(\"nav-favorites\").innerText()).toContain( \"Favorites\" ); }); test(\"update customer 01 account\", async ("
+              - generic [ref=e75]: "{ page }"
+              - text: ") => { await page.goto(\"account/profile\"); await page.waitForLoadState(\"networkidle\"); await page.getByTestId(\"first-name\").fill(\"Testy\"); await page.getByTestId(\"last-name\").fill(\"McTesterface\"); await page.getByTestId(\"address\").fill(\"101 Testing Way\"); await page.getByTestId(\"update-profile-submit\").click(); await expect( page.getByRole(\"alert\").filter({ hasText: \"successfully\" }) ).toBeVisible(); // Assert the updated name is displayed in the nav menu await page.reload(); expect(await page.getByTestId(\"nav-menu\").innerText()).toContain( \"Testy McTesterface\" ); await expect(page.getByTestId(\"first-name\")).toHaveValue(\"Testy\"); await expect(page.getByTestId(\"last-name\")).toHaveValue(\"McTesterface\"); await expect(page.getByTestId(\"address\")).toHaveValue(\"101 Testing Way\"); }); test(\"validate customer 01 account other\", async ("
+              - generic [ref=e76]: "{ page }"
+              - text: ") => { await page.goto(\"/account\"); expect(await page.getByTestId(\"nav-menu\").innerText()).toContain( \"Jane Doe\" ); }); });"
+            - heading "Running the tests without options" [level=2] [ref=e77]
+            - code [ref=e79]: npx playwright test tests/account/account.spec.ts
+            - paragraph [ref=e80]:
+              - text: When running my tests with my default
+              - code [ref=e81]: playwright.config.ts
+              - text: ", the test ran with 3 workers 1 test for each, and all tests ran at the same time."
+            - paragraph [ref=e82]:
+              - text: When running the tests you can see that the first test failed, and the 2nd test passed. This is because the afterEach block will actually reset the data for every test. I could make this where it only runs the afterEach based on the title see
+              - link "A Better Way to Control Before and After Blocks with Test Titles" [ref=e83] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/a-better-way-to-control-before-and-after-blocks-with-test-titles-in-playwright-test/
+              - text: article.
+            - figure [ref=e84]
+            - paragraph [ref=e85]:
+              - text: Now I could go to my
+              - code [ref=e86]: playwright.config.ts
+              - text: file and update the amount of workers that should run and set to
+              - code [ref=e87]: "1"
+              - text: ", or change fullyParallel option to"
+              - code [ref=e88]: "false"
+              - text: but this would increase the full time of all of my tests running.
+            - paragraph [ref=e89]: The good news is there is another option, to limit the way our tests run from within a test.describe() block.
+            - heading "Running the tests with \"default\" configuration option" [level=2] [ref=e90]
+            - paragraph [ref=e91]:
+              - text: To configure this add the line
+              - code [ref=e92]: "test.describe.configure({ mode: \"default\" });"
+              - text: within your describe block. The
+              - link "docs" [ref=e93] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/api/class-test?ref=playwrightsolutions.com#test-describe-configure
+              - text: for this walk through the different options.
+            - code [ref=e95]: "//tests/account/account.spec.ts import { test, expect } from \"@playwright/test\"; test.describe(\"Customer 01 my account specs\", () => { test.describe.configure({ mode: \"default\" }); ..."
+            - paragraph [ref=e96]: This default option will allow tests to run one at a time in order within the describe block of a spec file. This allows you to override the default configuration for the rest of your test suite for a specific set of tests.
+            - figure [ref=e97]
+            - paragraph [ref=e98]: With this in place your tests are all passing again, and I still get the benefit of having the rest of my automation suite running in parallel.
+            - paragraph [ref=e99]:
+              - text: There is another option for achieving the same result it is setting the
+              - code [ref=e100]: "test.describe.configure({ mode: \"serial\" });"
+              - text: The difference with using serial is if any of the tests fail while running in serial mode, the following tests that are apart of the describe block will be
+              - code [ref=e101]: skipped
+              - text: . This could be useful if you have tests that build data for other tests, but that is a practice I would not recommend. Each test should create and cleanup it's own test data.
+            - heading "Big Thanks" [level=2] [ref=e102]
+            - paragraph [ref=e103]:
+              - text: One thing to note is the option
+              - code [ref=e104]: default
+              - text: must be specified in the test if you want to use it, which is a bit counter intuitive as
+              - link "Stefan Judis" [ref=e105] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/stefan-judis/?ref=playwrightsolutions.com
+              - text: in a recent
+              - link "LinkedIn post" [ref=e106] [cursor=pointer]:
+                - /url: https://www.linkedin.com/posts/stefan-judis_when-building-your-playwright-test-suite-activity-7283265466742013952-rW1u?utm_source=share&utm_medium=member_desktop
+              - text: . He also covered this in a recent YouTube video. If you have a youtube account I would highly recommend subscribing to his channel, there has been some great Playwright content shared there!
+            - figure [ref=e107]:
+              - iframe [ref=e110]:
+                - generic "YouTube Video Player" [ref=f52e3]:
+                  - generic [ref=f52e5]:
+                    - link "Photo image of Checkly" [ref=f52e8] [cursor=pointer]:
+                      - /url: https://www.youtube.com/channel/UCJ4R8axyKuPZdJ7lFll3SKQ?embeds_referring_euri=https%3A%2F%2Fplaywrightsolutions.com%2F
+                    - link "How to Run Playwright Test in \"Parallel,\" \"Serial,\" or \"Default\" Mode" [ref=f52e11] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=8NIm1QCUXE0
+                    - button "Share" [ref=f52e13] [cursor=pointer]:
+                      - generic [ref=f52e14]:
+                        - img
+                      - generic [ref=f52e15]: Share
+                  - button "Play" [ref=f52e18] [cursor=pointer]:
+                    - img
+                  - link "Watch on YouTube" [ref=f52e19] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=8NIm1QCUXE0&embeds_referring_euri=https%3A%2F%2Fplaywrightsolutions.com%2F
+                    - generic [ref=f52e20]: Watch on
+                    - generic [ref=f52e21]:
+                      - img
+            - separator [ref=e111]
+            - paragraph [ref=e112]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e113] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e114] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e116]: If this solution was helpful show some love!
+      - generic [ref=e117]:
+        - img [ref=e118]
+        - generic [ref=e121]: "8"
+      - paragraph
+      - generic [ref=e123]:
+        - heading "Sign up for more like this." [level=2] [ref=e124]
+        - link "Enter your email Subscribe" [ref=e125] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e126]: Enter your email
+          - generic [ref=e127]: Subscribe
+      - complementary [ref=e128]:
+        - generic [ref=e129]:
+          - article [ref=e130]:
+            - generic [ref=e131]:
+              - 'link "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e132] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e134]'
+                - generic [ref=e135]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e136]:
+                - time [ref=e137]: Feb 18, 2025
+                - generic [ref=e138]: 3 min read
+          - article [ref=e139]:
+            - generic [ref=e140]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e141] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e143]'
+                - generic [ref=e144]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e145]:
+                - time [ref=e146]: Feb 10, 2025
+                - generic [ref=e147]: 6 min read
+          - article [ref=e148]:
+            - generic [ref=e149]:
+              - link "End of 2024 Announcements I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the \"Learning Playwright\" Course that I've been working on the last few months was released. I've been" [ref=e150] [cursor=pointer]:
+                - /url: /end-of-2024-announcements/
+                - heading "End of 2024 Announcements" [level=2] [ref=e152]
+                - generic [ref=e153]: I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the "Learning Playwright" Course that I've been working on the last few months was released. I've been
+              - generic [ref=e154]:
+                - time [ref=e155]: Dec 10, 2024
+                - generic [ref=e156]: 1 min read
+    - contentinfo [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - link "Playwright Solutions" [ref=e160] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e161]:
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - link "Data & privacy" [ref=e164] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e165]:
+              - link "Contact" [ref=e166] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e168] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e169]:
+    - generic [ref=f53e3] [cursor=pointer]:
+      - img [ref=f53e4]
+      - generic [ref=f53e8]: Subscribe

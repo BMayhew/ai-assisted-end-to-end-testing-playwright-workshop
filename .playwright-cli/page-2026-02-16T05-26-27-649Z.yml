@@ -1,0 +1,117 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Sign in" [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+            - menuitem "cart" [ref=e42]:
+              - link "cart" [ref=e43] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e45]
+                - generic [ref=e47]: "1"
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e51]
+            - text: EN
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - paragraph [ref=e56]:
+        - img "Banner" [ref=e57]
+      - separator [ref=e58]
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - heading "Sort" [level=4] [ref=e61]:
+          - img [ref=e63]
+          - text: Sort
+        - separator [ref=e65]
+        - combobox "sort" [ref=e68]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading "Price Range" [level=4] [ref=e69]:
+          - img [ref=e71]
+          - text: Price Range
+        - separator [ref=e73]
+        - generic "ngx-slider" [ref=e75]:
+          - slider "ngx-slider" [ref=e80] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=e81] [cursor=pointer]
+          - generic [ref=e82]: "0"
+          - generic [ref=e83]: "200"
+          - generic [ref=e84]: "1"
+          - generic [ref=e85]: "100"
+        - heading "Search" [level=4] [ref=e87]:
+          - img [ref=e89]
+          - text: Search
+        - separator [ref=e91]
+        - generic [ref=e93]:
+          - generic [ref=e94]: Search
+          - textbox "Search" [ref=e95]
+          - button "X" [ref=e96] [cursor=pointer]
+          - button "Search" [ref=e97] [cursor=pointer]
+        - heading "Filters" [level=4] [ref=e98]:
+          - img [ref=e100]
+          - text: Filters
+        - separator [ref=e102]
+        - heading "By category:" [level=4] [ref=e103]
+        - group "Categories":
+          - generic [ref=e104]: Categories
+        - heading "By brand:" [level=4] [ref=e106]
+        - group "Brands":
+          - generic [ref=e107]: Brands
+        - heading "Sustainability:" [level=4] [ref=e109]
+        - group "Eco-Friendly Products" [ref=e110]:
+          - generic [ref=e111]: Eco-Friendly Products
+          - generic [ref=e113]:
+            - checkbox "Show only eco-friendly products" [ref=e114]
+            - text: Show only eco-friendly products
+      - generic [ref=e116]:
+        - heading [level=5] [ref=e120]
+        - heading [level=5] [ref=e126]
+        - heading [level=5] [ref=e132]
+        - heading [level=5] [ref=e138]
+        - heading [level=5] [ref=e144]
+        - heading [level=5] [ref=e150]
+        - heading [level=5] [ref=e156]
+        - heading [level=5] [ref=e162]
+  - paragraph [ref=e167]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e168] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e169] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e170] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e171] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e173] [cursor=pointer]:
+    - img [ref=e174]

@@ -1,0 +1,99 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Jane Doe" [ref=e67]:
+              - button "Jane Doe" [ref=e68] [cursor=pointer]
+            - menuitem "cart" [ref=e40]:
+              - link "cart" [ref=e41] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e43]
+                - generic [ref=e45]: "1"
+          - button [ref=e47] [cursor=pointer]:
+            - img [ref=e49]
+            - text: EN
+  - generic [ref=e53]:
+    - list [ref=e55]:
+      - listitem [ref=e106]:
+        - generic [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: Cart
+          - generic [ref=e109]: "1"
+      - listitem [ref=e118]:
+        - generic [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: Sign in
+          - generic [ref=e121]: "2"
+      - listitem:
+        - generic:
+          - generic: Billing Address
+          - generic: "3"
+      - listitem:
+        - generic:
+          - generic: Payment
+          - generic: "4"
+    - generic [ref=e126]:
+      - heading "Billing Address" [level=3] [ref=e127]
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]: Street
+          - textbox "Street" [ref=e132]:
+            - /placeholder: Your Street *
+            - text: Test street 98
+        - generic [ref=e133]:
+          - generic [ref=e134]: City
+          - textbox "City" [ref=e135]:
+            - /placeholder: Your City *
+            - text: Vienna
+        - generic [ref=e136]:
+          - generic [ref=e137]: State
+          - textbox "State" [ref=e138]:
+            - /placeholder: State *
+            - text: Vienna
+        - generic [ref=e139]:
+          - generic [ref=e140]: Country
+          - textbox "Country" [ref=e141]:
+            - /placeholder: Your country *
+            - text: Austria
+        - generic [ref=e142]:
+          - generic [ref=e143]: Postal code
+          - textbox "Postal code" [active] [ref=e144]:
+            - /placeholder: Your Postcode *
+            - text: "1010"
+      - button "Proceed to checkout" [ref=e146] [cursor=pointer]
+  - paragraph [ref=e58]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e59] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e60] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e61] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e62] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e64] [cursor=pointer]:
+    - img [ref=e65]

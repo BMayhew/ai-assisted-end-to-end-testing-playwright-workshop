@@ -1,0 +1,431 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "Howdy QA Logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Howdy QA Logo" [ref=e9]
+        - generic [ref=e10]:
+          - link "Services" [ref=e11] [cursor=pointer]:
+            - /url: "#services"
+          - link "Benefits" [ref=e12] [cursor=pointer]:
+            - /url: "#benefits"
+          - link "Glossary" [ref=e13] [cursor=pointer]:
+            - /url: /glossary
+          - link "FAQ" [ref=e14] [cursor=pointer]:
+            - /url: "#faq"
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Get Started" [ref=e16] [cursor=pointer]:
+            - /url: "#contact"
+            - button "Get Started" [ref=e17]
+    - main [ref=e18]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - img "Howdy QA Logo" [ref=e24]
+            - heading "Playwright Test Automation Consultancy" [level=2] [ref=e25]
+            - paragraph [ref=e26]: Save time and reduce testing costs with our expert Playwright automation services. From migration to training, we help you build a quality testing culture.
+          - generic [ref=e27]:
+            - link "Start Free Trial" [ref=e28] [cursor=pointer]:
+              - /url: "#contact"
+              - button "Start Free Trial" [ref=e29]:
+                - text: Start Free Trial
+                - img
+            - link "Learn More" [ref=e30] [cursor=pointer]:
+              - /url: "#services"
+              - button "Learn More" [ref=e31]
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - generic [ref=e37]: 1 Week Free Trial
+            - generic [ref=e38]:
+              - img [ref=e39]
+              - generic [ref=e42]: Free Coding Guarantee
+        - img "Playwright test automation workflow visualization" [ref=e44]
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "What services do we offer?" [level=2] [ref=e49]
+          - paragraph [ref=e50]: Comprehensive Playwright test automation consultancy—including automated accessibility testing with axe-core + Playwright— designed to transform your testing approach and accelerate your development cycle.
+        - generic [ref=e51]:
+          - generic [ref=e53]:
+            - img [ref=e54]
+            - heading "Save Time" [level=3] [ref=e57]
+            - paragraph [ref=e58]: Reduce automation maintenance time by up to 70%
+          - generic [ref=e60]:
+            - img [ref=e61]
+            - heading "Lower Costs" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Decrease overall testing costs with efficient automation
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - img [ref=e68]
+              - heading "From Zero to Automated with Playwright" [level=3] [ref=e73]
+              - paragraph [ref=e74]:
+                - text: Go from zero test automation to a robust, maintainable Playwright test suite—fast. We help teams with no automation experience launch their first suite, establish best practices, and achieve rapid quality gains.
+                - link "Playwright docs" [ref=e76] [cursor=pointer]:
+                  - /url: https://playwright.dev/docs/test-intro
+            - list [ref=e78]:
+              - listitem [ref=e79]: Playwright test suite setup from scratch
+              - listitem [ref=e81]: Quick wins for fast feedback
+              - listitem [ref=e83]: Best practices for maintainability
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - heading "Test Automation Health Audit" [level=3] [ref=e91]
+              - paragraph [ref=e92]: Get a comprehensive review of your current test automation setup. We’ll identify bottlenecks, flaky tests, and areas for improvement, then deliver a clear action plan for boosting reliability and speed.
+            - list [ref=e94]:
+              - listitem [ref=e95]: In-depth code and process review
+              - listitem [ref=e97]: Flaky test analysis and recommendations
+              - listitem [ref=e99]: CI/CD pipeline assessment
+              - listitem [ref=e101]: Actionable improvement roadmap
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - img [ref=e105]
+              - heading "API Test Automation" [level=3] [ref=e109]
+              - paragraph [ref=e110]: Ensure your backend services are reliable and robust with automated API testing. We design and implement comprehensive API test suites for fast feedback, integration coverage, and early bug detection.
+            - list [ref=e112]:
+              - listitem [ref=e113]: REST & GraphQL API test design
+              - listitem [ref=e115]: Automated integration and regression tests
+              - listitem [ref=e117]: Fast, scalable execution in CI/CD
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - img [ref=e121]
+              - heading "CI/CD Orchestration" [level=3] [ref=e124]
+              - paragraph [ref=e125]: Set up reliable CI/CD pipelines for consistent test automation feedback.
+            - list [ref=e127]:
+              - listitem [ref=e128]: Pipeline setup
+              - listitem [ref=e130]: Test data management
+              - listitem [ref=e132]: Failure notifications
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - img [ref=e136]
+              - heading "Migration Services" [level=3] [ref=e141]
+              - paragraph [ref=e142]: Seamless migration from Selenium or Cypress to Playwright.
+            - list [ref=e144]:
+              - listitem [ref=e145]: Selenium to Playwright
+              - listitem [ref=e147]: Cypress to Playwright
+              - listitem [ref=e149]: Code review & optimization
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - heading "Training & Education" [level=3] [ref=e156]
+              - paragraph [ref=e157]: Comprehensive training programs using Playwright in conjunction withAI tools and best practices.
+            - list [ref=e159]:
+              - listitem [ref=e160]: Playwright training
+              - listitem [ref=e162]: AI tools (Claude, Copilot)
+              - listitem [ref=e164]: Quality culture development
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - img [ref=e168]
+              - heading "Test Strategy" [level=3] [ref=e172]
+              - paragraph [ref=e173]: Build comprehensive test automation strategies for your software.
+            - list [ref=e175]:
+              - listitem [ref=e176]: UI & API test design
+              - listitem [ref=e178]: Performance testing with K6
+              - listitem [ref=e180]: Reliable test creation
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - img [ref=e184]
+              - heading "Code Reviews" [level=3] [ref=e188]
+              - paragraph [ref=e189]: Expert feedback and optimization for your existing test automation code.
+            - list [ref=e191]:
+              - listitem [ref=e192]: Test code review
+              - listitem [ref=e194]: Flaky test fixes
+              - listitem [ref=e196]: Performance optimization
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - img [ref=e200]
+              - heading "Quality Culture" [level=3] [ref=e203]
+              - paragraph [ref=e204]: Establish testing best practices and quality-focused development culture.
+            - list [ref=e206]:
+              - listitem [ref=e207]: Strategy development
+              - listitem [ref=e209]: Team processes
+              - listitem [ref=e211]: Continuous improvement
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - img [ref=e215]
+              - heading "Accessibility Testing (axe-core + Playwright)" [level=3] [ref=e217]
+              - paragraph [ref=e218]:
+                - text: Integrate automated accessibility checks with axe-core in Playwright and gate PRs with WCAG A/AA thresholds.
+                - generic [ref=e219]:
+                  - link "axe-core" [ref=e220] [cursor=pointer]:
+                    - /url: https://www.deque.com/axe/core-documentation/
+                  - link "WCAG 2.1" [ref=e221] [cursor=pointer]:
+                    - /url: https://www.w3.org/TR/WCAG21/
+            - list [ref=e223]:
+              - listitem [ref=e224]: Axe-core audits for pages and components
+              - listitem [ref=e226]: WCAG 2.1 A/AA severity gating
+              - listitem [ref=e228]: CI annotations and fast developer feedback
+        - link "🎯 1 Week Free Trial | 1 Week Free Coding Guarantee Start your automation transformation risk-free" [ref=e231] [cursor=pointer]:
+          - /url: "#contact"
+          - paragraph [ref=e232]:
+            - text: 🎯 1 Week Free Trial |
+            - generic [ref=e233]: 1 Week Free Coding Guarantee
+          - paragraph [ref=e234]: Start your automation transformation risk-free
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - heading "Benefits With Howdy QA?" [level=2] [ref=e238]
+          - paragraph [ref=e239]: Transform your testing approach with proven strategies that deliver results. Our expertise helps you build faster, more reliable software.
+        - generic [ref=e240]:
+          - generic [ref=e243]:
+            - img [ref=e245]
+            - generic [ref=e250]:
+              - heading "From Zero to Automated with Playwright" [level=3] [ref=e251]
+              - paragraph [ref=e252]: Start your automation journey with Playwright. We guide teams from zero automation to a fully functional, scalable test suite, ensuring a smooth and impactful transition.
+              - text: From zero to coverage in days
+          - generic [ref=e255]:
+            - img [ref=e257]
+            - generic [ref=e259]:
+              - heading "Fast Feedback" [level=3] [ref=e260]
+              - paragraph [ref=e261]: Get reliable test results quickly with optimized Playwright automation that provides instant feedback on code changes.
+              - text: Up to 70% faster execution
+          - generic [ref=e264]:
+            - img [ref=e266]
+            - generic [ref=e268]:
+              - heading "API Test Automation" [level=3] [ref=e269]
+              - paragraph [ref=e270]: Automate your backend and integration testing with robust API test suites for REST and GraphQL. Ensure reliability, fast feedback, and scalable execution in CI/CD.
+              - text: Comprehensive API coverage
+          - generic [ref=e273]:
+            - img [ref=e275]
+            - generic [ref=e281]:
+              - heading "Accessibility Built-In" [level=3] [ref=e282]
+              - paragraph [ref=e283]: Catch a11y regressions early with axe-core integrated into Playwright and CI. Gate PRs on WCAG A/AA thresholds and deliver inclusive experiences.
+              - text: WCAG A/AA coverage
+          - generic [ref=e286]:
+            - img [ref=e288]
+            - generic [ref=e290]:
+              - heading "Reliable Tests" [level=3] [ref=e291]
+              - paragraph [ref=e292]: Eliminate flaky tests with robust automation strategies that provide consistent, trustworthy results every time.
+              - text: 95% reliability rate
+          - generic [ref=e295]:
+            - img [ref=e297]
+            - generic [ref=e301]:
+              - heading "Quality Culture" [level=3] [ref=e302]
+              - paragraph [ref=e303]: Build a sustainable testing culture with proper strategies, training, and processes that scale with your team.
+              - text: Long-term success
+          - generic [ref=e306]:
+            - img [ref=e308]
+            - generic [ref=e313]:
+              - heading "Accelerated Delivery" [level=3] [ref=e314]
+              - paragraph [ref=e315]: Ship features faster with confidence through comprehensive test coverage and automated quality gates.
+              - text: 50% faster releases
+        - generic [ref=e316]:
+          - heading "Our Quality Culture Development Process" [level=3] [ref=e317]
+          - generic [ref=e318]:
+            - generic [ref=e319]:
+              - img [ref=e320]
+              - generic [ref=e323]: From Zero to Automated with Playwright
+            - generic [ref=e324]:
+              - img [ref=e325]
+              - generic [ref=e328]: Establishing a Test Automation Strategy
+            - generic [ref=e329]:
+              - img [ref=e330]
+              - generic [ref=e333]: Playwright UI and API Test Design
+            - generic [ref=e334]:
+              - img [ref=e335]
+              - generic [ref=e338]: API test automation for REST & GraphQL
+            - generic [ref=e339]:
+              - img [ref=e340]
+              - generic [ref=e343]: Axe-core accessibility checks (WCAG A/AA)
+            - generic [ref=e344]:
+              - img [ref=e345]
+              - generic [ref=e348]: Creating test data management plans
+            - generic [ref=e349]:
+              - img [ref=e350]
+              - generic [ref=e353]: Setting up consistent CI pipelines
+            - generic [ref=e354]:
+              - img [ref=e355]
+              - generic [ref=e358]: Implementing reporting & notifications
+            - generic [ref=e359]:
+              - img [ref=e360]
+              - generic [ref=e363]: Maintaining and fixing flaky tests and optimizations
+        - generic [ref=e365]:
+          - heading "Ready to Transform Your Testing?" [level=3] [ref=e366]
+          - paragraph [ref=e367]: Start with our free trial and experience the difference expert automation makes.
+          - link "Start Free Trial Today" [ref=e368] [cursor=pointer]:
+            - /url: "#contact"
+            - button "Start Free Trial Today" [ref=e369]:
+              - text: Start Free Trial Today
+              - img
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - heading "Why Choose Us?" [level=2] [ref=e373]
+          - paragraph [ref=e374]: Partner with industry leaders in Playwright test automation. Our expertise, proven results, and community leadership set us apart.
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]:
+              - generic [ref=e378]:
+                - link "Butch Mayhew LinkedIn" [ref=e379] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/butchmayhew/
+                  - img "Butch Mayhew LinkedIn" [ref=e380]
+                  - img [ref=e382]
+                - heading "Butch Mayhew" [level=3] [ref=e385]
+                - img [ref=e386]
+              - paragraph [ref=e389]: Playwright Ambassador
+            - list [ref=e391]:
+              - listitem [ref=e392]: Microsoft MVP
+              - listitem [ref=e393]:
+                - text: Creator of
+                - link "playwrightsolutions.com" [ref=e394] [cursor=pointer]:
+                  - /url: https://playwrightsolutions.com/
+              - listitem [ref=e395]: Author of 2 LinkedIn Learning Courses
+              - listitem [ref=e396]: Speaker at major QA & Dev conferences
+              - listitem [ref=e397]: 10+ years in test automation
+              - listitem [ref=e398]: Helped 1000+ individuals learn and scale Playwright test suites
+              - listitem [ref=e399]: Advocate for quality culture and modern testing practices
+          - generic [ref=e400]:
+            - generic [ref=e401]:
+              - img [ref=e402]
+              - generic [ref=e405]: Recognized Industry Leader
+            - paragraph [ref=e406]: Our consultancy is trusted by startups and enterprises alike for delivering fast, reliable, and maintainable Playwright automation solutions. We combine technical excellence with a passion for helping teams succeed.
+            - list [ref=e407]:
+              - listitem [ref=e408]: Proven track record of reducing test maintenance
+              - listitem [ref=e409]: Accelerated delivery for dozens of SaaS and product teams
+              - listitem [ref=e410]: Community-driven, always up-to-date with the latest Playwright features
+      - generic [ref=e412]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e413]
+        - generic [ref=e414]:
+          - generic [ref=e415]:
+            - heading "What does the Free Coding Guarantee cover?" [level=3] [ref=e416]
+            - paragraph [ref=e417]: During the first week, if our code doesn't meet agreed acceptance criteria, we fix it at no additional cost. This de-risks onboarding and ensures value from day one.
+          - generic [ref=e418]:
+            - heading "Do you offer a free trial?" [level=3] [ref=e419]
+            - paragraph [ref=e420]: Yes. We provide a 1-week free trial to prove outcomes before you commit. You'll see working tests, a plan for coverage, and clear next steps.
+          - generic [ref=e421]:
+            - heading "How does a Playwright migration work?" [level=3] [ref=e422]
+            - paragraph [ref=e423]: We audit your current tests, prioritize high-value scenarios, stand up Playwright with best practices, and migrate iteratively—unlocking fast feedback in CI while reducing flakiness.
+          - generic [ref=e424]:
+            - heading "How quickly can we see first results?" [level=3] [ref=e425]
+            - paragraph [ref=e426]: Within the first week. We target a proof of value with runnable Playwright tests in CI so you can assess stability and speed immediately.
+          - generic [ref=e427]:
+            - heading "Which CI providers do you support?" [level=3] [ref=e428]
+            - paragraph [ref=e429]: We support GitHub Actions, GitLab CI, CircleCI, Azure Pipelines, and Jenkins. We also provide containerized runners for consistent, reproducible execution.
+          - generic [ref=e430]:
+            - heading "Who owns the code produced?" [level=3] [ref=e431]
+            - paragraph [ref=e432]: You retain full IP ownership. All code is committed to your repositories under your license and control.
+          - generic [ref=e433]:
+            - heading "What languages and frameworks are supported?" [level=3] [ref=e434]
+            - paragraph [ref=e435]: Primary focus is TypeScript with Playwright. We test React, Vue, Angular, and server-rendered apps, plus REST and GraphQL APIs for integration coverage.
+      - generic [ref=e437]:
+        - heading "Ready to see results for your team?" [level=3] [ref=e438]
+        - paragraph [ref=e439]: Join innovative companies like NiBuild and Triad—start your Playwright automation journey today.
+        - link "Get Started Now" [ref=e440] [cursor=pointer]:
+          - /url: "#contact"
+          - button "Get Started Now" [ref=e441]
+      - generic [ref=e443]:
+        - generic [ref=e444]:
+          - heading "Get Started Today" [level=2] [ref=e445]
+          - paragraph [ref=e446]: Ready to revolutionize your test automation? Contact us for a free consultation and discover how we can help transform your testing strategy.
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - generic [ref=e449]:
+              - generic [ref=e451]:
+                - img [ref=e452]
+                - heading "Contact Information" [level=3] [ref=e455]
+              - generic [ref=e457]:
+                - paragraph [ref=e458]: Email
+                - link "butch@howdyqa.com" [ref=e459] [cursor=pointer]:
+                  - /url: mailto:butch@howdyqa.com
+            - generic [ref=e460]:
+              - generic [ref=e462]:
+                - img [ref=e463]
+                - heading "What to Expect" [level=3] [ref=e466]
+              - list [ref=e468]:
+                - listitem [ref=e469]:
+                  - img [ref=e470]
+                  - generic [ref=e473]: Free initial consultation
+                - listitem [ref=e474]:
+                  - img [ref=e475]
+                  - generic [ref=e478]: Custom strategy proposal within 3 days of consultation
+                - listitem [ref=e479]:
+                  - img [ref=e480]
+                  - generic [ref=e483]: 1 week free trial to prove value
+                - listitem [ref=e484]:
+                  - img [ref=e485]
+                  - generic [ref=e488]: 1 week free coding guarantee
+            - generic [ref=e490]:
+              - generic [ref=e491]:
+                - img [ref=e492]
+                - heading "Quick Start Options" [level=3] [ref=e494]
+              - generic [ref=e495]:
+                - paragraph [ref=e496]:
+                  - text: 🚀
+                  - strong [ref=e497]: "Migration Project:"
+                  - text: Scope out and and begin migration 2 weeks
+                - paragraph [ref=e498]:
+                  - text: 📚
+                  - strong [ref=e499]: "Training Program:"
+                  - text: Custom duration based on team size
+                - paragraph [ref=e500]:
+                  - text: 🔧
+                  - strong [ref=e501]: "CI/CD Setup:"
+                  - text: 1-2 weeks implementation
+                - paragraph [ref=e502]:
+                  - text: 📊
+                  - strong [ref=e503]: "Strategy Consultation:"
+                  - text: 1-3 days assessment
+          - generic [ref=e504]:
+            - generic [ref=e505]:
+              - heading "Send us a message" [level=3] [ref=e506]
+              - paragraph [ref=e507]: Tell us about your testing challenges and we'll get back to you quickly.
+            - generic [ref=e509]:
+              - generic [ref=e510]:
+                - generic [ref=e511]:
+                  - generic [ref=e512]: Name
+                  - textbox "Name" [ref=e513]:
+                    - /placeholder: Your name
+                - generic [ref=e514]:
+                  - generic [ref=e515]: Email
+                  - textbox "Email" [ref=e516]:
+                    - /placeholder: your@email.com
+              - generic [ref=e517]:
+                - generic [ref=e518]: Company
+                - textbox "Company" [ref=e519]:
+                  - /placeholder: Your company name
+              - generic [ref=e520]:
+                - generic [ref=e521]: Current Testing Tools
+                - textbox "Current Testing Tools" [ref=e522]:
+                  - /placeholder: e.g., Selenium, Cypress, Jest, etc.
+              - generic [ref=e523]:
+                - generic [ref=e524]: Project Details
+                - textbox "Project Details" [ref=e525]:
+                  - /placeholder: Tell us about your testing challenges, team size, and what you'd like to achieve...
+              - button "Send Message" [ref=e526] [cursor=pointer]
+    - contentinfo [ref=e527]:
+      - generic [ref=e528]:
+        - generic [ref=e529]:
+          - generic [ref=e530]:
+            - generic [ref=e531]:
+              - img "Howdy QA Logo"
+            - paragraph [ref=e532]: Expert Playwright test automation consultancy helping teams build reliable, efficient testing strategies that scale.
+          - generic [ref=e533]:
+            - heading "Services" [level=3] [ref=e534]
+            - list [ref=e535]:
+              - listitem [ref=e536]:
+                - link "Migration Services" [ref=e537] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e538]:
+                - link "CI/CD Orchestration" [ref=e539] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e540]:
+                - link "Training & Education" [ref=e541] [cursor=pointer]:
+                  - /url: "#services"
+              - listitem [ref=e542]:
+                - link "Code Reviews" [ref=e543] [cursor=pointer]:
+                  - /url: "#services"
+          - generic [ref=e544]:
+            - heading "Company" [level=3] [ref=e545]
+            - list [ref=e546]:
+              - listitem [ref=e547]:
+                - link "Partners & Reviews" [ref=e548] [cursor=pointer]:
+                  - /url: /partners
+              - listitem [ref=e549]:
+                - text: "Email:"
+                - link "butch@howdyqa.com" [ref=e550] [cursor=pointer]:
+                  - /url: mailto:butch@howdyqa.com
+              - listitem [ref=e551]: Free trial available
+        - paragraph [ref=e553]: © 2026 Howdy QA. All rights reserved. | Playwright Test Automation Consultancy

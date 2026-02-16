@@ -1,0 +1,101 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Jane Doe" [ref=e67]:
+              - button "Jane Doe" [ref=e68] [cursor=pointer]
+            - menuitem "cart" [ref=e40]:
+              - link "cart" [ref=e41] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e43]
+                - generic [ref=e45]: "1"
+          - button [ref=e47] [cursor=pointer]:
+            - img [ref=e49]
+            - text: EN
+  - generic [ref=e53]:
+    - list [ref=e55]:
+      - listitem:
+        - generic:
+          - generic: Cart
+          - generic: "1"
+      - listitem:
+        - generic:
+          - generic: Sign in
+          - generic: "2"
+      - listitem:
+        - generic:
+          - generic: Billing Address
+          - generic: "3"
+      - listitem:
+        - generic:
+          - generic: Payment
+          - generic: "4"
+    - generic [ref=e72]:
+      - table [ref=e73]:
+        - rowgroup [ref=e74]:
+          - row "Item Quantity Price Total" [ref=e75]:
+            - columnheader "Item" [ref=e76]
+            - columnheader "Quantity" [ref=e77]
+            - columnheader "Price" [ref=e78]
+            - columnheader "Total" [ref=e79]
+            - columnheader [ref=e80]
+        - rowgroup [ref=e81]:
+          - row "Bolt Cutters Quantity for Bolt Cutters $48.41 $48.41" [ref=e82]:
+            - cell "Bolt Cutters" [ref=e83]:
+              - generic [ref=e84]: Bolt Cutters
+            - cell "Quantity for Bolt Cutters" [ref=e85]:
+              - generic [ref=e86]: Quantity for Bolt Cutters
+              - spinbutton "Quantity for Bolt Cutters" [ref=e87]: "1"
+            - cell "$48.41" [ref=e88]
+            - cell "$48.41" [ref=e89]
+            - cell [ref=e90]:
+              - img [ref=e93] [cursor=pointer]
+        - rowgroup [ref=e95]:
+          - row "Total $48.41" [ref=e96]:
+            - cell [ref=e97]
+            - cell [ref=e98]
+            - cell "Total" [ref=e99]:
+              - strong [ref=e100]: Total
+            - cell "$48.41" [ref=e101]
+            - cell [ref=e102]
+      - generic [ref=e103]:
+        - button "Continue Shopping" [ref=e104] [cursor=pointer]
+        - button "Proceed to checkout" [ref=e105] [cursor=pointer]
+  - paragraph [ref=e58]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e59] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e60] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e61] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e62] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e64] [cursor=pointer]:
+    - img [ref=e65]

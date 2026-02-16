@@ -1,0 +1,109 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+          - button [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+            - text: EN
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - paragraph [ref=e48]:
+        - img "Banner" [ref=e49]
+      - separator [ref=e50]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Sort" [level=4] [ref=e53]:
+          - img [ref=e55]
+          - text: Sort
+        - separator [ref=e57]
+        - combobox "sort" [ref=e60]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading "Price Range" [level=4] [ref=e61]:
+          - img [ref=e63]
+          - text: Price Range
+        - separator [ref=e65]
+        - generic "ngx-slider" [ref=e67]:
+          - slider "ngx-slider" [ref=e72] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=e73] [cursor=pointer]
+          - generic [ref=e74]: "0"
+          - generic [ref=e75]: "200"
+          - generic [ref=e76]: "1"
+          - generic [ref=e77]: "100"
+        - heading "Search" [level=4] [ref=e79]:
+          - img [ref=e81]
+          - text: Search
+        - separator [ref=e83]
+        - generic [ref=e85]:
+          - generic [ref=e86]: Search
+          - textbox "Search" [ref=e87]
+          - button "X" [ref=e88] [cursor=pointer]
+          - button "Search" [ref=e89] [cursor=pointer]
+        - heading "Filters" [level=4] [ref=e90]:
+          - img [ref=e92]
+          - text: Filters
+        - separator [ref=e94]
+        - heading "By category:" [level=4] [ref=e95]
+        - group "Categories":
+          - generic [ref=e96]: Categories
+        - heading "By brand:" [level=4] [ref=e98]
+        - group "Brands":
+          - generic [ref=e99]: Brands
+        - heading "Sustainability:" [level=4] [ref=e101]
+        - group "Eco-Friendly Products" [ref=e102]:
+          - generic [ref=e103]: Eco-Friendly Products
+          - generic [ref=e105]:
+            - checkbox "Show only eco-friendly products" [ref=e106]
+            - text: Show only eco-friendly products
+      - generic [ref=e108]:
+        - heading [level=5] [ref=e112]
+        - heading [level=5] [ref=e118]
+        - heading [level=5] [ref=e124]
+        - heading [level=5] [ref=e130]
+        - heading [level=5] [ref=e136]
+        - heading [level=5] [ref=e142]
+        - heading [level=5] [ref=e148]
+        - heading [level=5] [ref=e154]
+  - paragraph [ref=e159]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e160] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e161] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e162] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e163] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e165] [cursor=pointer]:
+    - img [ref=e166]

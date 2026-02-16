@@ -1,0 +1,254 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Playwright Practitioner" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: Playwright Practitioner
+        - generic [ref=e7]:
+          - link "How We Work" [ref=e8] [cursor=pointer]:
+            - /url: "#methodology"
+          - link "Team" [ref=e9] [cursor=pointer]:
+            - /url: "#team"
+          - link "FAQ" [ref=e10] [cursor=pointer]:
+            - /url: "#faq"
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about.html
+          - link "Let's Talk" [ref=e12] [cursor=pointer]:
+            - /url: https://cal.com/howdyqa/strategy-call
+  - main [ref=e13]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - img [ref=e18]
+        - text: AI-Powered Training
+      - heading "We Don't Just Teach Playwright. We Embed With Your Team." [level=1] [ref=e20]:
+        - text: We Don't Just Teach Playwright.
+        - text: We Embed With Your Team.
+      - paragraph [ref=e21]: AI-augmented test automation training that works in your codebase, with your challenges, until your team is fully self-sufficient.
+      - link "Let's Talk" [ref=e23] [cursor=pointer]:
+        - /url: https://cal.com/howdyqa/strategy-call
+        - text: Let's Talk
+        - img [ref=e24]
+      - paragraph [ref=e26]: No commitment. Let's see if we're a good fit.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Sound Familiar?" [level=2] [ref=e30]
+        - paragraph [ref=e31]: If you're struggling with any of these, you're not alone.
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - img [ref=e36]
+          - generic [ref=e38]:
+            - heading "Manual Testing Can't Keep Up" [level=3] [ref=e39]
+            - paragraph [ref=e40]: Your release velocity is increasing, but manual testing is becoming a bottleneck that delays every deploy.
+        - generic [ref=e42]:
+          - img [ref=e44]
+          - generic [ref=e46]:
+            - heading "Failed Automation Attempts" [level=3] [ref=e47]
+            - paragraph [ref=e48]: You've tried automation before. Maybe Selenium, maybe something else. It became unmaintainable and was abandoned.
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - generic [ref=e54]:
+            - heading "Team Lacks the Expertise" [level=3] [ref=e55]
+            - paragraph [ref=e56]: Your team knows the product but doesn't have deep test automation experience. Online courses haven't closed the gap.
+        - generic [ref=e58]:
+          - img [ref=e60]
+          - generic [ref=e62]:
+            - heading "No Clear Path Forward" [level=3] [ref=e63]
+            - paragraph [ref=e64]: You know you need automation, but you're not sure where to start or how to build something that will actually last.
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - heading "The Embedded Approach" [level=2] [ref=e68]
+        - paragraph [ref=e69]: We don't hand you a course and wish you luck. We roll up our sleeves and work alongside your team until they're experts.
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - img [ref=e73]
+          - heading "Your Codebase, Not Examples" [level=3] [ref=e75]
+          - paragraph [ref=e76]: We work directly in your repository, writing tests for your actual application. No generic tutorials or toy projects. Real solutions for real challenges.
+        - generic [ref=e77]:
+          - img [ref=e79]
+          - heading "Pair Programming, Not Lectures" [level=3] [ref=e81]
+          - paragraph [ref=e82]: Side-by-side coding sessions where your team learns by doing. Immediate feedback, real-time problem solving, and skills that stick.
+        - generic [ref=e83]:
+          - img [ref=e85]
+          - heading "Knowledge Transfer, Not Dependency" [level=3] [ref=e87]
+          - paragraph [ref=e88]: Our goal is your team's independence. We provide written progress reports and ensure your team can maintain and extend tests on their own.
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]: Modern Approach
+        - heading "AI-Augmented Test Automation" [level=2] [ref=e94]
+        - paragraph [ref=e95]: AI is transforming how tests are written and maintained. We teach your team to leverage these tools effectively, giving them a significant productivity advantage.
+        - list [ref=e96]:
+          - listitem [ref=e97]:
+            - img [ref=e98]
+            - generic [ref=e100]:
+              - text: AI-Assisted Test Writing
+              - paragraph [ref=e101]: Using Copilot, Claude, and other tools to write tests faster without sacrificing quality.
+          - listitem [ref=e102]:
+            - img [ref=e103]
+            - generic [ref=e105]:
+              - text: AI for Test Maintenance
+              - paragraph [ref=e106]: Fixing flaky tests, updating selectors, and keeping your suite healthy with AI assistance.
+          - listitem [ref=e107]:
+            - img [ref=e108]
+            - generic [ref=e110]:
+              - text: Test Generation from Specs
+              - paragraph [ref=e111]: Generating test scaffolds from requirements and user stories using AI.
+      - generic [ref=e112]:
+        - generic [ref=e118]: checkout.spec.ts
+        - code [ref=e120]: "import { test, expect } from '@playwright/test'; test('user completes checkout', async ({ page }) => { // AI-generated test with your patterns await page.goto('/cart'); await page.getByRole('button', { name: 'Checkout' }).click(); await expect(page).toHaveURL('/success'); });"
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - heading "How We Work Together" [level=2] [ref=e124]
+        - paragraph [ref=e125]: A structured approach designed for real results, not just hours billed.
+      - generic [ref=e127]:
+        - generic [ref=e129]:
+          - generic [ref=e130]: "1"
+          - generic [ref=e131]:
+            - heading "Discovery Workshop" [level=3] [ref=e132]
+            - paragraph [ref=e133]: We start with a hands-on Playwright workshop with your team, broken into digestible sessions. This helps us assess readiness and identify your automation champions.
+            - list [ref=e134]:
+              - listitem [ref=e135]: • Interactive sessions, not passive lectures
+              - listitem [ref=e136]: • Overview of your specific context and challenges
+              - listitem [ref=e137]: • Introduction to Playwright tooling with hands-on exercises
+        - generic [ref=e138]:
+          - generic [ref=e139]: "2"
+          - generic [ref=e140]:
+            - heading "Embedded Coaching" [level=3] [ref=e141]
+            - paragraph [ref=e142]: We work in 4-week cycles, embedding with your team through PR reviews, 1:1 pairing sessions, and continuous feedback.
+            - list [ref=e143]:
+              - listitem [ref=e144]: • Regular pairing sessions with team members
+              - listitem [ref=e145]: • Detailed PR reviews with actionable feedback
+              - listitem [ref=e146]: • Written progress reports to leadership
+              - listitem [ref=e147]: • Re-evaluation at end of each cycle
+        - generic [ref=e148]:
+          - generic [ref=e149]: "3"
+          - generic [ref=e150]:
+            - heading "Independence" [level=3] [ref=e151]
+            - paragraph [ref=e152]: Your team transitions to full self-sufficiency. We reduce involvement as your team gains confidence and capability.
+            - list [ref=e153]:
+              - listitem [ref=e154]: • Team maintains and extends tests independently
+              - listitem [ref=e155]: • Optional ongoing office hours or group sessions
+              - listitem [ref=e156]: • Documentation and best practices tailored to your stack
+    - generic [ref=e158]:
+      - generic [ref=e159]:
+        - heading "Meet Your Trainers" [level=2] [ref=e160]
+        - paragraph [ref=e161]: Deep expertise in Playwright and a passion for helping teams succeed.
+      - generic [ref=e162]:
+        - generic [ref=e164]:
+          - img "Butch Mayhew" [ref=e165]
+          - generic [ref=e166]:
+            - heading "Butch Mayhew" [level=3] [ref=e167]
+            - link "Butch Mayhew on LinkedIn" [ref=e168] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/butchmayhew/
+              - img [ref=e169]
+          - generic [ref=e171]:
+            - generic [ref=e172]: Playwright Ambassador
+            - generic [ref=e173]: Microsoft MVP
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - img [ref=e176]
+              - generic [ref=e178]: Creator of playwrightsolutions.com
+            - listitem [ref=e179]:
+              - img [ref=e180]
+              - text: Author of 2 LinkedIn Learning Courses
+            - listitem [ref=e182]:
+              - img [ref=e183]
+              - text: Speaker at major QA & Dev conferences
+            - listitem [ref=e185]:
+              - img [ref=e186]
+              - text: 10+ years in test automation
+            - listitem [ref=e188]:
+              - img [ref=e189]
+              - text: Helped 1,000+ individuals learn Playwright
+        - generic [ref=e192]:
+          - img "Sergei Gapanovich" [ref=e193]
+          - generic [ref=e194]:
+            - heading "Sergei Gapanovich" [level=3] [ref=e195]
+            - link "Sergei Gapanovich on LinkedIn" [ref=e196] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/sgapanovich/
+              - img [ref=e197]
+          - generic [ref=e199]:
+            - generic [ref=e200]: QA Lead
+            - generic [ref=e201]: Conference Speaker
+          - list [ref=e202]:
+            - listitem [ref=e203]:
+              - img [ref=e204]
+              - text: 6+ years building automation tooling
+            - listitem [ref=e206]:
+              - img [ref=e207]
+              - text: Built multiple frameworks from the ground up
+            - listitem [ref=e209]:
+              - img [ref=e210]
+              - text: Reduced test development time by 70%
+            - listitem [ref=e212]:
+              - img [ref=e213]
+              - text: API contract testing for 200+ endpoints
+            - listitem [ref=e215]:
+              - img [ref=e216]
+              - text: Proven track record of mentoring teams
+      - link "Learn more about our approach" [ref=e219] [cursor=pointer]:
+        - /url: /about.html
+        - text: Learn more about our approach
+        - img [ref=e220]
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - heading "Frequently Asked Questions" [level=2] [ref=e225]
+        - paragraph [ref=e226]: Answers to common questions about working with us.
+      - generic [ref=e227]:
+        - group [ref=e228]:
+          - generic "How much time does our team need to commit?" [ref=e229] [cursor=pointer]:
+            - heading "How much time does our team need to commit?" [level=3] [ref=e230]
+            - img [ref=e232]
+        - group [ref=e236]:
+          - generic "What do we get at the end of an engagement?" [ref=e237] [cursor=pointer]:
+            - heading "What do we get at the end of an engagement?" [level=3] [ref=e238]
+            - img [ref=e240]
+          - paragraph [ref=e297]: You'll have a working test automation suite in your actual codebase, team members trained to maintain and extend those tests, documentation and best practices tailored to your stack, and written progress reports with recommendations for continued growth.
+        - group [ref=e242]:
+          - generic "What tech stack do you work with?" [ref=e243] [cursor=pointer]:
+            - heading "What tech stack do you work with?" [level=3] [ref=e244]
+            - img [ref=e246]
+          - paragraph [ref=e299]: We focus exclusively on JavaScript/TypeScript Playwright. We believe in going deep on one tool rather than being generalists. Playwright works with any JavaScript framework your application uses, and our deep expertise means we can solve complex problems faster.
+        - group [ref=e248]:
+          - generic "What size teams do you work with?" [ref=e249] [cursor=pointer]:
+            - heading "What size teams do you work with?" [level=3] [ref=e250]
+            - img [ref=e252]
+          - paragraph [ref=e301]: "We work with teams of all sizes: startups building their first automation suite, mid-size teams scaling existing efforts, and enterprise teams standardizing on Playwright. Our approach adapts to your team's size and needs."
+        - group [ref=e254]:
+          - generic "What if we already have tests in another framework?" [ref=e255] [cursor=pointer]:
+            - heading "What if we already have tests in another framework?" [level=3] [ref=e256]
+            - img [ref=e258]
+          - paragraph [ref=e303]: We can help with migration strategy from Selenium, Cypress, or other frameworks. We typically recommend a gradual migration approach, running frameworks in parallel during the transition period. This minimizes risk while your team builds Playwright proficiency.
+        - group [ref=e260]:
+          - generic "What happens after the engagement ends?" [ref=e261] [cursor=pointer]:
+            - heading "What happens after the engagement ends?" [level=3] [ref=e262]
+            - img [ref=e264]
+          - paragraph [ref=e305]: Your team will be self-sufficient to continue building and maintaining your test suite. We re-evaluate at the end of each 4-week cycle, so you can choose to extend, reduce, or conclude the engagement. Optional ongoing support like office hours is available if needed.
+        - group [ref=e266]:
+          - generic "Do you work remotely or on-site?" [active] [ref=e267] [cursor=pointer]:
+            - heading "Do you work remotely or on-site?" [level=3] [ref=e268]
+            - img [ref=e270]
+          - paragraph [ref=e307]: We work primarily remotely via video calls and screen sharing. This allows us to work with teams anywhere. On-site visits are available for specific engagements if needed - we can discuss this on our call.
+        - group [ref=e272]:
+          - generic "How is this different from online courses or tutorials?" [ref=e273] [cursor=pointer]:
+            - heading "How is this different from online courses or tutorials?" [level=3] [ref=e274]
+            - img [ref=e276]
+    - generic [ref=e279]:
+      - heading "Ready to Build Real Automation Skills?" [level=2] [ref=e280]
+      - paragraph [ref=e281]: Let's talk about your team's challenges and see if we're a good fit. No pressure, no commitment - just a conversation.
+      - link "Let's Talk" [ref=e282] [cursor=pointer]:
+        - /url: https://cal.com/howdyqa/strategy-call
+        - text: Let's Talk
+        - img [ref=e283]
+  - contentinfo [ref=e285]:
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - generic [ref=e289]: Playwright Practitioner
+        - generic [ref=e290]:
+          - link "About" [ref=e291] [cursor=pointer]:
+            - /url: /about.html
+          - link "Privacy" [ref=e292] [cursor=pointer]:
+            - /url: /privacy.html
+          - link "Blog" [ref=e293] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+      - paragraph [ref=e295]: © 2026 Playwright Practitioner. All rights reserved.

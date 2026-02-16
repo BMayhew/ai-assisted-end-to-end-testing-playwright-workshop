@@ -1,0 +1,292 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - list [ref=e6]:
+          - listitem [ref=e7]:
+            - link "Home" [ref=e8] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e9]:
+            - link "About" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e11]:
+            - link "Resources" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e13]:
+          - button [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+          - link "Twitter" [ref=e18] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e19]
+          - link "Subscribe" [ref=e21] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e23] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e24]:
+              - img "Ko-fi donations" [ref=e25]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - img "Playwright Solutions" [ref=e28]
+        - generic [ref=e29]:
+          - heading "Playwright Solutions" [level=1] [ref=e30]
+          - paragraph [ref=e31]: Curated Selection of Playwright Automated Test Problems and Solutions
+      - main [ref=e32]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Featured Partner
+          - generic [ref=e36]:
+            - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+            - link "Learn More Today" [ref=e37] [cursor=pointer]:
+              - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+        - generic [ref=e39]:
+          - article [ref=e40]:
+            - generic [ref=e41]:
+              - 'link "Tool TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e42] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - generic [ref=e43]:
+                  - generic [ref=e45]: Tool
+                  - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e46]'
+                - generic [ref=e47]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e48]:
+                - time [ref=e49]: Feb 18, 2025
+                - generic [ref=e50]: 3 min read
+          - article [ref=e51]:
+            - generic [ref=e52]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e53] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e55]'
+                - generic [ref=e56]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e57]:
+                - time [ref=e58]: Feb 10, 2025
+                - generic [ref=e59]: 6 min read
+          - article [ref=e60]:
+            - generic [ref=e61]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e62] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e64]
+                - generic [ref=e65]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e66]:
+                - time [ref=e67]: Jan 20, 2025
+                - generic [ref=e68]: 4 min read
+          - article [ref=e69]:
+            - generic [ref=e70]:
+              - link "End of 2024 Announcements I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the \"Learning Playwright\" Course that I've been working on the last few months was released. I've been" [ref=e71] [cursor=pointer]:
+                - /url: /end-of-2024-announcements/
+                - heading "End of 2024 Announcements" [level=2] [ref=e73]
+                - generic [ref=e74]: I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the "Learning Playwright" Course that I've been working on the last few months was released. I've been
+              - generic [ref=e75]:
+                - time [ref=e76]: Dec 10, 2024
+                - generic [ref=e77]: 1 min read
+          - article [ref=e78]:
+            - generic [ref=e79]:
+              - link "Playwright Login Test With Two Factor Authentication (2FA) Enabled (TOTP) This week I'll walk through a Playwright Test with 2FA enabled. 2FA or Two Factor Authentication is a common recommended security measure to protect users accounts across the internet. Having a way to test this functionality in your CI/CD pipelines within your Playwright tests can ensure that" [ref=e80] [cursor=pointer]:
+                - /url: /playwright-login-test-with-2-factor-authentication-2fa-enabled/
+                - heading "Playwright Login Test With Two Factor Authentication (2FA) Enabled (TOTP)" [level=2] [ref=e82]
+                - generic [ref=e83]: This week I'll walk through a Playwright Test with 2FA enabled. 2FA or Two Factor Authentication is a common recommended security measure to protect users accounts across the internet. Having a way to test this functionality in your CI/CD pipelines within your Playwright tests can ensure that
+              - generic [ref=e84]:
+                - time [ref=e85]: Dec 9, 2024
+                - generic [ref=e86]: 4 min read
+          - article [ref=e87]:
+            - generic [ref=e88]:
+              - 'link "Playwright Solutions Challenge: Debug and figure out why the video recording isn''t in the HTML report? A few weeks back I was approached with a playwright challenge. The challenged seemed like an easy one to solve but I was surprised with the solution, so much so I wanted to share it here and give you a chance to exercise your debug skills. The Challenge 🎯The Challenge:" [ref=e89] [cursor=pointer]':
+                - /url: /playwright-solutions-challenge-debug-and-figure-out-why-the-video-recording-isnt-in-the-html-report/
+                - 'heading "Playwright Solutions Challenge: Debug and figure out why the video recording isn''t in the HTML report?" [level=2] [ref=e91]'
+                - generic [ref=e92]: "A few weeks back I was approached with a playwright challenge. The challenged seemed like an easy one to solve but I was surprised with the solution, so much so I wanted to share it here and give you a chance to exercise your debug skills. The Challenge 🎯The Challenge:"
+              - generic [ref=e93]:
+                - time [ref=e94]: Sep 30, 2024
+                - generic [ref=e95]: 4 min read
+          - article [ref=e96]:
+            - generic [ref=e97]:
+              - link "[Update v1.46] Is it possible to run only Playwright Tests that changed in GitHub actions on a pull request? Good news everyone! This is now possible to do without any external scripts. It is all baked into the Playwright CLI. Original solution If you've been subscribed for some time you may have remembered the original solution. It included getting a list of the file names by running" [ref=e98] [cursor=pointer]:
+                - /url: /update-v1-46-is-it-possible-to-run-only-playwright-tests-that-changed-in-github-actions-on-a-pull-request/
+                - heading "[Update v1.46] Is it possible to run only Playwright Tests that changed in GitHub actions on a pull request?" [level=2] [ref=e100]
+                - generic [ref=e101]: Good news everyone! This is now possible to do without any external scripts. It is all baked into the Playwright CLI. Original solution If you've been subscribed for some time you may have remembered the original solution. It included getting a list of the file names by running
+              - generic [ref=e102]:
+                - time [ref=e103]: Sep 23, 2024
+                - generic [ref=e104]: 4 min read
+          - article [ref=e105]:
+            - generic [ref=e106]:
+              - link "How Do I Combine Playwright HTML Reports After Running Multiple Playwright Commands? A Fun Challenge I recently had someone reach out to me with this question. They wanted to run a set of tests with 3 workers and then a separate test run with with 1 worker and the command looked something like this. npx playwright test --grep-invert @api --workers=3 &" [ref=e107] [cursor=pointer]:
+                - /url: /how-to-combine-playwright-html-reports-after-running-multiple-playwright-commands/
+                - heading "How Do I Combine Playwright HTML Reports After Running Multiple Playwright Commands?" [level=2] [ref=e109]
+                - generic [ref=e110]: A Fun Challenge I recently had someone reach out to me with this question. They wanted to run a set of tests with 3 workers and then a separate test run with with 1 worker and the command looked something like this. npx playwright test --grep-invert @api --workers=3 &
+              - generic [ref=e111]:
+                - time [ref=e112]: Aug 19, 2024
+                - generic [ref=e113]: 4 min read
+          - article [ref=e114]:
+            - generic [ref=e115]:
+              - link "How Do You Scroll To The Bottom Of An Infinite Scrolling Page In A Playwright Test? This week our team had a renewed focus on addressing some of our flakey tests, and one of the things we ran across was an interesting page interaction. We wanted to utilize our drop down to limit the amount of responses within a page. The options for filtering are 5," [ref=e116] [cursor=pointer]:
+                - /url: /how-do-you-scroll-to-the-bottom-of-an-infinite-scrolling-page-in-a-playwright-test/
+                - heading "How Do You Scroll To The Bottom Of An Infinite Scrolling Page In A Playwright Test?" [level=2] [ref=e118]
+                - generic [ref=e119]: This week our team had a renewed focus on addressing some of our flakey tests, and one of the things we ran across was an interesting page interaction. We wanted to utilize our drop down to limit the amount of responses within a page. The options for filtering are 5,
+              - generic [ref=e120]:
+                - time [ref=e121]: Aug 12, 2024
+                - generic [ref=e122]: 2 min read
+          - article [ref=e123]:
+            - generic [ref=e124]:
+              - link "How To Load a Custom Test Fixture or Setup Projects When Running Playwright Test Code Generator I'm a big fan of the Playwright Test Generator when I first start writing tests. I find the tool very useful to quickly identify useful locators/selectors, and quickly generate some test code and assertions from recording my manual actions through a website. Though the code isn'" [ref=e125] [cursor=pointer]:
+                - /url: /how-to-load-a-custom-test-fixture-or-setup-projects-when-running-playwright-test-code-generator/
+                - heading "How To Load a Custom Test Fixture or Setup Projects When Running Playwright Test Code Generator" [level=2] [ref=e127]
+                - generic [ref=e128]: I'm a big fan of the Playwright Test Generator when I first start writing tests. I find the tool very useful to quickly identify useful locators/selectors, and quickly generate some test code and assertions from recording my manual actions through a website. Though the code isn'
+              - generic [ref=e129]:
+                - time [ref=e130]: Jul 29, 2024
+                - generic [ref=e131]: 3 min read
+          - article [ref=e132]:
+            - generic [ref=e133]:
+              - link "How To Use Playwright's testInfo.retry To Deal With Flakey Environments The environment I am working with can be unstable sometimes. To ensure I don't have false negative tests, I need to rerun the failed checks. Playwright makes this easy by allowing you to pass --retries followed by the number of retries. Skipping certain tests if retried The problem" [ref=e134] [cursor=pointer]:
+                - /url: /how-to-use-playwrights-testinforetry-to-deal-with-flakey-environments/
+                - heading "How To Use Playwright's testInfo.retry To Deal With Flakey Environments" [level=2] [ref=e136]
+                - generic [ref=e137]: The environment I am working with can be unstable sometimes. To ensure I don't have false negative tests, I need to rerun the failed checks. Playwright makes this easy by allowing you to pass --retries followed by the number of retries. Skipping certain tests if retried The problem
+              - generic [ref=e138]:
+                - time [ref=e139]: Jun 24, 2024
+                - generic [ref=e140]: 2 min read
+          - article [ref=e141]:
+            - generic [ref=e142]:
+              - link "A Few Thoughts On Flakey Tests When a new test automation project starts there are really 3 buckets of work that happen. building (creating new tests), maintaining (updating existing tests as the application changes), and monitoring (keeping an eye on automation runs, investigating failures and surfacing findings to the team). \"Flakey\" tests really come" [ref=e143] [cursor=pointer]:
+                - /url: /a-few-thoughts-on-flakey-tests-playwright-solutions/
+                - heading "A Few Thoughts On Flakey Tests" [level=2] [ref=e145]
+                - generic [ref=e146]: When a new test automation project starts there are really 3 buckets of work that happen. building (creating new tests), maintaining (updating existing tests as the application changes), and monitoring (keeping an eye on automation runs, investigating failures and surfacing findings to the team). "Flakey" tests really come
+              - generic [ref=e147]:
+                - time [ref=e148]: Jun 10, 2024
+                - generic [ref=e149]: 5 min read
+          - article [ref=e150]:
+            - generic [ref=e151]:
+              - link "How To Run Failures Only From The Last Playwright Run Via CLI Hello Playwright 1.44 release! With this release we now have official support to run failures only from the last playwright run. 💡TLDR; npx playwright test--last-failed Previous Solution Last year I created the json summary reporter and a bash script that can be found in the article below. This was" [ref=e152] [cursor=pointer]:
+                - /url: /how-to-run-failures-only-from-the-last-playwright-run/
+                - heading "How To Run Failures Only From The Last Playwright Run Via CLI" [level=2] [ref=e154]
+                - generic [ref=e155]: Hello Playwright 1.44 release! With this release we now have official support to run failures only from the last playwright run. 💡TLDR; npx playwright test--last-failed Previous Solution Last year I created the json summary reporter and a bash script that can be found in the article below. This was
+              - generic [ref=e156]:
+                - time [ref=e157]: Jun 3, 2024
+                - generic [ref=e158]: 3 min read
+          - article [ref=e159]:
+            - generic [ref=e160]:
+              - link "Featured In-Depth Review of Playwright Dashboard by Currents In this guide I'll be sharing my experiences using the Playwright Dashboard by Currents with my Playwright Solutions projects I've built over the years. This article is sponsored but I was given the liberty of sharing my honest experiences with the platform. All of my examples" [ref=e161] [cursor=pointer]:
+                - /url: /in-depth-review-of-playwright-dashboard-by-currents/
+                - generic [ref=e162]:
+                  - generic [ref=e164]:
+                    - img [ref=e165]
+                    - text: Featured
+                  - heading "In-Depth Review of Playwright Dashboard by Currents" [level=2] [ref=e167]
+                - generic [ref=e168]: In this guide I'll be sharing my experiences using the Playwright Dashboard by Currents with my Playwright Solutions projects I've built over the years. This article is sponsored but I was given the liberty of sharing my honest experiences with the platform. All of my examples
+              - generic [ref=e169]:
+                - time [ref=e170]: May 6, 2024
+                - generic [ref=e171]: 23 min read
+          - article [ref=e172]:
+            - generic [ref=e173]:
+              - link "👀 Playwright Indent List Reporter Do you ever find the need to 🌶️ up your command line interface? Well good news Syzana Bicaj, has released a npm package that allows you to customize your colors but also to indent the spec files in your terminal for easy reading! In order to install the package with the" [ref=e174] [cursor=pointer]:
+                - /url: /custom-playwright-indent-list-reporter/
+                - heading "👀 Playwright Indent List Reporter" [level=2] [ref=e176]
+                - generic [ref=e177]: Do you ever find the need to 🌶️ up your command line interface? Well good news Syzana Bicaj, has released a npm package that allows you to customize your colors but also to indent the spec files in your terminal for easy reading! In order to install the package with the
+              - generic [ref=e178]:
+                - time [ref=e179]: Jan 8, 2024
+                - generic [ref=e180]: 2 min read
+          - article [ref=e181]:
+            - generic [ref=e182]:
+              - 'link "Playwright Ask Me Anything Debrief: Will Playwright Replace Cypress? This past week I was able to participate in a Playwright Ask Me Anything that was hosed by Ministry of Testing. Over the hour we had a plethra of questions that came in that thought would be good to dive deeper on across a few articles. Today I plan to" [ref=e183] [cursor=pointer]':
+                - /url: /playwright-ask-me-anything-debrief-will-playwright-replace-cypress/
+                - 'heading "Playwright Ask Me Anything Debrief: Will Playwright Replace Cypress?" [level=2] [ref=e185]'
+                - generic [ref=e186]: This past week I was able to participate in a Playwright Ask Me Anything that was hosed by Ministry of Testing. Over the hour we had a plethra of questions that came in that thought would be good to dive deeper on across a few articles. Today I plan to
+              - generic [ref=e187]:
+                - time [ref=e188]: Dec 18, 2023
+                - generic [ref=e189]: 3 min read
+          - article [ref=e190]:
+            - generic [ref=e191]:
+              - link "A Feature Map Framework with Playwright for Improved UI Testing Tracking A few weeks back Ben Fellows created a LinkedIn post asking for solutions around a problem he often faces in his work. As a QA service provider building automation, one challenge I face is allowing the customer to see & engage with the test plan. I've tried TestPad," [ref=e192] [cursor=pointer]:
+                - /url: /tracking-automated-ui-testing-using-a-feature-map-with-playwright/
+                - heading "A Feature Map Framework with Playwright for Improved UI Testing Tracking" [level=2] [ref=e194]
+                - generic [ref=e195]: A few weeks back Ben Fellows created a LinkedIn post asking for solutions around a problem he often faces in his work. As a QA service provider building automation, one challenge I face is allowing the customer to see & engage with the test plan. I've tried TestPad,
+              - generic [ref=e196]:
+                - time [ref=e197]: Dec 11, 2023
+                - generic [ref=e198]: 9 min read
+          - article [ref=e199]:
+            - generic [ref=e200]:
+              - 'link "Playwright Release 1.40 Includes Ability to Create Assertions Through Codegen Tool! The Playwright team just released version 1.40 of Playwright, which included a long awaited feature: the ability to create assertions right from the Codegen tool! This should help lower the barrier to entry for folks new to Playwright making it easier for them to add assertions to their browser" [ref=e201] [cursor=pointer]':
+                - /url: /playwright-release-1-40-includes-ability-to-create-assertions-through-codegen-tool/
+                - heading "Playwright Release 1.40 Includes Ability to Create Assertions Through Codegen Tool!" [level=2] [ref=e203]
+                - generic [ref=e204]: "The Playwright team just released version 1.40 of Playwright, which included a long awaited feature: the ability to create assertions right from the Codegen tool! This should help lower the barrier to entry for folks new to Playwright making it easier for them to add assertions to their browser"
+              - generic [ref=e205]:
+                - time [ref=e206]: Dec 4, 2023
+                - generic [ref=e207]: 3 min read
+          - article [ref=e208]:
+            - generic [ref=e209]:
+              - 'link "The Definitive Guide to API Test Automation With Playwright: Part 16 - Adding CI/CD Through GitHub Actions This is the final planned article of this series, where we will discuss Adding CI/CD through GitHub Actions. In this guide I''ll walk through the basics of GitHub Actions along with ways you can scale your tests as the suite grows. If you''re just joining" [ref=e210] [cursor=pointer]':
+                - /url: /the-definitive-guide-to-api-test-automation-with-playwright-part-16-adding-ci-cd-through-github-actions/
+                - 'heading "The Definitive Guide to API Test Automation With Playwright: Part 16 - Adding CI/CD Through GitHub Actions" [level=2] [ref=e212]'
+                - generic [ref=e213]: This is the final planned article of this series, where we will discuss Adding CI/CD through GitHub Actions. In this guide I'll walk through the basics of GitHub Actions along with ways you can scale your tests as the suite grows. If you're just joining
+              - generic [ref=e214]:
+                - time [ref=e215]: Nov 27, 2023
+                - generic [ref=e216]: 11 min read
+          - article [ref=e217]:
+            - generic [ref=e218]:
+              - link "How Do You Append Query Parameters To page.goto() Using Playwright Test? There haven't been many times where I wanted to add and validate query parameters on certain requests, but this guide be really useful if you are testing UTM or other types of tracking links that utilize URL parameters. For this article I'll be utilizing the repo" [ref=e219] [cursor=pointer]:
+                - /url: /how-do-you-append-query-parameters-to-page-goto-using-playwright-test/
+                - heading "How Do You Append Query Parameters To page.goto() Using Playwright Test?" [level=2] [ref=e221]
+                - generic [ref=e222]: There haven't been many times where I wanted to add and validate query parameters on certain requests, but this guide be really useful if you are testing UTM or other types of tracking links that utilize URL parameters. For this article I'll be utilizing the repo
+              - generic [ref=e223]:
+                - time [ref=e224]: Nov 20, 2023
+                - generic [ref=e225]: 4 min read
+          - article [ref=e226]:
+            - generic [ref=e227]:
+              - 'link "The Definitive Guide to API Test Automation With Playwright: Part 15 - Adding Test Tags to Get Targeted Feedback In this guide I''ll cover how tags work, link to other articles where I discuss some tips on how to use tags, and show some code examples of the tags I like to use. If you are just now joining us for the first time feel free to" [ref=e228] [cursor=pointer]':
+                - /url: /the-definitive-guide-to-api-test-automation-with-playwright-part-15-adding-test-tags-to-get-targeted-feedback/
+                - 'heading "The Definitive Guide to API Test Automation With Playwright: Part 15 - Adding Test Tags to Get Targeted Feedback" [level=2] [ref=e230]'
+                - generic [ref=e231]: In this guide I'll cover how tags work, link to other articles where I discuss some tips on how to use tags, and show some code examples of the tags I like to use. If you are just now joining us for the first time feel free to
+              - generic [ref=e232]:
+                - time [ref=e233]: Nov 13, 2023
+                - generic [ref=e234]: 6 min read
+          - article [ref=e235]:
+            - generic [ref=e236]:
+              - link "How to quickly get realistic data with Faker? When testing a registration process, or filling any form, it's pretty easy to add a \"Jane Doe\". But when you also need to add an email, an address, and do it in a different locale it becomes troublesome. Sure you can create data sets, but why" [ref=e237] [cursor=pointer]:
+                - /url: /how-to-quickly-get-realistic-data-with-faker-for-playwright-tests/
+                - heading "How to quickly get realistic data with Faker?" [level=2] [ref=e239]
+                - generic [ref=e240]: When testing a registration process, or filling any form, it's pretty easy to add a "Jane Doe". But when you also need to add an email, an address, and do it in a different locale it becomes troublesome. Sure you can create data sets, but why
+              - generic [ref=e241]:
+                - time [ref=e242]: Nov 6, 2023
+                - generic [ref=e243]: 3 min read
+          - article [ref=e244]:
+            - generic [ref=e245]:
+              - link "What the Hex, or How I Check Colors With Playwright Don't worry; it's not a Matrix situation where you have to choose between red and blue. I'm a visual person, and it's easier for me to explain things with diagrams, pictures, or, better yet, my facial expressions. Since the internet isn'" [ref=e246] [cursor=pointer]:
+                - /url: /what-the-hex-or-how-i-check-colors-with-playwright/
+                - heading "What the Hex, or How I Check Colors With Playwright" [level=2] [ref=e248]
+                - generic [ref=e249]: Don't worry; it's not a Matrix situation where you have to choose between red and blue. I'm a visual person, and it's easier for me to explain things with diagrams, pictures, or, better yet, my facial expressions. Since the internet isn'
+              - generic [ref=e250]:
+                - time [ref=e251]: Oct 30, 2023
+                - generic [ref=e252]: 4 min read
+          - article [ref=e253]:
+            - generic [ref=e254]:
+              - 'link "How To Fix: apiRequestContext.fetch: Request context disposed Within my automation tests at work, I found myself running into these two errors within my tests when I use the await page.route() (docs) functionality. Error: apiRequestContext.fetch: Request context disposed Error: apiRequestContext.fetch: Browser has been closed With additional information 1 error was not a part of any" [ref=e255] [cursor=pointer]':
+                - /url: /how-to-fix-apirequestcontext-fetch-request-context-disposed/
+                - 'heading "How To Fix: apiRequestContext.fetch: Request context disposed" [level=2] [ref=e257]'
+                - generic [ref=e258]: "Within my automation tests at work, I found myself running into these two errors within my tests when I use the await page.route() (docs) functionality. Error: apiRequestContext.fetch: Request context disposed Error: apiRequestContext.fetch: Browser has been closed With additional information 1 error was not a part of any"
+              - generic [ref=e259]:
+                - time [ref=e260]: Oct 23, 2023
+                - generic [ref=e261]: 3 min read
+          - article [ref=e262]:
+            - generic [ref=e263]:
+              - 'link "The Definitive Guide to API Test Automation With Playwright: Part 14 - Creating Custom Assertions Through Extending Expect This week I''ll be going back and refactoring some tests adding custom assertions to my repo. This is something I considered implementing early on but decided against it, as I wanted to keep things simple. with the release of 1.39 the Playwright team has released some easier" [ref=e264] [cursor=pointer]':
+                - /url: /the-definitive-guide-to-api-test-automation-with-playwright-part-14-custom-assertions-extending-expect/
+                - 'heading "The Definitive Guide to API Test Automation With Playwright: Part 14 - Creating Custom Assertions Through Extending Expect" [level=2] [ref=e266]'
+                - generic [ref=e267]: This week I'll be going back and refactoring some tests adding custom assertions to my repo. This is something I considered implementing early on but decided against it, as I wanted to keep things simple. with the release of 1.39 the Playwright team has released some easier
+              - generic [ref=e268]:
+                - time [ref=e269]: Oct 16, 2023
+                - generic [ref=e270]: 9 min read
+    - contentinfo [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - link "Playwright Solutions" [ref=e274] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e275]:
+          - list [ref=e276]:
+            - listitem [ref=e277]:
+              - link "Data & privacy" [ref=e278] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e279]:
+              - link "Contact" [ref=e280] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e282] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e283]:
+    - generic [ref=f1e3] [cursor=pointer]:
+      - img [ref=f1e4]
+      - generic [ref=f1e8]: Subscribe

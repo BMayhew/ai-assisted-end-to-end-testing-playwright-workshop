@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - heading "[Update v1.46] Is it possible to run only Playwright Tests that changed in GitHub actions on a pull request?" [level=1] [ref=e37]
+            - generic [ref=e39]:
+              - list [ref=e40]:
+                - listitem [ref=e41]:
+                  - link "Butch Mayhew" [ref=e42] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e43]
+              - generic [ref=e44]:
+                - heading "Butch Mayhew" [level=4] [ref=e45]:
+                  - link "Butch Mayhew" [ref=e46] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e47]:
+                  - time [ref=e48]: Sep 23, 2024
+                  - generic [ref=e49]:
+                    - generic [ref=e50]: •
+                    - text: 4 min read
+          - generic [ref=e51]:
+            - paragraph [ref=e52]:
+              - text: Good news everyone! This is now possible to do without any external scripts. It is all baked into the
+              - link "Playwright CLI" [ref=e53] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/test-cli?ref=playwrightsolutions.com#reference
+              - text: .
+            - heading "Original solution" [level=2] [ref=e54]
+            - paragraph [ref=e55]:
+              - text: If you've been subscribed for some time you may have remembered the original solution. It included getting a list of the file names by running a narly
+              - code [ref=e56]: git diff
+              - text: command and piping the results to
+              - code [ref=e57]: grep
+              - text: and
+              - code [ref=e58]: tr
+              - text: commands. Storing those file names to a
+              - code [ref=e59]: CHANGED
+              - text: environment variable, and passing that into the
+              - code [ref=e60]: "npx playwright test ${{ env.CHANGED }}"
+              - text: .
+            - figure [ref=e61]:
+              - link "Is it possible to run only Playwright Tests that changed in GitHub actions on a pull request? Have you ever been reviewing a peer’s pull request in GitHub, and asked yourself does this Playwright check even pass? Well, I have, and that is what inspired this post. In my workplace, I want to prevent failing tests from entering the main automation branch, but I also didn’t want Playwright Solutions •Butch Mayhew" [ref=e62] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/is-it-possible-to-run-only-playwright-tests-that-changed-on-a/
+                - generic [ref=e63]:
+                  - generic [ref=e64]: Is it possible to run only Playwright Tests that changed in GitHub actions on a pull request?
+                  - generic [ref=e65]: Have you ever been reviewing a peer’s pull request in GitHub, and asked yourself does this Playwright check even pass? Well, I have, and that is what inspired this post. In my workplace, I want to prevent failing tests from entering the main automation branch, but I also didn’t want
+                  - generic [ref=e66]:
+                    - generic [ref=e67]: Playwright Solutions
+                    - generic [ref=e68]: •Butch Mayhew
+            - heading "Updated solution" [level=2] [ref=e70]
+            - paragraph [ref=e71]:
+              - text: There was a flaw with my approach that I just accepted as I didn't see an easy way to solve the problem. I was only checking and building the CHANGED list of tests run from the
+              - code [ref=e72]: "*.spec"
+              - text: files. This list didn't include any page object files, helpers, fixtures, or data factory files. This was a known risk in my case, but with the built in playwright command they have solved this problem. See version 1.46
+              - link "release notes" [ref=e73] [cursor=pointer]:
+                - /url: https://playwright.dev/docs/release-notes?ref=playwrightsolutions.com#--only-changed-cli-option
+              - text: below.
+            - blockquote [ref=e74]:
+              - text: New CLI option
+              - code [ref=e75]: "--only-changed"
+              - text: will only run test files that have been changed since the last git commit or from a specific git "ref". This will also run all test files that import any changed files.
+            - heading "Running pre-commit and post-commit" [level=2] [ref=e76]
+            - paragraph [ref=e77]:
+              - text: One thing to note with this solution, the command
+              - code [ref=e78]: "--only-changed"
+              - strong [ref=e79]: by itself will only run files that have been changed, but not yet committed.
+              - text: This is important as you commit files to your local branch this command will not pick up those test changes after committed.
+            - paragraph [ref=e80]:
+              - text: In order to pick up changes on committed files you will need to pass in a reference branch to check against.
+              - code [ref=e81]: "--only-changed=main"
+              - text: for example will check your local git changes and do a diff against the main branch and run those changes.
+            - heading "Example on playwright-api-test-demo" [level=2] [ref=e82]
+            - paragraph [ref=e83]:
+              - text: Let's update our
+              - link "playwright-api-test-demo" [ref=e84] [cursor=pointer]:
+                - /url: https://github.com/playwrightsolutions/playwright-api-test-demo?ref=playwrightsolutions.com
+              - text: repo with the changes both in our
+              - code [ref=e85]: package.json
+              - text: file to create a new npm script
+              - code [ref=e86]: npm run changed
+              - text: .
+            - code [ref=e88]: "// package.json ... \"scripts\": { ... \"changed\": \"npx playwright test --only-changed\" },"
+            - paragraph [ref=e89]:
+              - text: We'll also update our
+              - code [ref=e90]: on-pr-files-changed.yml
+              - text: file removing all the old
+              - code [ref=e91]: CHANGED
+              - text: logic we previously implemented. The main thing we are adding is the
+              - code [ref=e92]: "--only-changed=origin/$GITHUB_BASE_REF"
+              - text: . Using the
+              - link "$GITHUB_BASE_REF" [ref=e93] [cursor=pointer]:
+                - /url: https://arc.net/l/quote/gvvfrill?ref=playwrightsolutions.com
+                - code [ref=e94]: $GITHUB_BASE_REF
+              - text: here instead of
+              - code [ref=e95]: main
+              - text: as the branch will prevent an error I was receiving when running in CI when I was using
+              - code [ref=e96]: "--only-changed=origin/main"
+              - text: as the release notes demonstrated. The specific error I received is below.
+            - code [ref=e98]: "Error: Cannot detect changed files for --only-changed mode: git diff main --name-only fatal: ambiguous argument 'main': unknown revision or path not in the working tree. Use '--' to separate paths from revisions, like this: 'git <command> [<revision>...] -- [<file>...]' Error: Error: Cannot detect changed files for --only-changed mode: git diff main --name-only fatal: ambiguous argument 'main': unknown revision or path not in the working tree. Use '--' to separate paths from revisions, like this: 'git <command> [<revision>...] -- [<file>...]'"
+            - paragraph [ref=e99]: "The changes that worked for me were adding the fetch-depth: 0 (the default is 1) and adding the --only-changed flag in my npx playwright test command."
+            - code [ref=e101]: "name: Changed Files Playwright API Checks on: pull_request: branches: - main ... jobs: playwright-automation-checks: ... steps: - uses: actions/checkout@v3 with: fetch-depth: 0 ... - name: Run Playwright tests run: | npx playwright test --only-changed=origin/$GITHUB_BASE_REF ...."
+            - paragraph [ref=e102]: The full example can be found below.
+            - code [ref=e104]: "// on-pr-files-changed.yml name: Changed Files Playwright API Checks on: pull_request: branches: - main permissions: contents: write pages: write id-token: write jobs: playwright-automation-checks: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} timeout-minutes: 10 runs-on: ubuntu-latest env: BASE_URL: ${{ github.event.inputs.base_url }} steps: - uses: actions/checkout@v3 with: fetch-depth: 0 - uses: actions/setup-node@v3 with: node-version: 16 - name: Cache node_modules uses: actions/cache@v3 id: node-modules-cache with: path: | node_modules key: modules-${{ hashFiles('package-lock.json') }} - run: npm ci --ignore-scripts if: steps.node-modules-cache.outputs.cache-hit != 'true' - name: Get installed Playwright version id: playwright-version run: echo \"PLAYWRIGHT_VERSION=$(node -e \"console.log(require('./package-lock.json').dependencies['@playwright/test'].version)\")\" >> $GITHUB_ENV - name: Cache playwright binaries uses: actions/cache@v3 id: playwright-cache with: path: | ~/.cache/ms-playwright key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }} - run: npx playwright install --with-deps if: steps.playwright-cache.outputs.cache-hit != 'true' - run: npx playwright install-deps if: steps.playwright-cache.outputs.cache-hit != 'true' - name: Run lint run: npm run lint - name: Run prettier run: npm run prettier - name: Set BASE_URL if not passed in if: env.BASE_URL == null run: | echo \"BASE_URL=https://automationintesting.online/\" >> $GITHUB_ENV - name: Run Playwright tests run: | echo \"The github event is: ${{ github.event_name }}\" URL=${{ env.BASE_URL }} npx playwright test --grep-invert @unsatisfactory --reporter=github --workers=1 --only-changed=origin/$GITHUB_BASE_REF"
+            - heading "Using only-changed on monorepos" [level=2] [ref=e105]
+            - paragraph [ref=e106]:
+              - text: One thing to note in my research
+              - link "Pramod Yadav" [ref=e107] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/pramodkyadav/?ref=playwrightsolutions.com
+              - text: (go give him a follow on LinkedIn) reported a
+              - link "Bug in the GitHub Issues" [ref=e108] [cursor=pointer]:
+                - /url: https://github.com/microsoft/playwright/issues/32452?ref=playwrightsolutions.com
+              - text: section of the Playwright repository. He attempted to implement this within a monorepo and found there were some extra steps to get things working. Specifically adding
+              - code [ref=e109]: git config --global --add safe.directory '*'
+              - text: as a command that is run after checking out the code and before the playwright test execution.
+            - code [ref=e111]: "name: Changed Files Playwright API Checks on: pull_request: branches: - main ... jobs: playwright-automation-checks: ... steps: - uses: actions/checkout@v3 with: fetch-depth: 0 - name: Mark repo as safe run: git config --global --add safe.directory '*' ... - name: Run Playwright tests run: | npx playwright test --only-changed=origin/$GITHUB_BASE_REF ...."
+            - figure [ref=e112]
+            - separator [ref=e113]
+            - paragraph [ref=e114]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e115] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e116] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e118]: If this solution was helpful show some love!
+      - generic [ref=e119]:
+        - img [ref=e120]
+        - generic [ref=e123]: "6"
+      - paragraph
+      - generic [ref=e125]:
+        - heading "Sign up for more like this." [level=2] [ref=e126]
+        - link "Enter your email Subscribe" [ref=e127] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e128]: Enter your email
+          - generic [ref=e129]: Subscribe
+      - complementary [ref=e130]:
+        - generic [ref=e131]:
+          - article [ref=e132]:
+            - generic [ref=e133]:
+              - 'link "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI Have you ever struggled to run specific tests from the command line? I''ve had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don''t have to craft" [ref=e134] [cursor=pointer]':
+                - /url: /tool-playwright-cli-select-for-quick-targeted-test-runs-via-cli/
+                - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=2] [ref=e136]'
+                - generic [ref=e137]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually. With this new tool I don't have to craft
+              - generic [ref=e138]:
+                - time [ref=e139]: Feb 18, 2025
+                - generic [ref=e140]: 3 min read
+          - article [ref=e141]:
+            - generic [ref=e142]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e143] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e145]'
+                - generic [ref=e146]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e147]:
+                - time [ref=e148]: Feb 10, 2025
+                - generic [ref=e149]: 6 min read
+          - article [ref=e150]:
+            - generic [ref=e151]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e152] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e154]
+                - generic [ref=e155]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e156]:
+                - time [ref=e157]: Jan 20, 2025
+                - generic [ref=e158]: 4 min read
+    - contentinfo [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - link "Playwright Solutions" [ref=e162] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e163]:
+          - list [ref=e164]:
+            - listitem [ref=e165]:
+              - link "Data & privacy" [ref=e166] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e167]:
+              - link "Contact" [ref=e168] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e170] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e171]:
+    - generic [ref=f78e3] [cursor=pointer]:
+      - img [ref=f78e4]
+      - generic [ref=f78e8]: Subscribe

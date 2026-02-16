@@ -1,0 +1,91 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Jane Doe" [ref=e67]:
+              - button "Jane Doe" [ref=e68] [cursor=pointer]
+            - menuitem "cart" [ref=e40]:
+              - link "cart" [ref=e41] [cursor=pointer]:
+                - /url: /checkout
+                - img [ref=e43]
+                - generic [ref=e45]: "1"
+          - button [ref=e47] [cursor=pointer]:
+            - img [ref=e49]
+            - text: EN
+  - generic [ref=e53]:
+    - list [ref=e55]:
+      - listitem [ref=e106]:
+        - generic [ref=e107] [cursor=pointer]:
+          - generic [ref=e108]: Cart
+          - generic [ref=e109]: "1"
+      - listitem [ref=e118]:
+        - generic [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]: Sign in
+          - generic [ref=e121]: "2"
+      - listitem [ref=e147]:
+        - generic [ref=e148] [cursor=pointer]:
+          - generic [ref=e149]: Billing Address
+          - generic [ref=e150]: "3"
+      - listitem:
+        - generic:
+          - generic: Payment
+          - generic: "4"
+    - generic [ref=e155]:
+      - heading "Payment" [level=3] [ref=e156]
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: Payment Method
+          - combobox "Payment Method" [ref=e160]:
+            - option "Choose your payment method" [disabled]
+            - option "Bank Transfer" [selected]
+            - option "Cash on Delivery"
+            - option "Credit Card"
+            - option "Buy Now Pay Later"
+            - option "Gift Card"
+        - generic [ref=e162]:
+          - generic [ref=e163]: Bank Name
+          - textbox "Bank Name" [ref=e164]: Test Bank
+          - generic [ref=e165]: Account Name
+          - textbox "Account Name" [ref=e166]: Jane Doe
+          - generic [ref=e167]: Account Number
+          - textbox "Account Number" [active] [ref=e168]: "1234567890"
+          - generic [ref=e169]: Please enter your bank account number as it appears on your bank statement. It's a unique series of numbers used to identify your individual account. Avoid including any spaces or hyphens.
+      - button "Confirm" [ref=e170] [cursor=pointer]
+  - paragraph [ref=e58]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e59] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e60] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e61] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e62] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e64] [cursor=pointer]:
+    - img [ref=e65]

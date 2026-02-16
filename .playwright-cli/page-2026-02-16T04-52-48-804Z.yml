@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Playwright Solutions" [ref=e6] [cursor=pointer]:
+          - /url: https://playwrightsolutions.com
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/
+          - listitem [ref=e11]:
+            - link "About" [ref=e12] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/about/
+          - listitem [ref=e13]:
+            - link "Resources" [ref=e14] [cursor=pointer]:
+              - /url: https://playwrightsolutions.com/playwright-resources/
+        - generic [ref=e15]:
+          - button [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+          - link "Twitter" [ref=e20] [cursor=pointer]:
+            - /url: https://twitter.com/butchmayhew
+            - img [ref=e21]
+          - link "Subscribe" [ref=e23] [cursor=pointer]:
+            - /url: "#/portal/signup"
+          - link "Ko-fi donationsSupport Me on Ko-Fi" [ref=e25] [cursor=pointer]:
+            - /url: https://ko-fi.com/A0A7PBHM
+            - generic [ref=e26]:
+              - img "Ko-fi donations" [ref=e27]
+              - text: Support Me on Ko-Fi
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Featured Partner
+        - generic [ref=e32]:
+          - text: Need help with your Playwright automation? - Howdy QA offers expert consultancy for migrations, CI/CD setup, training, and accessibility testing. Led by Playwright Ambassador Butch Mayhew.
+          - link "Learn More Today" [ref=e33] [cursor=pointer]:
+            - /url: https://howdyqa.com?utm_source=playwrightsolutions&utm_medium=header&utm_campaign=featured_partner
+      - main [ref=e34]:
+        - article [ref=e35]:
+          - generic [ref=e36]:
+            - link "Tool" [ref=e39] [cursor=pointer]:
+              - /url: /tag/tool/
+            - 'heading "TOOL: Playwright-Cli-Select For Quick Targeted Test Runs via CLI" [level=1] [ref=e40]'
+            - generic [ref=e42]:
+              - list [ref=e43]:
+                - listitem [ref=e44]:
+                  - link "Butch Mayhew" [ref=e45] [cursor=pointer]:
+                    - /url: /author/butch/
+                    - img "Butch Mayhew" [ref=e46]
+              - generic [ref=e47]:
+                - heading "Butch Mayhew" [level=4] [ref=e48]:
+                  - link "Butch Mayhew" [ref=e49] [cursor=pointer]:
+                    - /url: /author/butch/
+                - generic [ref=e50]:
+                  - time [ref=e51]: Feb 18, 2025
+                  - generic [ref=e52]:
+                    - generic [ref=e53]: •
+                    - text: 3 min read
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: Have you ever struggled to run specific tests from the command line? I've had the want to run 2-3 tests from the command line together and struggled to autocomplete my way through building the proper command manually.
+            - figure "Good News Everybody" [ref=e56]:
+              - generic [ref=e57]: Good News Everybody
+            - paragraph [ref=e58]: With this new tool I don't have to craft the perfect command line anymore I now have access to a nice command line selector to pick and choose exactly what I want to run!
+            - figure [ref=e59]:
+              - 'link "GitHub - dennisbergevin/playwright-cli-select: Playwright interactive cli prompts to select and run specs, tests or tags Playwright interactive cli prompts to select and run specs, tests or tags - dennisbergevin/playwright-cli-select GitHub •dennisbergevin" [ref=e60] [cursor=pointer]':
+                - /url: https://github.com/dennisbergevin/playwright-cli-select?ref=playwrightsolutions.com
+                - generic [ref=e61]:
+                  - generic [ref=e62]: "GitHub - dennisbergevin/playwright-cli-select: Playwright interactive cli prompts to select and run specs, tests or tags"
+                  - generic [ref=e63]: Playwright interactive cli prompts to select and run specs, tests or tags - dennisbergevin/playwright-cli-select
+                  - generic [ref=e64]:
+                    - generic [ref=e65]: GitHub
+                    - generic [ref=e66]: •dennisbergevin
+            - heading "Set it all up" [level=2] [ref=e68]
+            - paragraph [ref=e69]:
+              - text: To get the cli tool installed it's quite simple! This command installs the dependency and updates your
+              - code [ref=e70]: package.json
+              - text: file.
+            - code [ref=e72]: npm install --save-dev playwright-cli-select
+            - paragraph [ref=e73]: Then you can run the cli tool with
+            - code [ref=e75]: npx playwright-cli-select run
+            - heading "My Experience" [level=2] [ref=e76]
+            - paragraph [ref=e77]:
+              - text: What I really like about this tool is the flexibility offered! The
+              - link "readme" [ref=e78] [cursor=pointer]:
+                - /url: https://github.com/dennisbergevin/playwright-cli-select?ref=playwrightsolutions.com
+              - text: provides a ton of easy to follow examples on how you can customize your run command. All of this can easily be added to your package.json script in order to have a simple
+              - code [ref=e79]: npm run cli
+              - text: command, below I've created so the command automatically selects the first
+              - code [ref=e80]: specs
+              - text: option for me.
+            - code [ref=e82]: "// package.json { \"scripts\": { \"cli\": \"npx playwright-cli-select run --specs\", \"test\": \"npx playwright test\" } }"
+            - paragraph [ref=e83]:
+              - text: Once you've rung the command and you are in the cli interface, you will need to use
+              - code [ref=e84]: Tab
+              - text: as the "select" key. This was a small learning curve as by default I was just trying to press
+              - code [ref=e85]: Enter
+              - text: and that actually allows you to "Proceed" Thankfully I read the interface and there were clear instructions on what the buttons do!
+            - paragraph [ref=e86]:
+              - text: If you ever do get stuck or want to explore the tool without reading the docs on GitHub you also have access to
+              - code [ref=e87]: npx playwright-cli-select run --help
+              - text: a help flag which providers all the different options at your fingertips!
+            - paragraph [ref=e88]: Overall I am a fan, and with very little effort on my end I'll have an easy way to run multiple spec files together via this tool. I plan to add this to all of my past, present, and future playwright projects! Check it out in action below.
+            - figure [ref=e89]:
+              - generic [ref=e90]:
+                - button "Play video" [ref=e93] [cursor=pointer]:
+                  - img [ref=e94]
+                - generic [ref=e97]:
+                  - button "Play video" [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+                  - generic [ref=e101]: 0:00
+                  - generic [ref=e102]: /0:41
+                  - slider [ref=e103]: "0"
+                  - button "Adjust playback speed" [ref=e104] [cursor=pointer]: 1×
+                  - button "Unmute" [ref=e105] [cursor=pointer]:
+                    - img [ref=e106]
+                  - slider [ref=e108]: "100"
+            - heading "Want to Learn More?" [level=2] [ref=e109]
+            - figure [ref=e110]:
+              - link "🎭 playwright-cli-select Problem context Playwright comes out of the box with a collection of ways to run test… DEV Community •Dennis Bergevin" [ref=e111] [cursor=pointer]:
+                - /url: https://dev.to/dennisbergevin/playwright-cli-select-12j?ref=playwrightsolutions.com
+                - generic [ref=e112]:
+                  - generic [ref=e113]: 🎭 playwright-cli-select
+                  - generic [ref=e114]: Problem context Playwright comes out of the box with a collection of ways to run test…
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: DEV Community
+                    - generic [ref=e117]: •Dennis Bergevin
+            - paragraph [ref=e119]:
+              - text: If you find this tool valuable go give it a ⭐️ on
+              - link "GitHub" [ref=e120] [cursor=pointer]:
+                - /url: https://github.com/dennisbergevin/playwright-cli-select?ref=playwrightsolutions.com
+              - text: and let
+              - link "Dennis Bergevin" [ref=e121] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/dennis-bergevin/?midToken=AQE3oxQecRFYvg&midSig=1nKrnpnmO7prE1&trk=eml-email_m2m_invite_single_01-invitation%7Ecard-0-inviter%7Ename&trkEmail=eml-email_m2m_invite_single_01-invitation%7Ecard-0-inviter%7Ename-null-u93cm%7Em75dk34a%7Eob-null-null&eid=u93cm-m75dk34a-ob&otpToken=MTcwNTE2ZTExMDI5Y2JjMmJlMmYwMmU5NGYxYmUwYjA4ZGNlZDY0MTlkYWY4NTYyNzhjZTA4Njk0YjVmNWRmOWIzZDZhZDgxNWJiNWRlYzQ5ZjE5ZTFkZjBkODZlNzkwZTE4Yjg4NzI5OTJjYjA4NiwxLDE%3D&ref=playwrightsolutions.com
+              - text: know how it helped!
+            - separator [ref=e122]
+            - paragraph [ref=e123]:
+              - text: Thanks for reading! If you found this helpful, reach out and let me know on
+              - link "LinkedIn" [ref=e124] [cursor=pointer]:
+                - /url: https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=butchmayhew&ref=playwrightsolutions.com
+              - text: or consider
+              - link "buying me a cup of coffee" [ref=e125] [cursor=pointer]:
+                - /url: https://ko-fi.com/butchmayhew?ref=playwrightsolutions.com
+              - text: . If you want more content delivered to you in your inbox subscribe below, and be sure to leave a ❤️ to show some love.
+      - paragraph [ref=e127]: If this solution was helpful show some love!
+      - generic [ref=e128]:
+        - img [ref=e129]
+        - generic [ref=e132]: "13"
+      - paragraph
+      - generic [ref=e134]:
+        - heading "Sign up for more like this." [level=2] [ref=e135]
+        - link "Enter your email Subscribe" [ref=e136] [cursor=pointer]:
+          - /url: "#/portal"
+          - generic [ref=e137]: Enter your email
+          - generic [ref=e138]: Subscribe
+      - complementary [ref=e139]:
+        - generic [ref=e140]:
+          - article [ref=e141]:
+            - generic [ref=e142]:
+              - 'link "TIP: Playwright Trace Viewer - Copy as Playwright API Request With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report" [ref=e143] [cursor=pointer]':
+                - /url: /tip-playwright-copy-as-playwright-api-request-button/
+                - 'heading "TIP: Playwright Trace Viewer - Copy as Playwright API Request" [level=2] [ref=e145]'
+                - generic [ref=e146]: With the latest 1.50 Playwright release, there was a really nice feature that was released that will help speed up test automation api requests. The feature is found on the Playwright Trace Viewer which is found in Playwright UI mode or the HTML test report. From Playwright Test Report
+              - generic [ref=e147]:
+                - time [ref=e148]: Feb 10, 2025
+                - generic [ref=e149]: 6 min read
+          - article [ref=e150]:
+            - generic [ref=e151]:
+              - link "How to Run a Specific Spec File in Playwright Tests Sequentially If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time" [ref=e152] [cursor=pointer]:
+                - /url: /how-to-run-a-specific-spec-file-playwright-tests-sequentially/
+                - heading "How to Run a Specific Spec File in Playwright Tests Sequentially" [level=2] [ref=e154]
+                - generic [ref=e155]: If you've ever been in a scenario where a test you were writing changed the state of the system or user in a way where other tests would fail? This solution may help you. While I am a big fan of running my tests at the same time
+              - generic [ref=e156]:
+                - time [ref=e157]: Jan 20, 2025
+                - generic [ref=e158]: 4 min read
+          - article [ref=e159]:
+            - generic [ref=e160]:
+              - link "End of 2024 Announcements I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the \"Learning Playwright\" Course that I've been working on the last few months was released. I've been" [ref=e161] [cursor=pointer]:
+                - /url: /end-of-2024-announcements/
+                - heading "End of 2024 Announcements" [level=2] [ref=e163]
+                - generic [ref=e164]: I wanted to share a few exciting announcements here and via the newsletter! 1. I'm a Linked In Learning Instructor. At the end of November the "Learning Playwright" Course that I've been working on the last few months was released. I've been
+              - generic [ref=e165]:
+                - time [ref=e166]: Dec 10, 2024
+                - generic [ref=e167]: 1 min read
+    - contentinfo [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - link "Playwright Solutions" [ref=e171] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+          - text: © 2026
+        - navigation [ref=e172]:
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "Data & privacy" [ref=e175] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/privacy/
+            - listitem [ref=e176]:
+              - link "Contact" [ref=e177] [cursor=pointer]:
+                - /url: https://playwrightsolutions.com/contact/
+        - link "Powered by Ghost" [ref=e179] [cursor=pointer]:
+          - /url: https://ghost.org/
+  - iframe [ref=e180]:
+    - generic [ref=f27e3] [cursor=pointer]:
+      - img [ref=f27e4]
+      - generic [ref=f27e8]: Subscribe

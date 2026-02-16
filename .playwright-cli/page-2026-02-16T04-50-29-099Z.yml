@@ -1,0 +1,63 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem "Home" [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem "Categories" [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem "Contact" [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem "Jane Doe" [ref=e40]:
+              - button "Jane Doe" [ref=e41] [cursor=pointer]
+          - button [ref=e43] [cursor=pointer]:
+            - img [ref=e45]
+            - text: EN
+  - generic [ref=e48]:
+    - heading "My account" [level=1] [ref=e49]
+    - paragraph [ref=e50]: Here you can manage your profile, favorites and orders.
+    - generic [ref=e51]:
+      - button "Favorites" [ref=e52] [cursor=pointer]:
+        - img [ref=e54]
+        - text: Favorites
+      - button "Profile" [ref=e56] [cursor=pointer]:
+        - img [ref=e58]
+        - text: Profile
+      - button "Invoices" [ref=e60] [cursor=pointer]:
+        - img [ref=e62]
+        - text: Invoices
+      - button "Messages" [ref=e64] [cursor=pointer]:
+        - img [ref=e66]
+        - text: Messages
+  - paragraph [ref=e70]:
+    - text: This is a DEMO application (
+    - link "GitHub repo" [ref=e71] [cursor=pointer]:
+      - /url: https://github.com/testsmith-io/practice-software-testing
+    - text: ), used for software testing training purpose. |
+    - link "Privacy Policy" [ref=e72] [cursor=pointer]:
+      - /url: /privacy
+    - text: "| Banner photo by"
+    - link "Barn Images" [ref=e73] [cursor=pointer]:
+      - /url: https://unsplash.com/@barnimages
+    - text: "on"
+    - link "Unsplash" [ref=e74] [cursor=pointer]:
+      - /url: https://unsplash.com/photos/t5YUoHW6zRo
+    - text: .
+  - button "Open chat" [ref=e76] [cursor=pointer]:
+    - img [ref=e77]

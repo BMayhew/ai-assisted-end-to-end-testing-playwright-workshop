@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Playwright Practitioner" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: Playwright Practitioner
+        - generic [ref=e7]:
+          - link "How We Work" [ref=e8] [cursor=pointer]:
+            - /url: /#methodology
+          - link "Team" [ref=e9] [cursor=pointer]:
+            - /url: /#team
+          - link "FAQ" [ref=e10] [cursor=pointer]:
+            - /url: /#faq
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about.html
+          - link "Let's Talk" [ref=e12] [cursor=pointer]:
+            - /url: https://cal.com/howdyqa/strategy-call
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - heading "Privacy Policy" [level=1] [ref=e16]
+      - paragraph [ref=e17]: "Last updated: January 2025"
+    - generic [ref=e20]:
+      - paragraph [ref=e21]: At Playwright Practitioner, we respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website.
+      - heading "Information We Collect" [level=2] [ref=e22]
+      - heading "Analytics Data" [level=3] [ref=e23]
+      - paragraph [ref=e24]:
+        - text: We use
+        - link "Beam Analytics" [ref=e25] [cursor=pointer]:
+          - /url: https://beamanalytics.io
+        - text: ", a privacy-focused analytics service, to understand how visitors use our website. Beam Analytics:"
+      - list [ref=e26]:
+        - listitem [ref=e27]: Does not use cookies
+        - listitem [ref=e28]: Does not collect personal information
+        - listitem [ref=e29]: Does not track you across websites
+        - listitem [ref=e30]: Is fully GDPR compliant
+      - paragraph [ref=e31]: The analytics data we collect includes general information such as page views, referral sources, and approximate geographic location (country level only). This data is aggregated and cannot be used to identify individual visitors.
+      - heading "Booking Information" [level=3] [ref=e32]
+      - paragraph [ref=e33]:
+        - text: When you book a call through our website, you are redirected to
+        - link "Cal.com" [ref=e34] [cursor=pointer]:
+          - /url: https://cal.com
+        - text: ", a third-party scheduling service. The information you provide during booking (such as your name, email address, and any notes) is collected and processed by Cal.com according to their"
+        - link "privacy policy" [ref=e35] [cursor=pointer]:
+          - /url: https://cal.com/privacy
+        - text: .
+      - paragraph [ref=e36]: We receive this booking information to schedule and conduct our calls with you. We use this information solely for the purpose of providing our services and communicating with you about your inquiry.
+      - heading "How We Use Your Information" [level=2] [ref=e37]
+      - paragraph [ref=e38]: "We use the information we collect to:"
+      - list [ref=e39]:
+        - listitem [ref=e40]: Understand how visitors use our website and improve our content
+        - listitem [ref=e41]: Schedule and conduct discovery calls
+        - listitem [ref=e42]: Respond to your inquiries and provide our services
+        - listitem [ref=e43]: Send you information about our services if you've requested it
+      - heading "Data Sharing" [level=2] [ref=e44]
+      - paragraph [ref=e45]: "We do not sell, trade, or rent your personal information to third parties. We only share your information with:"
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - strong [ref=e48]: "Service providers:"
+          - text: Third-party services that help us operate our website (Beam Analytics for analytics, Cal.com for scheduling), who are bound by their own privacy policies
+        - listitem [ref=e49]:
+          - strong [ref=e50]: "Legal requirements:"
+          - text: When required by law or to protect our rights
+      - heading "Cookies" [level=2] [ref=e51]
+      - paragraph [ref=e52]: Our website does not use cookies for tracking purposes. Beam Analytics is cookie-free. Cal.com may use cookies on their platform for functionality purposes - please refer to their privacy policy for details.
+      - heading "Your Rights" [level=2] [ref=e53]
+      - paragraph [ref=e54]: "Depending on your location, you may have certain rights regarding your personal data, including:"
+      - list [ref=e55]:
+        - listitem [ref=e56]: The right to access your personal data
+        - listitem [ref=e57]: The right to correct inaccurate data
+        - listitem [ref=e58]: The right to request deletion of your data
+        - listitem [ref=e59]: The right to object to processing of your data
+      - paragraph [ref=e60]: To exercise any of these rights, please contact us using the information below.
+      - heading "Third-Party Links" [level=2] [ref=e61]
+      - paragraph [ref=e62]: Our website may contain links to third-party websites (such as playwrightsolutions.com). We are not responsible for the privacy practices of these external sites. We encourage you to read the privacy policies of any website you visit.
+      - heading "Changes to This Policy" [level=2] [ref=e63]
+      - paragraph [ref=e64]: We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.
+      - heading "Contact Us" [level=2] [ref=e65]
+      - paragraph [ref=e66]: If you have any questions about this privacy policy or our data practices, please contact us by booking a call through our website or reaching out via the contact methods provided during our conversations.
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e71]: Playwright Practitioner
+        - generic [ref=e72]:
+          - link "About" [ref=e73] [cursor=pointer]:
+            - /url: /about.html
+          - link "Privacy" [ref=e74] [cursor=pointer]:
+            - /url: /privacy.html
+          - link "Blog" [ref=e75] [cursor=pointer]:
+            - /url: https://playwrightsolutions.com
+      - paragraph [ref=e77]: © 2026 Playwright Practitioner. All rights reserved.
