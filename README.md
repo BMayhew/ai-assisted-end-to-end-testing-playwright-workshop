@@ -151,3 +151,30 @@ Focus areas:
 - **Model:** Claude Opus 4.6 (new model)
 
 See [specs/README.md](specs/README.md) for the analysis of how Opus 4.6 autonomously discovered and read the V1 and V2 and the specs/analysis folder for more details on the improvements in the V3 test plan.
+
+## Creating Tests from Specs
+
+This section covers going from spec to working test code. The same scenario (Add Product to Cart and Verify Cart Contents) was generated multiple times with different models, then healed and refactored using page objects.
+
+> **Deep dive:** The [tests/prompts/](tests/prompts/) directory contains the generated test files from each iteration and the exact prompts used. See [tests/prompts/README.md](tests/prompts/README.md) for the complete walkthrough of each version, healing steps, and page object extraction.
+### Version 1 — Out of the Box Agent
+
+Used the `playwright-test-generator` agent with Claude Sonnet 4 to generate a test from the V3 critical path spec's Scenario 1 (Add Product to Cart).
+
+- **Output:** [tests/prompts/v1-test/add-product-to-cart-and-verify-cart-contents.spec.ts](tests/prompts/v1-test/add-product-to-cart-and-verify-cart-contents.spec.ts)
+
+### Version 2 — Model Upgrade
+
+Same prompt and agent, switched to Claude Opus 4.6.
+
+- **Output:** [tests/prompts/v2-test/add-product-to-cart-and-verify-cart-contents.spec.ts](tests/prompts/v2-test/add-product-to-cart-and-verify-cart-contents.spec.ts)
+
+### Version 3 — Healed & Refactored with Page Objects
+
+The generated test had two flaky areas: a product click relying on a volatile unique ID, and a strict mode violation on price assertions. Used the `playwright-test-healer` agent to fix those issues, then created a custom `playwright-page-object-generator` agent to extract page objects and refactor the test.
+
+- **Page Objects:** [lib/pages/](lib/pages/) — `home.page.ts`, `product-detail.page.ts`, `cart.page.ts`
+- **Final Test:** [tests/add-product-to-cart-and-verify-cart-contents.spec.ts](tests/add-product-to-cart-and-verify-cart-contents.spec.ts)
+- **Custom Agent:** [.github/agents/playwright-page-object-generator.agent.md](.github/agents/playwright-page-object-generator.agent.md)
+
+> **Branch:** [04-create-tests](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/04-create-tests)
