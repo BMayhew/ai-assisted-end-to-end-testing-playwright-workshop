@@ -121,7 +121,6 @@ A broad first pass. The agent explored the site and produced individual spec fil
 - Many specs are shallow (e.g., "verify page loads")
 - Hard to know which 20% of tests gives 80% of coverage
 
-> [Create Test GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/create-test/)
 
 ### Version 2 — Focused Critical Path (single plan)
 
@@ -143,26 +142,12 @@ Focus areas:
 - Account management
 ```
 
-- **Agent:** `playwright-critical-path-analyzer` (custom agent)
-- **Model:** Claude Sonnet 4
-- **Output:** [specs/v2/critical-path-test-plan.md](specs/v2/critical-path-test-plan.md)
-
-A major improvement. Providing application context, focus areas, and using a purpose-built agent produced a single prioritized plan with P0/P1/P2 rankings, a coverage matrix, and automation notes. The scenarios are more actionable and test-ready.
 
 ### Version 3 — Enhanced with Codebase Awareness
 
 **Prompt:** Same as V2 (identical prompt and agent).
 
-- **Agent:** `playwright-critical-path-analyzer` (same custom agent)
-- **Model:** Claude Opus 4.6
-- **Output:** [specs/v3/critical-path-test-plan.md](specs/v3/critical-path-test-plan.md)
+- **Agent:** `playwright-test-planner` (same agent)
+- **Model:** Claude Opus 4.6 (new model)
 
-The only change was the model. Opus 4.6 autonomously discovered and read the V1 and V2 specs already in the repo without being asked, then used that prior work as additional context. The result is more thorough: better locator hints (referencing `data-test` attributes from page snapshots), Playwright-specific API recommendations (`test.step()`, `toBeDisabled()`, `waitForResponse()`), and practical improvements like removing the impractical Google OAuth scenario.
-
-### Comparison & Gap Analysis
-
-A detailed comparison of all three versions is available in [specs/analysis/](specs/analysis/):
-- [gap-analysis-detailed.md](specs/analysis/gap-analysis-detailed.md) — Full scoring and gap analysis
-- [workshop-comparison-slides.md](specs/analysis/workshop-comparison-slides.md) — Shareable summary
-
-> [Improve Prompt GitHub Branch](https://github.com/BMayhew/ai-assisted-end-to-end-testing-playwright-workshop/tree/improve-prompt)
+See [specs/README.md](specs/README.md) for the analysis of how Opus 4.6 autonomously discovered and read the V1 and V2 and the specs/analysis folder for more details on the improvements in the V3 test plan.
