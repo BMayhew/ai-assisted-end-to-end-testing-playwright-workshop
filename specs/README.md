@@ -30,7 +30,7 @@ Focus areas:
 - Product search and filtering
 - Account management
 ```
-- Agent: playwright-critical-path-analyzer (custom agent we created in .github/agents/playwright-test-critical-path-analyzer.agent.md)
+- Agent: playwright-test-generator(custom agent we created in .github/agents/playwright-test-generator.agent.md)
 - Model: Claude Sonnet 4
 
 ## Version 3 (v3)
@@ -53,7 +53,7 @@ Focus areas:
 - Product search and filtering
 - Account management
 ```
-- Agent: playwright-critical-path-analyzer (custom agent we created in .github/agents/playwright-test-critical-path-analyzer.agent.md)
+- Agent: playwright-test-generator (custom agent we created in .github/agents/playwright-test-generator.agent.md)
 - Model: Claude Opus 4.6
 - Note: Same prompt and agent as V2. The only change was the model. Opus 4.6 autonomously discovered and read the V1 and V2 specs in the repo without being asked, then used that prior work as additional context to produce a more thorough result.
 

@@ -109,7 +109,7 @@ For the full breakdown of each version (prompts used, agents, models, and analys
 Explore https://practicesoftwaretesting.com and create 20 different spec files
 ```
 
-- **Agent:** `playwright-test-planner-cli`
+- **Agent:** `playwright-test-planner`
 - **Model:** Claude Sonnet 4
 - **Output:** [specs/v1/](specs/v1/) — 20 individual spec files
 
